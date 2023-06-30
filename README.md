@@ -1,8 +1,12 @@
-# MicrobioimeAMR: An all-in-one amplicon pipeline to analysis microbitoa and resistome 
+# MicrobioimeAMR: An all-in-one amplicon-sequencing pipeline to analysis microbitoa and resistome 
 # Trying to develop an amplicon seq pipeline for bacterial abundance and amr gene conunt
 Input: PE reads or SE read from nanopore
+
 EMU: Bacterial abundance
+
+
 AMR++.abricate, or amrfinderplus: AMR gene count ( may just use some codes from AMR++) 
+
 R corrplot: correlation matrix 
 
 # Install emu and AMR++ according to their documentation
