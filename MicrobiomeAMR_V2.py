@@ -13,10 +13,11 @@ import seaborn as sns
 # Program : MicrobiomeAMR
 # Author: Mingsong Kang (mingsong.kang@inspection.gc.ca)
 # Installation:
-# 1.Conda: EMU, minimap2, fastp, and resistomeanalyzer
-# 2.Python packages: sutil, argpares, panadas, numpy, scipy, termcolor, and seaborn
+# 1.Conda: Create an env for MicrobiomeAMR and install EMU, minimap2, fastp, and resistomeanalyzer within that env  
+# 2.Python packages: install the following pyhon packages:sutil, argpares, panadas, numpy, scipy, termcolor, and seaborn
 # input files format   1. PE: *_R1/R2.fastq.gz. ONT:*.fastq.gz; * = sample name.
 #                      2. use the same name of the same sample for 16S and AMR fastq files
+#                      
 
 
 
