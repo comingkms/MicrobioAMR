@@ -1,3 +1,4 @@
+![image](https://github.com/comingkms/EMU-and-AMR-/assets/56736071/85fb5692-0c0a-4df5-95c0-5290bb402d36)
 # MicrobioimeAMR: An all-in-one amplicon-sequencing pipeline to corraltiveanalysis microbitoa and resistome 
 # Trying to develop an amplicon seq pipeline for bacterial abundance and amr gene conunt
 Input: PE reads or SE read from nanopore
