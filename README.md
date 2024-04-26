@@ -1,60 +1,127 @@
 
 # ![legend](https://github.com/comingkms/MicrobiotAMR/assets/56736071/eb3e13ec-acb5-41c4-b2ec-6db0faf4f972) 
-# An all-in-one amplicon-sequencing pipeline to corraltiveanalysis microbitoa and resistome
-Input: PE reads or SE read from nanopore
+# An all-in-one amplicon-sequencing data analysis pipeline for resistome and microbiome
 
-EMU: Bacterial abundance
+MicrobiotAMR(MAMR) is a simple python script that perform amplicon seqeucing data analyses for 16s rRNA gene and Illumina Antimicrobial Resistance(AMR) Research Panel, and corrliation analysis to identify 'potential' antimicrobial resistant bacteria.
+
++ [System requirements](#system-requirements)
++ [Installation](#installation)
++ [Usage](#usage)
++ [Output files](#output-files)
++ [Example](#example)
++ [Reference](#reference)  
 
 
-AMR: resistomeanalyzer https://github.com/cdeanj/resistomeanalyzer
+## System requirements
 
-R corrplot: correlation matrix 
+MAMR has been developed and tested under a Linux environment.It requires certain tools and database in order to be installed and used: 
++ GNU bash (version 4 or later recommended)
++ [miniconda3](https://conda.io/en/latest/miniconda.html)
 
-# Install emu and AMR++ according to their documentation
-....... Conda 
 
-# Run emu on your input file to get the metagenomic abundance output -type 16s_PE or 16s_Nano
-emu_output = "emu_output_file"
+## Installation
 
-# Run xxxx on your input file to get the antimicrobial resistance genes output -type amr-PE 
-amr_output = "amr_output_file"
+The simplest (and recommended) way to install MAMR dependencies is through [conda](https://conda.io/en/latest/miniconda.html) in an isolated environment (*e.g.*, named `microbotAMR`):
+```bash
+git clone https://github.com/comingkms/MicrobiotAMR.git
+cd MicrobiotAMR
+conda env create -n microbiotAMR --file environment.yml
+```
+The whole installation process should take about 5-10 minutes.
 
-# Import pandas or scipy to perform correlation analysis
-import pandas as pd
-import scipy.stats as stats
+To make the `microbiotAMR` command available, it is advised to include the absolute path of MAMR's directory in your PATH environment variable by adding the following line to your `~/.bashrc` file:
 
-# Read the emu and AMRplusplus outputs as dataframes
-emu_df = pd.read_csv(emu_output, sep="\t")
-amr_df = pd.read_csv(amr_output, sep="\t")
+```
+export PATH=/absolute/path/to/microbiotAMR:${PATH}
+```
 
-# Merge the two dataframes on a common column, such as sample ID or bin ID
-merged_df = pd.merge(emu_df, amr_df, on="sample_id")
 
-# R script 
+## Usage and command line options
 
-# Compute the matrix of p-value : further arguments to pass to the native R cor.test function
-    # mat : is a matrix of data
-cor.mtest <- function(mat, ...) {
-    mat <- as.matrix(mat)
-    n <- ncol(mat)
-    p.mat<- matrix(NA, n, n)
-    diag(p.mat) <- 0
-    for (i in 1:(n - 1)) {
-        for (j in (i + 1):n) {
-            tmp <- cor.test(mat[, i], mat[, j], ...)
-            p.mat[i, j] <- p.mat[j, i] <- tmp$p.value
-        }
-    }
-  colnames(p.mat) <- rownames(p.mat) <- colnames(mat)
-  p.mat
-}
-# matrix of the p-value of the correlation
-M = cor(merged_df)
-p.mat <- cor.mtest(M)
+Activate MAMR conda environment:
+```
+conda activate microbotAMR
+```
 
-# Perform correlation analysis on the columns of interest, such as abundance or gene count
-correlation = corrplot(M, type="upper", order="hclust", tl.col="black", tl.srt=45)
+Running microbotAMR:
 
-# Plot correlation matrix 
-corrplot(M, type="upper", order="hclust", 
-         p.mat = p.mat, sig.level = 0.01, insig = "blank")
+Module 1: Analysis of  Illumina AMR reseach panel(AMR)
+
+```
+conda activate microbotAMR
+```
+
+Module 2: Analysis of 16s rRNA gene amplicon sequencing(16s)
+
+```
+conda activate microbotAMR
+```
+Module 3: corrliation analysis(COR)
+
+```
+conda activate microbotAMR
+```
+
+## Output files
+
+The output directory of MAMR has the following structure:
+
+Module 1: AMR 
+```
+OUTPUT_DIR/
+├── strainberry_n2/
+    ├── strainberry_n3/
+├── ...
+├── strainberry_nK/
+├── assembly.scaffolds.bam
+├── assembly.scaffolds.bam.bai
+├── assembly.scaffolds.fa
+└── assembly.scaffolds.fa.fai
+```
+Strainberry output assembly is stored in the `assembly.scaffolds.fa` file.
+
+Module 2: 16s
+
+```
+OUTPUT_DIR/
+├── strainberry_n2/
+    ├── strainberry_n3/
+├── ...
+├── strainberry_nK/
+├── assembly.scaffolds.bam
+├── assembly.scaffolds.bam.bai
+├── assembly.scaffolds.fa
+└── assembly.scaffolds.fa.fai
+```
+Strainberry output assembly is stored in the `assembly.scaffolds.fa` file.
+
+Module 3: COR
+
+```
+OUTPUT_DIR/
+├── strainberry_n2/
+    ├── strainberry_n3/
+├── ...
+├── strainberry_nK/
+├── assembly.scaffolds.bam
+├── assembly.scaffolds.bam.bai
+├── assembly.scaffolds.fa
+└── assembly.scaffolds.fa.fai
+```
+MAMR output assembly is stored in the `assembly.scaffolds.fa` file.
+
+A minimap2-based alignment of input reads on the output assembly is also available in the `assembly.scaffolds.bam` file.
+
+## Example
+
+In order to verify that MAMR has been correctly installed, it is possible to test it on a small dataset in the `example` sub-directory.
+
+### Name of raw read files
+
+### Running MAMR
+
+
+## Reference
+
+If you use MAMR in your work, please cite:
+
