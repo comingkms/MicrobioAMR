@@ -35,7 +35,7 @@ MAMR has been developed and tested under a Linux environment.It requires certain
   AMR database, which is a hand-curated database based on [MEGARes V3.0 database](https://www.meglab.org/megares/)<sup>4</sup> and [Illumina AMR research panel documentation](https://www.illumina.com/products/by-brand/ampliseq/community-panels/antimicrobial-resistance.html#tabs-5bcafff4ef-item-28eba04f16-documentation), can be found in the 'AMR_database' sub-directory, respectively.
   
 
-## Installation(...)
+## Installation
 
 The simplest (and recommended) way to install MAMR dependencies is through [conda](https://conda.io/en/latest/miniconda.html) in an isolated environment (*e.g.*, named `microbotAMR`):
 ```bash
@@ -54,11 +54,12 @@ export PATH=/absolute/path/to/MAMR:${PATH}
 ## Usage and command line options
 
 In order to verify that MAMR has been correctly installed, it is possible to test it on a small dataset in the `example` sub-directory.
-### Name of raw read files
-+ format of input files' name:
+
++ Name of raw read files
+1.  Format of input files' name:
    PE: {sample_name}_Sxx_Lxxx_R1/R2.fastq.gz
    ONT:{sample_name}.fastq.gz 
-+ Please make sure sample name is identical for the same sample for AMR and 16s rRNA gene amplicon sequencing data. 
+2. Please make sure sample name is identical for the same sample for AMR and 16s rRNA gene amplicon sequencing data. 
 
 Activate MAMR conda environment:
 ```
