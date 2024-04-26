@@ -13,7 +13,7 @@ MicrobiotAMR (MAMR) is a Python script that facilitates the analysis of amplicon
 
 ## System requirements
 
-MAMR has been developed and tested under a Linux environment.It requires certain tools and database in order to be installed and used:
+MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires the installation and utilization of specific tools and databases.
 + Tool or pipleine:
 + [emu](https://github.com/treangenlab/emu)<sup>1</sup>
 + [fastp](https://github.com/OpenGene/fastp)<sup>2</sup>
@@ -31,13 +31,13 @@ MAMR has been developed and tested under a Linux environment.It requires certain
   [termcolor](https://github.com/termcolor/termcolor)
   [tqdm](https://tqdm.github.io/)
 + Database:
-  micobiome database, which is [emu database](https://github.com/treangenlab/emu/tree/master/emu_database), can be found in the '16s_database' sub-directory or [Emu github](https://github.com/treangenlab/emu). 
-  AMR database, which is a hand-curated database based on [MEGARes V3.0 database](https://www.meglab.org/megares/)<sup>4</sup> and [Illumina AMR research panel documentation](https://www.illumina.com/products/by-brand/ampliseq/community-panels/antimicrobial-resistance.html#tabs-5bcafff4ef-item-28eba04f16-documentation), can be found in the 'AMR_database' sub-directory, respectively.
+  1. micobiome database, which is [emu database](https://github.com/treangenlab/emu/tree/master/emu_database), can be found in the '16s_database' sub-directory or [Emu github](https://github.com/treangenlab/emu). 
+  2. AMR database, which is a hand-curated database based on [MEGARes V3.0 database](https://www.meglab.org/megares/)<sup>4</sup> and [Illumina AMR research panel documentation](https://www.illumina.com/products/by-brand/ampliseq/community-panels/antimicrobial-resistance.html#tabs-5bcafff4ef-item-28eba04f16-documentation), can be found in the 'AMR_database' sub-directory, respectively.
   
 
 ## Installation
 
-The simplest (and recommended) way to install MAMR dependencies is through [conda](https://conda.io/en/latest/miniconda.html) in an isolated environment (*e.g.*, named `microbotAMR`):
+The easiest and most convenient way to install MAMR dependencies is by using conda in an isolated environment, such as `microbotAMR`. This method ensures a smooth and hassle-free installation process.
 ```bash
 git clone https://github.com/comingkms/MicrobiotAMR.git
 cd MicrobiotAMR
@@ -45,7 +45,7 @@ conda env create -n microbiotAMR --file environment.yml
 ```
 The whole installation process should take about 5-10 minutes.
 
-To make the `MAMR` command available, it is advised to include the absolute path of MAMR's directory in your PATH environment variable by adding the following line to your `~/.bashrc` file:
+To ensure the availability of the `MAMR` command, it is essential to add the absolute path of MAMR's directory to your PATH environment variable. This can be done by adding the following line to your `~/.bashrc` file:
 
 ```
 export PATH=/absolute/path/to/MAMR:${PATH}
@@ -53,13 +53,12 @@ export PATH=/absolute/path/to/MAMR:${PATH}
 
 ## Usage and command line options
 
-In order to verify that MAMR has been correctly installed, it is possible to test it on a small dataset in the `example` sub-directory.
+To confirm the proper installation of MAMR, you can test a small dataset located in the `example` subdirectory.
 
-+ Name of raw read files
-1.  Format of input files' name:
-   PE: {sample_name}_Sxx_Lxxx_R1/R2.fastq.gz
-   ONT:{sample_name}.fastq.gz 
-2. Please make sure sample name is identical for the same sample for AMR and 16s rRNA gene amplicon sequencing data. 
+Here are some guidelines for the file names of the raw read files:
+1. For paired-end reads, the format of the input files' name should be: {sample_name}_Sxx_Lxxx_R1/R2.fastq.gz
+2. For ONT reads, the format of the input file's name should be: {sample_name}.fastq.gz
+3. For module 3(COR),  please ensure that the sample name matches the ones used for AMR and 16s rRNA gene amplicon sequencing.
 
 Activate MAMR conda environment:
 ```
@@ -160,7 +159,7 @@ OUTPUT_DIR/
     ├──{sample_1}_sam.mechanism.tsv 
     ├──...
 ```
-MAMR conbined outputs are stored in the `AMR_conbined.****.csv` files. 
+MAMR combined outputs are stored in the `AMR_conbined.****.csv` files. 
 
 Module 2: BAC
 
@@ -178,7 +177,7 @@ OUTPUT_DIR/
     ├── emu-combined-species.tsv
     └── emu-combined-species_counts.tsv
 ```
-MAMR uses emu pipeline to analysis 16s rRNA sequencing data. please review Emu github](https://github.com/treangenlab/emu) for more inforamtion. 
+MAMR utilizes the Emu pipeline to analyze 16S rRNA sequencing data. For more information, please review the [Emu GitHub repository](https://github.com/treangenlab/emu) 
 
 Module 3: COR
 
@@ -189,9 +188,7 @@ OUTPUT_DIR/
 ├── ...
 
 ```
-MAMR correlation outputs are stored in the `corelation_xxx.csv' files. Other files in this output folder are copied from module1 and 2 output folders. 
-
-
+MAMR correlation results are saved in the `corelation_xxx.csv' files. The rest of the files in this output folder are copied from the output folders of modules 1 and 2.
 
 ## Citation 
 
