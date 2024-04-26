@@ -31,8 +31,8 @@ MAMR has been developed and tested under a Linux environment.It requires certain
   [termcolor](https://github.com/termcolor/termcolor)
   [tqdm](https://tqdm.github.io/)
 + Database:
-+ micobiome database, which is [emu database](https://github.com/treangenlab/emu/tree/master/emu_database), can be found in the '16s_database' sub-directory or [Emu github](https://github.com/treangenlab/emu). 
-+ AMR database, which is a hand-curated database based on [MEGARes V3.0 database](https://www.meglab.org/megares/)<sup>4</sup> and [Illumina AMR research panel documentation](https://www.illumina.com/products/by-brand/ampliseq/community-panels/antimicrobial-resistance.html#tabs-5bcafff4ef-item-28eba04f16-documentation), can be found in the 'AMR_database' sub-directory, respectively.
+  micobiome database, which is [emu database](https://github.com/treangenlab/emu/tree/master/emu_database), can be found in the '16s_database' sub-directory or [Emu github](https://github.com/treangenlab/emu). 
+  AMR database, which is a hand-curated database based on [MEGARes V3.0 database](https://www.meglab.org/megares/)<sup>4</sup> and [Illumina AMR research panel documentation](https://www.illumina.com/products/by-brand/ampliseq/community-panels/antimicrobial-resistance.html#tabs-5bcafff4ef-item-28eba04f16-documentation), can be found in the 'AMR_database' sub-directory, respectively.
   
 
 ## Installation(...)
