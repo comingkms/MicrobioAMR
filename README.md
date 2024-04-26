@@ -55,11 +55,10 @@ export PATH=/absolute/path/to/MAMR:${PATH}
 
 In order to verify that MAMR has been correctly installed, it is possible to test it on a small dataset in the `example` sub-directory.
 ### Name of raw read files
-1. format of input files' name:
++ format of input files' name:
    PE: {sample_name}_Sxx_Lxxx_R1/R2.fastq.gz
    ONT:{sample_name}.fastq.gz 
-2. Please make sure sample name is identical for the same sample for AMR and 16s rRNA gene amplicon sequencing data. 
-
++ Please make sure sample name is identical for the same sample for AMR and 16s rRNA gene amplicon sequencing data. 
 
 Activate MAMR conda environment:
 ```
@@ -159,7 +158,7 @@ OUTPUT_DIR/
     ├──{sample_1}_sam.group.tsv
     ├──{sample_1}_sam.mechanism.tsv 
     ├──...
-
+```
 MAMR conbined outputs are stored in the `AMR_conbined.****.csv` files. 
 
 Module 2: BAC
@@ -195,6 +194,10 @@ MAMR correlation outputs are stored in the `corelation_xxx.csv' files. Other fil
 
 ## Citation 
 
-If you use MAMR in your work, please cite:
+
 
 ## Reference
+1. Curry KD, Wang Q, Nute MG, Tyshaieva A, Reeves E, Soriano S, Wu Q, Graeber E, Finzer P, Mendling W, Savidge T, Villapol S, Dilthey A, Treangen TJ. Emu: species-level microbial community profiling of full-length 16S rRNA Oxford Nanopore sequencing data. Nat Methods. 2022 Jul;19(7):845-853. doi: 10.1038/s41592-022-01520-4. Epub 2022 Jun 30. PMID: 35773532; PMCID: PMC9939874.
+2. Chen S, Zhou Y, Chen Y, Gu J. fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics. 2018 Sep 1;34(17):i884-i890. doi: 10.1093/bioinformatics/bty560. PMID: 30423086; PMCID: PMC6129281.
+3. De Coster W, Rademakers R. NanoPack2: population-scale evaluation of long-read sequencing data. Bioinformatics. 2023 May 4;39(5):btad311. doi: 10.1093/bioinformatics/btad311. PMID: 37171891; PMCID: PMC10196664.
+4. Bonin N, Doster E, Worley H, Pinnell LJ, Bravo JE, Ferm P, Marini S, Prosperi M, Noyes N, Morley PS, Boucher C. MEGARes and AMR++, v3.0: an updated comprehensive database of antimicrobial resistance determinants and an improved software pipeline for classification using high-throughput sequencing. Nucleic Acids Res. 2023 Jan 6;51(D1):D744-D752. doi: 10.1093/nar/gkac1047. PMID: 36382407; PMCID: PMC9825433.
