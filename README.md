@@ -2,7 +2,7 @@
 # ![legend](https://github.com/comingkms/MicrobiotAMR/assets/56736071/eb3e13ec-acb5-41c4-b2ec-6db0faf4f972) 
 # All-in-one amplicon-sequencing data analysis pipeline for resistome and microbiome
 
-MicrobiotAMR(MAMR) is a simple python script that perform amplicon seqeucing data analyses for 16s rRNA gene and Illumina Antimicrobial Resistance(AMR) Research Panel, and corrliation analysis to identify 'potential' antimicrobial resistant bacteria.
+MicrobiotAMR (MAMR) is a Python script that facilitates the analysis of amplicon sequencing data for the 16s rRNA gene and the Illumina Antimicrobial Resistance (AMR) Research Panel, with the additional capability of performing correlation analysis to identify "potential" antimicrobial-resistant bacteria.
 
 + [System requirements](#system-requirements)
 + [Installation](#installation)
