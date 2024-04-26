@@ -14,9 +14,17 @@ MicrobiotAMR(MAMR) is a simple python script that perform amplicon seqeucing dat
 
 ## System requirements
 
-MAMR has been developed and tested under a Linux environment.It requires certain tools and database in order to be installed and used: 
-+ GNU bash (version 4 or later recommended)
+MAMR has been developed and tested under a Linux environment.It requires certain tools and database in order to be installed and used:
+Tool or pipleine:
++ [emu](https://github.com/treangenlab/emu)<sup>1</sup>
++ [fastp](https://github.com/OpenGene/fastp)<sup>1</sup>
++ [chopper](https://github.com/wdecoster/chopper)<sup>1</sup>
++ [resistomeanalyzer](https://github.com/cdeanj/resistomeanalyzer)
++ [Porechop](https://github.com/rrwick/Porechop)<sup>1</sup>
 + [miniconda3](https://conda.io/en/latest/miniconda.html)
+Python library:
++ [glob], [shutil], [argpare], [panadas], [numpy], [cripy], [termcolor], [tqdm]
+Database
 
 
 ## Installation
@@ -121,7 +129,8 @@ In order to verify that MAMR has been correctly installed, it is possible to tes
 ### Running MAMR
 
 
-## Reference
+## Citation 
 
 If you use MAMR in your work, please cite:
 
+## Reference
