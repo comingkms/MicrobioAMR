@@ -31,7 +31,7 @@ MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires th
   [termcolor](https://github.com/termcolor/termcolor)
   [tqdm](https://tqdm.github.io/)
 + Database:
-  1. micobiome database, which is [emu database](https://github.com/treangenlab/emu/tree/master/emu_database), can be found in the '16s_database' sub-directory or [Emu github](https://github.com/treangenlab/emu). 
+  1. micobiome database, which is [emu database](https://github.com/treangenlab/emu/tree/master/emu_database), can be found in the [Emu github](https://github.com/treangenlab/emu). 
   2. AMR database, which is a hand-curated database based on [MEGARes V3.0 database](https://www.meglab.org/megares/)<sup>4</sup> and [Illumina AMR research panel documentation](https://www.illumina.com/products/by-brand/ampliseq/community-panels/antimicrobial-resistance.html#tabs-5bcafff4ef-item-28eba04f16-documentation), can be found in the 'AMR_database' sub-directory, respectively.
   
 
