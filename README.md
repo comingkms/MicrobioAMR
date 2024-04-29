@@ -8,6 +8,7 @@ MicrobiotAMR (MAMR) is a Python script that facilitates the analysis of amplicon
 + [Installation](#installation)
 + [Usage](#usage)
 + [Output files](#output-files)
++ [Citation](#citation)   
 + [Reference](#reference)  
 
 
