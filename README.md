@@ -114,11 +114,11 @@ options:
   -h, --help            show this help message and exit
   -emu_db EMU_DATABASE, --EMU_database EMU_DATABASE
                         Path to EMU database
-  -emu_q EMU_QUERY_FILES, --EMU_query_files EMU_QUERY_FILES
+  -bac_q BAC_QUERY_FILES, --BAC_query_files BAC_QUERY_FILES
                         Directory containing EMU query files
   -qt {PE,ONT}, --query_type {PE,ONT}
                         Type of query (PE or ONT)
-  -emu_o EMU_OUTPUT, --EMU_output EMU_OUTPUT
+  -bac_o BAC_OUTPUT, --BAC_output BAC_OUTPUT
                         Output directory for EMU analysis results
   -t THREADS, --threads THREADS
                         Number of threads to use
@@ -134,7 +134,7 @@ options:
   -h, --help            show this help message and exit
   -cor_amr COR_INTPUT_AMR, --Cor_intput_AMR COR_INTPUT_AMR
                         Input directory containing AMR analysis combined results
-  -cor_emu COR_INTPUT_EMU, --Cor_intput_EMU COR_INTPUT_EMU
+  -cor_bac COR_INTPUT_BAC, --Cor_intput_BAC COR_INTPUT_BAC
                         Input directory containing EMU analysis combined results
   -cor_o COR_OUTPUT, --Cor_output COR_OUTPUT
                         Output directory for correlation analysis results
