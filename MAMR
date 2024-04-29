@@ -1,0 +1,460 @@
+#!/usr/bin/env python
+import os
+import subprocess
+import glob
+import shutil
+import argparse
+import pandas as pd
+import numpy as np
+from scipy.stats import pearsonr
+from termcolor import colored
+from tqdm import tqdm
+
+# Program : MicrobiotAMR
+# Author: Mingsong Kang (mingsong.kang@inspection.gc.ca)
+# Installation:
+# 1.Conda: emu, minimap2, fastp, chopper, and resistomeanalyzer, Porechop,
+# 2.Python packages: glob, shutil, argpares, panadas, numpy, scipy, termcolor, tqdm
+# input files format   1. PE: *_R1/R2.fastq.gz. ONT:*.fastq.gz; * = sample name.
+#                      2. use the same name of the same sample for 16S and AMR fastq files
+
+# Check if required tools are installed
+def check_tool(tool_name):
+    result = subprocess.run(['which', tool_name], capture_output=True, text=True)
+    if not result.stdout.strip():
+        print(f"ERROR: Cannot find {tool_name} using 'which {tool_name}'")
+        exit(1)
+
+def check_tools(tools):
+    for tool in tools:
+        check_tool(tool)
+
+# Set default values
+default_threads = "1"
+
+# Define main function for AMR analysis
+def AMR(args):
+    # Check if all required arguments are provided
+    if not all([args.AMR_database, args.anno_file, args.AMR_query_files, args.AMR_output]):
+        print("ERROR: One or more required arguments are missing.")
+        exit(1)
+
+    # Create output directory if it does not exist
+    if os.path.exists(args.AMR_output):
+        print("ERROR: AMR output directory already exists. Please remove it or set an alternate output directory.")
+        exit(1)
+    else:
+        os.makedirs(args.AMR_output)
+
+    # Perform QC and adapter trimming using fastp
+    print(colored("Step 1: Performing QC checks and adapter trimming", 'green'))
+    os.chdir(args.AMR_query_files)
+    # Rename files based on their naming convention
+    for filename in glob.glob("*.fastq.gz"):
+        parts = filename.split('_')
+        new_filename = f"{parts[0]}_{parts[3]}.fastq.gz"
+        os.rename(filename, new_filename)
+    # Perform adapter trimming using fastp
+    for file in tqdm(glob.glob("*_R1.fastq.gz")):
+        j = file.replace("_R1.fastq.gz", "")
+        subprocess.run([
+            "fastp",
+            "-i", f"{j}_R1.fastq.gz",
+            "-I", f"{j}_R2.fastq.gz",
+            "-o", f"{j}_R1_trimmed.fastq.gz",
+            "-O", f"{j}_R2_trimmed.fastq.gz",
+            '-c',
+            "-h", f"{j}_fastp.html",
+            "-w", args.threads
+        ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    # Alignment using minimap2
+    print(colored("Step 2: Performing alignment using minimap2", 'green'))
+    for file in tqdm(glob.glob("*_R1_trimmed.fastq.gz")):
+        m = file.replace("_R1_trimmed.fastq.gz", "")
+        subprocess.run(['minimap2', '-ax', 'sr', args.AMR_database, f'{m}_R1_trimmed.fastq.gz',
+                        f'{m}_R2_trimmed.fastq.gz', '-t', args.threads], stdout=open(f'{m}.sam', 'w'), stderr=subprocess.DEVNULL)
+
+    # Create output directory for Resistomes
+    os.mkdir(os.path.join(args.AMR_output, 'Resistomes'))
+
+    # Characterization of Resistome
+    print(colored("Step 3: Characterization of Resistome", 'green'))
+    for j in tqdm(glob.glob("*.sam")):
+        gene_fp = f"{j}.gene.tsv"
+        group_fp = f"{j}.group.tsv"
+        mech_fp = f"{j}.mechanism.tsv"
+        class_fp = f"{j}.class.tsv"
+        threshold = "80"
+        command_re = [
+            "resistome",
+            "-ref_fp", args.AMR_database,
+            "-sam_fp", j,
+            "-annot_fp", args.anno_file,
+            "-gene_fp", gene_fp,
+            "-group_fp", group_fp,
+            "-class_fp", class_fp,
+            "-mech_fp", mech_fp,
+            "-t", threshold
+        ]
+        subprocess.run(command_re)
+        for fp in [group_fp, gene_fp, class_fp, mech_fp]:
+            shutil.move(fp, os.path.join(args.AMR_output, 'Resistomes'))
+
+    # Combine outputs from multiple files for gene and class data
+    print(colored("Step 4: Combining outputs", 'green'))
+    combine_outputs(args.AMR_output)
+
+    # Clean up temporary files
+    cleanup(args.AMR_query_files)
+    print(colored("Completed resistome analysis", 'green'))
+# Combine output files for gene and class data
+def combine_outputs(output_dir):
+    # Combine data for gene files
+
+    file_name_list = os.listdir(os.path.join(output_dir, 'Resistomes'))
+    input_files_gene = [os.path.join(output_dir, 'Resistomes', file) for file in file_name_list if
+                        file.endswith('.gene.tsv')]
+    output_file_gene = os.path.join(output_dir, 'Resistomes', 'AMR_combined-gene.csv')
+
+    # Combine data for class files
+
+    input_files_class = [os.path.join(output_dir, 'Resistomes', file) for file in file_name_list if
+                         file.endswith('.class.tsv')]
+    output_file_class = os.path.join(output_dir, 'Resistomes', 'AMR_combined-class.csv')
+
+    print(colored("Combining AMR gene files", 'green'))
+    combine_data(input_files_gene, output_file_gene)
+    print(colored("Combining AMR class files", 'green'))
+    combine_data(input_files_class, output_file_class)
+    # Change read counts to relative abundance
+
+    amr_data_gene = pd.read_csv(output_file_gene, sep="\t")
+    amr_data_class = pd.read_csv(output_file_class, sep="\t")
+
+    # Get the bacterial names from the first column
+    Amr_gene_names = amr_data_gene.iloc[:, 0]
+    Amr_class_names = amr_data_class.iloc[:, 0]
+
+    # Calculate the sum of counts for each sample (column)
+    sample_sums_gene = amr_data_gene.iloc[:, 1:].sum(axis=0)
+    sample_sums_class = amr_data_class.iloc[:, 1:].sum(axis=0)
+
+    # Calculate the relative abundance for each sample
+    relative_abundance_gene = amr_data_gene.iloc[:, 1:].div(sample_sums_gene, axis=1)
+    relative_abundance_class = amr_data_class.iloc[:, 1:].div(sample_sums_class, axis=1)
+
+    # Create a new DataFrame with bacterial names and relative abundance
+    result_gene = pd.concat([Amr_gene_names, relative_abundance_gene], axis=1)
+    result_class = pd.concat([Amr_class_names, relative_abundance_class], axis=1)
+
+    # Save the results to a new CSV file
+
+    result_gene.to_csv(os.path.join(output_dir, 'Resistomes', 'AMR_gene_combined_rel-abundance.csv'), sep='\t', index=False)
+    result_gene.to_csv(os.path.join(output_dir, 'Resistomes', 'AMR_class_combined_rel-abundance.csv'), sep='\t', index=False)
+# Combine data from input files
+def combine_data(input_files, output_file):
+    samples = {}
+    labels = set()
+    for file in tqdm(input_files):
+        with open(file, 'r') as f:
+            data = f.read().split('\n')[1:]
+            for entry in data:
+                if not entry:
+                    continue
+                entry = entry.split('\t')
+                sample = entry[0].split('.')[0]
+                count = float(entry[2])
+                name = entry[1]
+                samples.setdefault(sample, {}).setdefault(name, 0)
+                samples[sample][name] += count
+                labels.add(name)
+
+    with open(output_file, 'w') as amr:
+        local_sample_names = list(samples.keys())
+        amr.write('name' + '\t' + '\t'.join(local_sample_names) + '\n')
+        for label in labels:
+            local_counts = []
+            amr.write(label + '\t')
+            for local_sample in local_sample_names:
+                local_counts.append(str(samples[local_sample].get(label, 0)))
+            amr.write('\t'.join(local_counts) + '\n')
+
+# Clean up temporary files
+def cleanup(temp_dir):
+    temp_output_dir = os.path.join(temp_dir, 'temp_output')
+    os.makedirs(temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*.sam')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*_trimmed.fastq.gz')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*.html')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*.json')):
+        shutil.move(f, temp_output_dir)
+# Define main function for EMU analysis
+
+def BAC(args):
+     # Check if all required arguments are provided
+    if not all([args.EMU_database, args.BAC_query_files, args.query_type, args.BAC_output]):
+        print("ERROR: One or more required arguments are missing.")
+        exit(1)
+
+    BAC_output_dir = args.BAC_output
+
+    if os.path.exists(BAC_output_dir):
+        print("ERROR: BAC output directory already exists. Please remove it or set an alternate output directory.")
+        exit(1)
+    else:
+        os.mkdir(BAC_output_dir)
+
+    # Perform QC and adapter trimming using fastp
+    print(colored("Step 1: Performing QC checks and adapter trimming", 'green'))
+    os.chdir(args.BAC_query_files)
+
+    if args.query_type == "PE":
+        # Rename files and perform QC for paired-end reads
+        for filename in glob.glob("*.fastq.gz"):
+            parts = filename.split('_')
+            new_filename = f"{parts[0]}_{parts[3]}.fastq.gz"
+            os.rename(filename, new_filename)
+
+        for file in tqdm(glob.glob("*_R1.fastq.gz")):
+            j = file.replace("_R1.fastq.gz", "")
+            subprocess.run([
+                "fastp",
+                "-i", f"{j}_R1.fastq.gz",
+                "-I", f"{j}_R2.fastq.gz",
+                "-o", f"{j}_R1_f_trimmed.fastq.gz",
+                "-O", f"{j}_R2_f_trimmed.fastq.gz",
+                "-h", f"{j}_fastp.html",
+                "-j", f"{j}_fastp.json",
+                "-w", args.threads
+            ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    elif args.query_type == "ONT":
+        # Trim adapters for Oxford Nanopore reads
+        for file in tqdm(glob.glob("*.fastq.gz")):
+            j = file.replace(".fastq.gz", "")
+            subprocess.run(["porechop", "-i", f"{j}.fastq.gz", "-o", f"{j}_trimmed.fastq.gz"],
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            with subprocess.Popen(["gunzip", "-c", f"{j}_trimmed.fastq.gz"],
+                                  stdout=subprocess.PIPE) as gunzip_proc:
+                with subprocess.Popen(["chopper", "-q", "10", "--minlength", "1000", "--maxlength", "2000"],
+                                      stdin=gunzip_proc.stdout, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL) as nanofilt_proc:
+                    with subprocess.Popen(["gzip", "-c"], stdin=nanofilt_proc.stdout,
+                                          stdout=subprocess.PIPE) as gzip_proc:
+                        with open(f"{j}_f_trimmed.fastq.gz", "wb") as f:
+                            f.write(gzip_proc.communicate()[0])
+
+    # Characterization of microbial community using EMU
+    print(colored("Step 2: Characterization of microbial community using EMU", 'green'))
+
+    for file in tqdm(glob.glob("*_R1_f_trimmed.fastq.gz")) if args.query_type == "PE" else tqdm(glob.glob(
+            "*_f_trimmed.fastq.gz")):
+        j = file.replace("_R1_f_trimmed.fastq.gz", "") if args.query_type == "PE" else file.replace(
+            "_f_trimmed.fastq.gz", "")
+        subprocess.run([
+            "emu", "abundance",
+            "--type", "sr" if args.query_type == "PE" else "map-ont",
+            file,
+            "--db", args.EMU_database,
+            "--threads", args.threads,
+            "--keep-counts",
+            "--min-abundance", '0.0001',
+            "--output-dir", os.path.join(BAC_output_dir, j)
+        ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    # Combine EMU outputs
+    print(colored("Step 3: Combining tables", 'green'))
+    os.mkdir(os.path.join(BAC_output_dir, 'combined'))
+
+    pattern = '*_f_trimmed.fastq_rel-abundance.tsv'
+    file_paths = glob.glob(os.path.join(BAC_output_dir, '**', pattern), recursive=True)
+
+    for file_path in tqdm(file_paths):
+        filename = os.path.basename(file_path)
+        destination_path = os.path.join(BAC_output_dir, 'combined', filename)
+        shutil.copy(file_path, destination_path)
+
+    os.chdir(os.path.join(BAC_output_dir, 'combined'))
+    file_paths = glob.glob("*_f_trimmed.fastq_rel-abundance.tsv")
+
+    for old_filepath in file_paths:
+        old_filename = os.path.basename(old_filepath)
+        parts = old_filename.split('_')
+        new_filename = f"{parts[0]}_rel-abundance.tsv"
+        os.rename(old_filepath, new_filename)
+
+    os.chdir(BAC_output_dir)
+    # Additional processing with EMU combine-outputs
+    subprocess.run(['emu', 'combine-outputs', 'combined', 'species'], stdout=subprocess.DEVNULL,
+                   stderr=subprocess.DEVNULL)
+    subprocess.run(['emu', 'combine-outputs', 'combined', 'genus'], stdout=subprocess.DEVNULL,
+                   stderr=subprocess.DEVNULL)
+    subprocess.run(['emu', 'combine-outputs', 'combined', 'species', '--counts'], stdout=subprocess.DEVNULL,
+                   stderr=subprocess.DEVNULL)
+    subprocess.run(['emu', 'combine-outputs', 'combined', 'genus', '--counts'], stdout=subprocess.DEVNULL,
+                   stderr=subprocess.DEVNULL)
+
+    # Clean up: move all the temp files to a folder
+    print(colored("Completed microbiome analysis", 'green'))
+    os.mkdir(os.path.join(args.BAC_query_files, 'fastp_output'))
+    fastp_output_dir = os.path.join(args.BAC_query_files, 'fastp_output')
+    os.chdir(args.BAC_query_files)
+    for f in glob.glob('*.sam'):
+        shutil.move(f, fastp_output_dir)
+    for f in glob.glob('*_trimmed.fastq.gz'):
+        shutil.move(f, fastp_output_dir)
+    for f in glob.glob('*.html'):
+        shutil.move(f, fastp_output_dir)
+    for f in glob.glob('*.json'):
+        shutil.move(f, fastp_output_dir)
+# Define main function for correlation analysis
+def COR(args):
+    Cor_output_dir = args.Cor_output
+
+    # Check if input files are provided
+    if not all([args.Cor_input_AMR, args.Cor_input_BAC]):
+        print("ERROR: One or more required input files are missing.")
+        exit(1)
+
+    # Check if output directory is provided
+    if not args.Cor_output:
+        print("ERROR: Correlation output directory not specified.")
+        exit(1)
+
+    print(colored("Step 1: Obtaining AMR and 16S results for correlation analysis", 'green'))
+
+    # Create output directory
+    os.makedirs(Cor_output_dir, exist_ok=True)
+
+    # Transfer data from AMR and EMU to correlation output folder
+    for filename in ['AMR_gene_combined_rel-abundance.csv', 'emu-combined-genus.tsv', 'emu-combined-species.tsv']:
+        src_path = os.path.join(args.Cor_input_AMR if filename.startswith('AMR') else args.Cor_input_BAC, filename)
+        shutil.copy(src_path, Cor_output_dir)
+
+    print(colored("Step 2: Combining bacterial and AMR gene counts", 'green'))
+
+    # Read bacterial abundance file
+    # genus
+    genus_file = os.path.join(Cor_output_dir, 'emu-combined-genus.tsv')
+    genus_df = pd.read_csv(genus_file, sep="\t", header=0, index_col=0)
+    genus = genus_df.drop(columns=['family', 'order', 'class', 'phylum', 'superkingdom'])
+    genus_t = genus.T
+    genus_t = genus_t.drop(columns=['unassigned'])
+    genus_t = genus_t.loc[:, genus_t.columns.notna()]
+    genus_t = genus_t.fillna(0)
+    # species
+    spp_file = os.path.join(Cor_output_dir, 'emu-combined-species.tsv')
+    spp_df = pd.read_csv(spp_file, sep="\t", header=0, index_col=0)
+    spp = spp_df.drop(columns=['genus', 'family', 'order', 'class', 'phylum', 'superkingdom'])
+    spp_t = spp.T
+    spp_t = spp_t.drop(columns=['unassigned'])
+    spp_t = spp_t.loc[:, spp_t.columns.notna()]
+    spp_t = spp_t.fillna(0)
+
+    # Read AMR gene abundance file
+    amr_file = os.path.join(Cor_output_dir, 'AMR_gene_combined_rel-abundance.csv')
+    amr_df = pd.read_csv(amr_file, sep="\t", index_col=0, header=0)
+    amr_df_t = amr_df.T
+
+    # Combine bacterial and AMR gene counts
+    combined_df_genus = merge_abundance_with_amr(genus_t, amr_df_t)
+    combined_df_spp = merge_abundance_with_amr(spp_t, amr_df_t)
+
+    combined_df_genus = apply_log_transformation(combined_df_genus)
+    combined_df_spp = apply_log_transformation(combined_df_spp)
+
+    print(colored("Step 3: Performing correlation analysis", 'green'))
+    # Calculate Pearson correlation coefficients
+    cor_p_genus = calculate_correlation(combined_df_genus)
+    cor_p_spp = calculate_correlation(combined_df_spp)
+    cor_p_filtered_genus = filter_correlation(cor_p_genus, amr_df_t.columns, genus_t.columns)
+    cor_p_filtered_spp = filter_correlation(cor_p_spp, amr_df_t.columns, spp_t.columns)
+    os.chdir(Cor_output_dir)
+    save_correlation_to_csv(cor_p_filtered_genus, 'correlation_genus.csv')
+    save_correlation_to_csv(cor_p_filtered_spp, 'correlation_species.csv')
+
+    print(colored("Completed correlation analysis", 'green'))
+
+def merge_abundance_with_amr(abundance_df, amr_df):
+    return pd.merge(abundance_df, amr_df, left_index=True, right_index=True)
+def apply_log_transformation(df):
+    df_log= df.apply(lambda x: np.log10(x + 1))
+    return df_log
+def calculate_correlation(df):
+    cor_df = df.corr(method='pearson')
+    pvalue_df = df.corr(method=lambda x, y: pearsonr(x, y)[1]) - np.eye(len(df.columns))
+    return flatten_corr_matrix(cor_df, pvalue_df)
+
+def flatten_corr_matrix(cormat, pmat):
+
+    ut = np.triu_indices(len(cormat), 1)  # get the upper triangular indices
+
+    data = {
+            "row": cormat.index[ut[0]],  # get the row names
+            "column": cormat.index[ut[1]],  # get the column names
+            "cor": cormat.values[ut],  # get the correlation values
+            "p": pmat.values[ut]  # get the p values
+    }
+    return pd.DataFrame(data)  # return a data frame
+def filter_correlation(cor_p, amr_columns, abundance_columns):
+    cor_p_1 = cor_p[~cor_p.row.isin(amr_columns)]
+    cor_p_2 = cor_p_1[~cor_p_1.column.isin(abundance_columns)]
+    return cor_p_2[(cor_p_2.cor >= 0.9) & (cor_p_2.p < 0.001)]
+
+def save_correlation_to_csv(df, filename):
+    df.to_csv(filename, sep='\t', index=False)
+
+# Define command-line argument parser
+def create_parser():
+    __version__ = "0.9.4"
+    parser = argparse.ArgumentParser(description='Integrated microbiome and reistome analysis pipeline')
+    parser.add_argument('-v', '--version',action='version', version='%(prog)s v' + __version__)
+    subparsers = parser.add_subparsers(dest="subparser_name", help='sub-commands')
+    # AMR analysis sub-parser
+    parser_amr = subparsers.add_parser('AMR', help='Perform Illumina AMR research panel analysis')
+    parser_amr.add_argument('-amr_db', '--AMR_database', type=str, help='Path to AMR gene database', required=True)
+    parser_amr.add_argument('-a', '--anno_file', type=str, help='Annotation file for AMR database', required=True)
+    parser_amr.add_argument('-amr_q', '--AMR_query_files', type=str, help='Directory containing AMR query files', required=True)
+    parser_amr.add_argument('-amr_o', '--AMR_output', type=str, help='Output directory for AMR analysis results', required=True)
+    parser_amr.add_argument('-t', '--threads', type=str, default=default_threads, help='Number of threads to use')
+
+    parser_amr.set_defaults(func=AMR)
+
+    # EMU analysis sub-parser
+    parser_emu = subparsers.add_parser('BAC', help='Perform 16s rRNA gene amplicon sequencing analysis')
+    parser_emu.add_argument('-emu_db', '--EMU_database', type=str, help='Path to EMU database', required=True)
+    parser_emu.add_argument('-bac_q', '--BAC_query_files', type=str, help='Directory containing BAC query files', required=True)
+    parser_emu.add_argument('-qt', '--query_type', type=str, choices=['PE', 'ONT'], help='Type of query (PE or ONT)', required=True)
+    parser_emu.add_argument('-bac_o', '--BAC_output', type=str, help='Output directory for BAC analysis results', required=True)
+    parser_emu.add_argument('-t', '--threads', type=str, default=default_threads, help='Number of threads to use')
+
+    parser_emu.set_defaults(func=BAC)
+
+    # Correlation analysis sub-parser
+    parser_corr = subparsers.add_parser('COR', help='Perform correlation analysis')
+    parser_corr.add_argument('-cor_amr', '--Cor_input_AMR', type=str, help='Input directory containing AMR analysis combined results', required=True)
+    parser_corr.add_argument('-cor_bac', '--Cor_input_BAC', type=str, help='Input directory containing BAC analysis combined results', required=True)
+    parser_corr.add_argument('-cor_o', '--Cor_output', type=str, help='Output directory for correlation analysis results', required=True)
+
+    parser_corr.set_defaults(func=COR)
+
+    return parser
+
+# Main function
+def main():
+    # Check if required tools are installed
+    required_tools = ['fastp', 'minimap2', 'resistome', 'porechop', 'gunzip', 'chopper', 'emu']
+    check_tools(required_tools)
+
+
+    # Create argument parser
+    parser = create_parser()
+    args = parser.parse_args()
+    args.func(args)
+
+if __name__ == '__main__':
+    main()
+
