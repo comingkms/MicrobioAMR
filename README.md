@@ -28,7 +28,7 @@ MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires th
   [argpare](https://docs.python.org/3/library/argparse.html)
   [panadas](https://pandas.pydata.org/)
   [numpy](https://numpy.org/)
-  [cripy](https://github.com/EmanuelGoncalves/crispy)
+  [cripy](https://pypi.org/project/scipy/)
   [termcolor](https://github.com/termcolor/termcolor)
   [tqdm](https://tqdm.github.io/)
   etc
