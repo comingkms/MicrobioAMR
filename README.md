@@ -126,7 +126,7 @@ options:
                         Number of threads to use
 
 ```
-Module 3: corrliation analysis(COR)
+Module 3: correlation analysis(COR)
 
 ```
 $MAMR COR -h
