@@ -58,7 +58,7 @@ export PATH=/absolute/path/to/MAMR:${PATH}
 To confirm the proper installation of MAMR, you can test a small dataset located in the `example` subdirectory.
 
 Here are some guidelines for the file names of the raw read files:
-1. For paired-end reads, the format of the input files' name should be: {sample_name}_Sxx_Lxxx_R1/R2.fastq.gz
+1. For paired-end reads, the format of the input files' name should be: {sample_name}_Sxx_Lxxx_R1/R2_001.fastq.gz
 2. For ONT reads, the format of the input file's name should be: {sample_name}.fastq.gz
 3. For module 3(COR),  please ensure that the sample name matches the ones used for AMR and 16s rRNA gene amplicon sequencing.
 
