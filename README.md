@@ -33,7 +33,7 @@ MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires th
   [termcolor](https://github.com/termcolor/termcolor)
   [tqdm](https://tqdm.github.io/)
 + Database:
-    + The Emu database, is available for download on the [Emu GitHub page](https://github.com/treangenlab/emu) and save it to the Emu_database directory.
+    + The Emu database can be downloaded from the [Emu GitHub page](https://github.com/treangenlab/emu) and should be saved in the Emu_database directory.
     + The AMR database curated in this study,  based on AMR database inlcuding CARD<sup>5</sup>, NCBI<sup>6</sup>, ResFinder<sup>7</sup>, and MEGARes<sup>8</sup>, is located in the 'AMR_database' subdirectory.
   
 
