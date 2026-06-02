@@ -1,7 +1,7 @@
 
 <img width="2167" height="726" alt="MicrobioAMR" src="https://github.com/user-attachments/assets/25796628-7790-419c-a8d8-d09e1727542e" />
  
-# All-in-one pipeline designed to evaluate amplicon sequencing data for resistome and microbiome
+# All-in-one pipeline designed to evaluate amplicon sequencing data for resistome and microbiome analyses 
 
 MicrobiotAMR (MAMR) is a Python script that facilitates the analysis of amplicon sequencing data for the 16s rRNA gene and the Illumina Antimicrobial Resistance Research Panel, with the additional capability of performing correlation analysis to identify "potential" antimicrobial-resistant bacteria.
 
@@ -18,12 +18,12 @@ MicrobiotAMR (MAMR) is a Python script that facilitates the analysis of amplicon
 
 MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires the installation and utilization of specific tools and databases.
 + Pipleine or tool:
-   + [emu](https://github.com/treangenlab/emu)<sup>1</sup>
-   + [fastp](https://github.com/OpenGene/fastp)<sup>2</sup>
-   + [chopper](https://github.com/wdecoster/chopper)<sup>3</sup>
-   + [gunzip](https://github.com/azerella/gunzip)
-   + [Porechop](https://github.com/rrwick/Porechop)
-   + [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2)
+   + [emu](https://github.com/treangenlab/emu)<sup>1</sup>: microbiome and resistome (alignment parsing code adapted from emu) analyses  
+   + [fastp](https://github.com/OpenGene/fastp)<sup>2</sup>: microbiome and resistome analyses 
+   + [chopper](https://github.com/wdecoster/chopper)<sup>3</sup>: microbiome analysis 
+   + [gunzip](https://github.com/azerella/gunzip): microbiome analysis
+   + [Porechop](https://github.com/rrwick/Porechop): microbiome analysis
+   + [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2)<sup>4</sup>: resistome analysis 
 + Python standard library plus:
   [scikit-learn](https://github.com/scikit-learn/scikit-learn)
   [kneed](https://pypi.org/project/kneed/)
@@ -57,18 +57,18 @@ echo 'export PATH="/absolute/path/to/MAMR:$PATH"'>> ~/.bashrc && source ~/.bashr
 ## Test
 
 
-## Usage and command line options
+## Usage 
 
 To confirm the proper installation of MAMR, you can test a small dataset located in the `example` subdirectory.
 
 Here are some guidelines for the file names of the raw read files:
-1. For paired-end reads, the format of the input files' name should be: {sample_name}_Sxx_Lxxx_R1/R2_001.fastq.gz
+1. For paired-end reads, the format of the input files' name should be: {sample_name}_Sxx_Lxxx_R1/R2_001.fastq.gz(defualt format form illumina) 
 2. For ONT reads, the format of the input file's name should be: {sample_name}.fastq.gz
-3. For module 3(COR),  please ensure that the sample name matches the ones used for AMR and 16s rRNA gene amplicon sequencing.
+3. For module COR,  please ensure that the sample name matches the ones used for AMR and BAC moudels.
 
 Activate MAMR conda environment:
 ```
-conda activate microbotAMR
+conda activate MAMR
 ```
 
 Running microbotAMR:
@@ -89,7 +89,7 @@ options:
   -v, --version  show program's version number and exit
 ```
 
-Module 1: Analysis of  Illumina AMR reseach panel(AMR)
+Module 1: Analysis of Illumina AMR reseach panel(AMR)
 
 ```
 $MAMR AMR -h
