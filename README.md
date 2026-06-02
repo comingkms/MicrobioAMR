@@ -5,15 +5,16 @@
 
 MicrobiotAMR (MAMR) is a Python script that facilitates the analysis of amplicon sequencing data for the 16s rRNA gene and the Illumina Antimicrobial Resistance Research Panel, with the additional capability of performing correlation analysis to identify "potential" antimicrobial-resistant bacteria.
 
-+ [System requirements](#system-requirements)
++ [Requirements](#Requirements)
 + [Installation](#installation)
++ [Test](#test)
 + [Usage](#usage)
-+ [Output files](#output-files)
-+ [Citation](#citation)   
++ [Demo](#demo)
++ [Output](#output) 
 + [Reference](#reference)  
 
 
-## System requirements
+## Requirements
 
 MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires the installation and utilization of specific tools and databases.
 + Tool or pipleine:
