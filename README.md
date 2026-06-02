@@ -1,59 +1,61 @@
 
-#<img width="2167" height="726" alt="MicrobioAMR" src="https://github.com/user-attachments/assets/25796628-7790-419c-a8d8-d09e1727542e" />
+<img width="2167" height="726" alt="MicrobioAMR" src="https://github.com/user-attachments/assets/25796628-7790-419c-a8d8-d09e1727542e" />
  
 # All-in-one pipeline designed to evaluate amplicon sequencing data for resistome and microbiome
 
 MicrobiotAMR (MAMR) is a Python script that facilitates the analysis of amplicon sequencing data for the 16s rRNA gene and the Illumina Antimicrobial Resistance Research Panel, with the additional capability of performing correlation analysis to identify "potential" antimicrobial-resistant bacteria.
 
 + [Requirements](#Requirements)
-+ [Installation](#installation)
-+ [Test](#test)
-+ [Usage](#usage)
-+ [Demo](#demo)
-+ [Output](#output) 
-+ [Reference](#reference)  
++ [Installation](#Installation)
++ [Test](#Test)
++ [Usage](#Usage)
++ [Demo](#Demo)
++ [Output](#Output) 
++ [Reference](#Reference)  
 
 
 ## Requirements
 
 MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires the installation and utilization of specific tools and databases.
-+ Tool or pipleine:
-+ [emu](https://github.com/treangenlab/emu)<sup>1</sup>
-+ [fastp](https://github.com/OpenGene/fastp)<sup>2</sup>
-+ [chopper](https://github.com/wdecoster/chopper)<sup>3</sup>
-+ [resistomeanalyzer](https://github.com/cdeanj/resistomeanalyzer)
-+ [Porechop](https://github.com/rrwick/Porechop)
-+ [miniconda3](https://conda.io/en/latest/miniconda.html)
-+ Python library:
-  [glob](https://docs.python.org/3/library/glob.html)
-  [shutil](https://docs.python.org/3/library/shutil.html)
-  [argpare](https://docs.python.org/3/library/argparse.html)
++ Pipleine or tool:
+   + [emu](https://github.com/treangenlab/emu)<sup>1</sup>
+   + [fastp](https://github.com/OpenGene/fastp)<sup>2</sup>
+   + [chopper](https://github.com/wdecoster/chopper)<sup>3</sup>
+   + [gunzip](https://github.com/azerella/gunzip)
+   + [Porechop](https://github.com/rrwick/Porechop)
+   + [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2)
++ Python standard library plus:
+  [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+  [kneed](https://pypi.org/project/kneed/)
+  [pysam](https://github.com/pysam-developers/pysam)
   [panadas](https://pandas.pydata.org/)
   [numpy](https://numpy.org/)
   [scipy](https://pypi.org/project/scipy/)
   [termcolor](https://github.com/termcolor/termcolor)
   [tqdm](https://tqdm.github.io/)
-  etc
 + Database:
-  1. micobiome database, which is [emu database](https://github.com/treangenlab/emu/tree/master/emu_database), can be found in the [Emu github](https://github.com/treangenlab/emu). 
-  2. AMR database, which is a hand-curated database based on [MEGARes V3.0 database](https://www.meglab.org/megares/)<sup>4</sup> and [Illumina AMR research panel documentation](https://www.illumina.com/products/by-brand/ampliseq/community-panels/antimicrobial-resistance.html#tabs-5bcafff4ef-item-28eba04f16-documentation), can be found in the 'AMR_database' sub-directory, respectively.
+    + The microbiome database, known as the Emu database, is available on the Emu GitHub page [Emu github](https://github.com/treangenlab/emu) or in the 'BAC_database' subdirectory. 
+    + The AMR database curated in this study is located in the 'AMR_database' subdirectory.
   
 
 ## Installation
 
-The easiest and most convenient way to install MAMR dependencies is by using conda in an isolated environment, such as `microbotAMR`. This method ensures a smooth and hassle-free installation process.
+The easiest and most convenient way to install MAMR dependencies is by using conda in an isolated environment, such as `MAMR`. This method ensures a smooth and hassle-free installation process.
 ```bash
-git clone https://github.com/comingkms/MicrobiotAMR.git
-cd MicrobiotAMR
-conda env create -n microbiotAMR --file environment.yml
+git clone https://github.com/comingkms/MicrobioAMR.git
+chmod +x MicrobioAMR/MAMR
+cd MicrobioAMR
+conda env create -n MAMR --file environment.yml
 ```
 The whole installation process should take about 5-10 minutes.
 
 To ensure the availability of the `MAMR` command, it is essential to add the absolute path of MAMR's directory to your PATH environment variable. This can be done by adding the following line to your `~/.bashrc` file:
 
 ```
-export PATH=/absolute/path/to/MAMR:${PATH}
+echo 'export PATH="/absolute/path/to/MAMR:$PATH"'>> ~/.bashrc && source ~/.bashrc
 ```
+## Test
+
 
 ## Usage and command line options
 
