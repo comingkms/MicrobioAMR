@@ -891,7 +891,7 @@ def save_correlation_to_csv(df, filename):
 
 # Define command-line argument parser
 def create_parser():
-    __version__ = "0.9.10_May_2026"
+    __version__ = "0.9.10"
     parser = argparse.ArgumentParser(description='Integrated reistome and microbiome analysis pipeline')
     parser.add_argument('-v', '--version',action='version', version='%(prog)s v' + __version__)
     subparsers = parser.add_subparsers(dest="subparser_name", help='sub-commands')
