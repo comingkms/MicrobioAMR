@@ -1,0 +1,971 @@
+#!/usr/bin/env python
+
+import subprocess
+import glob
+import shutil
+import argparse
+import pandas as pd
+import numpy as np
+from scipy.stats import pearsonr
+from scipy.stats import spearmanr
+from scipy.stats import poisson
+from termcolor import colored
+from tqdm import tqdm
+import pysam
+from multiprocessing import Pool, cpu_count
+import logging
+import time
+import os
+import cProfile
+import pstats
+from scipy.stats import nbinom
+from kneed import KneeLocator
+from sklearn.mixture import GaussianMixture
+
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Check if required tools are installed
+def check_tool(tool_name):
+    result = subprocess.run(['which', tool_name], capture_output=True, text=True)
+    if not result.stdout.strip():
+        logging.error(colored(f"Cannot find {tool_name} using 'which {tool_name}'", 'red'))
+        exit(1)
+
+def check_tools(tools):
+    for tool in tools:
+        check_tool(tool)
+
+# Set default values
+default_threads = "4"
+
+# Define main function for AMR analysis
+def AMR(args):
+    # Check if all required arguments are provided
+    if not all([args.AMR_database, args.anno_file, args.AMR_query_files, args.AMR_output]):
+        logging.error(colored("One or more required arguments are missing.", 'red'))
+        exit(1)
+        # Resolve relative paths before changing directories.
+        # This allows AMR to work with either relative or absolute paths.
+    args.AMR_database = os.path.abspath(os.path.expanduser(args.AMR_database))
+    args.anno_file = os.path.abspath(os.path.expanduser(args.anno_file))
+    args.AMR_query_files = os.path.abspath(os.path.expanduser(args.AMR_query_files))
+    args.AMR_output = os.path.abspath(os.path.expanduser(args.AMR_output))
+
+    if not os.path.isfile(args.AMR_database):
+        logging.error(colored(f"AMR database FASTA not found: {args.AMR_database}", 'red'))
+        exit(1)
+    if not os.path.isfile(args.anno_file):
+        logging.error(colored(f"AMR annotation file not found: {args.anno_file}", 'red'))
+        exit(1)
+    if not os.path.isdir(args.AMR_query_files):
+        logging.error(colored(f"AMR query directory not found: {args.AMR_query_files}", 'red'))
+        exit(1)
+    # Create output directory if it does not exist
+    if os.path.exists(args.AMR_output):
+        logging.error(colored("AMR output directory already exists. Please remove it or set an alternate output directory.", 'red'))
+        exit(1)
+    else:
+        os.makedirs(args.AMR_output)
+    start_time_total = time.time()
+    # Perform QC and adapter trimming using fastp
+    logging.info(colored("QC checks and adapter trimming", 'green'))
+    os.chdir(args.AMR_query_files)
+    # Rename files based on their naming convention
+    for filename in glob.glob("*.fastq.gz"):
+        parts = filename.split('_')
+        new_filename = f"{parts[0]}_{parts[3]}.fastq.gz"
+        shutil.copy2(filename, new_filename)
+    # Perform adapter trimming using fastp
+    for file in tqdm(glob.glob("*_R1.fastq.gz")):
+        j = file.replace("_R1.fastq.gz", "")
+        subprocess.run([
+            "fastp",
+            "-i", f"{j}_R1.fastq.gz",
+            "-I", f"{j}_R2.fastq.gz",
+            "-o", f"{j}_R1_trimmed.fastq.gz",
+            "-O", f"{j}_R2_trimmed.fastq.gz",
+            '-c',
+            "-h", f"{j}_fastp.html",
+            "-l","80",
+            "-w", args.threads
+        ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    #logging.info(colored("Completed:QC checks and adapter trimming", 'green'))
+    # Alignment using BWA
+    logging.info(colored("generating BWA index", 'green'))
+    subprocess.run(['bwa-mem2', 'index', '-p', 'AMR', args.AMR_database],stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    logging.info(colored("Alignment using BWA", 'green'))
+    for file in tqdm(glob.glob("*_R1_trimmed.fastq.gz")):
+        m = file.replace("_R1_trimmed.fastq.gz", "")
+        subprocess.run(['bwa-mem2', 'mem', '-t', args.threads, 'AMR',
+                        f'{m}_R1_trimmed.fastq.gz', f'{m}_R2_trimmed.fastq.gz'],
+                       stdout=open(f'{m}.sam', 'w'), stderr=subprocess.DEVNULL)
+    #logging.info(colored("Completed:alignment", 'green'))
+    # Create output directory for Resistomes
+    os.makedirs(os.path.join(args.AMR_output, 'Resistomes'), exist_ok=True)
+    os.chdir(args.AMR_query_files)
+    # Characterization of Resistome
+    logging.info(colored("Characterization of Resistome", 'green'))
+
+    for file in tqdm(glob.glob("*.sam")):
+        j = file.replace(".sam", "")
+        gene_stats_1, AMR_Ab_tax = gene_stats(args.anno_file, f"{j}.sam", num_processes= int(args.threads), chunksize=10, profile=False)
+        gene_full, gene_stats_filtered = filter_low_abundance_genes(gene_stats_1, min_count=1, max_gmm_components=3, low_abundance_mode= args.filtering_mode)
+        grouped_gene = group_and_calculate_relative(gene_stats_filtered, 'gene')
+        gene_stats_1.to_csv( f"{j}_stats.csv")
+        AMR_Ab_tax.to_csv( f"{j}_stats_log.csv")
+        grouped_gene.to_csv( f"{j}_gene.csv")
+        gene_stats_filtered.to_csv( f"{j}_gene_filtered.csv")
+        gene_full.to_csv(f"{j}_gene_full.csv")
+    combine_gene_abundance(anno_file=args.anno_file)
+    for csv in glob.glob("AMR_gene_combined.csv"):
+        shutil.move(csv, os.path.join(args.AMR_output, 'Resistomes'))
+    cleanup(args.AMR_output, args.AMR_query_files)
+    logging.info(colored("Completed:characterization of Resistome", 'green'))
+    end_time_total = time.time()
+    print(colored(f"Total execution time: {end_time_total - start_time_total} seconds", 'green'))
+
+
+def combine_gene_abundance(file_pattern="*_gene.csv", output_filename="AMR_gene_combined.csv", anno_file = None):
+
+    file_paths = glob.glob(file_pattern)
+    if not file_paths:
+        logging.error(colored("No files found matching pattern", 'red'))
+        return None
+
+    dfs = []
+    column_names = []  # Store column names (part before "_gene.tsv")
+    for fp in file_paths:
+        try:
+            df = pd.read_csv(fp)
+            df = df.set_index('gene')
+            df = df[['relative_amount']]
+            filename = os.path.basename(fp)
+            column_name = filename.replace("_gene.csv", "")  # Remove "_gene.tsv"
+            dfs.append(df)
+            column_names.append(column_name)
+        except FileNotFoundError:
+           logging.error(colored(f"File not found: {fp}", 'red'))
+        except pd.errors.EmptyDataError:
+            logging.error(f"File is empty: {fp}")
+        except Exception as e:
+            logging.error(colored("An error occurred while processing {fp}: {e}", 'red'))
+
+    if dfs:
+        combined_df = pd.concat(dfs, axis=1, join='outer', keys=column_names)
+        combined_df.columns = combined_df.columns.get_level_values(0)
+        tax = pd.read_csv(anno_file)
+        tax = tax.drop(columns= ['target', 'group', 'organism'])
+        tax = tax.drop_duplicates(subset=["gene"])
+        combined_df = combined_df.merge(tax, on = "gene", how = "left")
+        combined_df.to_csv(output_filename)
+        return output_filename
+    else:
+        return None
+
+
+def extract_features(alignment):
+    features = [
+        alignment.query_name,
+        alignment.reference_name,
+        alignment.mapping_quality,
+        alignment.query_length,
+        alignment.reference_length
+    ]
+    cigar_stats = alignment.get_cigar_stats()[0]
+    n_mismatch = cigar_stats[10] - cigar_stats[1] - cigar_stats[2]
+
+    features.extend([
+        cigar_stats[1],
+        cigar_stats[2],
+        cigar_stats[4],
+        n_mismatch
+    ])
+
+    return features
+
+def _process_region(args):
+    """Worker: open BAM and process a (ref, start, end) region."""
+    sam_path, ref, start, end = args
+    feats = []
+    af = pysam.AlignmentFile(sam_path)
+    for read in af.fetch(ref, start, end):
+        feats.append(extract_features(read))
+    af.close()
+    return feats
+
+def create_dataset(
+    sam_path,
+    deleted_out=None,
+    softclip_reflen_thresh=0.10,
+    edit_reflen_thresh=0.10,
+    num_processes=None,
+    chunksize=10 # region size per task when sharding BAM
+):
+    """
+    Parallel feature extraction with multiprocessing.Pool when possible.
+
+    - If input is an indexed BAM: shard by genomic windows across processes.
+    - If input is SAM (or unindexed BAM): fall back to single-process scan.
+    - Returns only clean_df; writes deleted_df to CSV named <basename>_deleted_reads.csv by default.
+    """
+    cols = [
+        "query_name","reference_name","mapping_quality","query_length","reference_length",
+        "insertion","deletion","soft_clip","mismatch"
+    ]
+    if deleted_out is None:
+        base = os.path.splitext(os.path.basename(sam_path))[0]
+        deleted_out = f"{base}_deleted_reads.csv"
+        clean_out = f"{base}_clean_reads.csv"
+    # Decide parallel strategy
+    features_all = []
+    ext = os.path.splitext(sam_path)[1].lower()
+    is_bam = (ext == ".bam")
+
+    if num_processes is None:
+        num_processes = max(1, cpu_count() - 1)
+
+    if is_bam:
+        # Try region-sharded multiprocessing if indexed
+        af = pysam.AlignmentFile(sam_path)
+        has_index = af.has_index()
+        refs = af.references
+        lens = af.lengths
+        af.close()
+
+        if has_index and num_processes > 1:
+            # Build region tasks
+            tasks = []
+            for ref, L in zip(refs, lens):
+                for start in range(0, L, chunksize):
+                    end = min(start + chunksize, L)
+                    tasks.append((sam_path, ref, start, end))
+
+            with Pool(processes=num_processes) as pool:
+                for chunk in pool.imap_unordered(_process_region, tasks, chunksize=1):
+                    features_all.extend(chunk)
+        else:
+            # Single-process scan (no index or requested 1 process)
+            af = pysam.AlignmentFile(sam_path)
+            for read in af.fetch(until_eof=True):
+                features_all.append(extract_features(read))
+            af.close()
+    else:
+        # SAM path: single-process scan (cannot region-fetch reliably)
+        af = pysam.AlignmentFile(sam_path)
+        for read in af.fetch(until_eof=True):
+            features_all.append(extract_features(read))
+        af.close()
+
+    # Build DataFrame
+    df = pd.DataFrame(features_all, columns=cols)
+
+    # Ensure numerics
+    num_cols = ["mapping_quality","query_length","reference_length",
+                "insertion","deletion","soft_clip","mismatch"]
+    df[num_cols] = df[num_cols].apply(pd.to_numeric, errors="coerce")
+
+    # 1) Unmapped
+    unmapped_mask = df["reference_name"].isna()
+    deleted_unmapped = df.loc[unmapped_mask].copy()
+    deleted_unmapped["reason"] = "unmapped"
+    kept = df.loc[~unmapped_mask].copy()
+
+    if kept.empty:
+        if not deleted_unmapped.empty:
+            deleted_unmapped.to_csv(deleted_out, index=False)
+        return kept  # empty clean_df
+
+    # Safe ratios
+    denom = kept["reference_length"].replace(0, np.nan)
+    kept["softclip_over_ref"] = kept["soft_clip"] / denom
+    kept["edit_over_ref"] = (kept[["insertion","deletion","mismatch"]].sum(axis=1)) / denom
+
+    # 2) Chimera detection
+    uniq_refs = kept.groupby("query_name")["reference_name"].transform("nunique")
+    chimera_multi_ref = uniq_refs > 1
+
+    max_softclip_over_ref = kept.groupby("query_name")["softclip_over_ref"].transform("max")
+    chimera_softclip = max_softclip_over_ref > softclip_reflen_thresh
+
+    chimera_mask = chimera_multi_ref | chimera_softclip
+    deleted_chimera = kept.loc[chimera_mask].copy()
+    deleted_chimera["reason"] = "chimera_softclip"
+    deleted_chimera.loc[chimera_multi_ref.loc[deleted_chimera.index], "reason"] = "chimera_multi_ref"
+    kept = kept.loc[~chimera_mask].copy()
+
+    # 3) Low quality
+    max_edit_over_ref = kept.groupby("query_name")["edit_over_ref"].transform("max")
+    lowq_mask = max_edit_over_ref > edit_reflen_thresh
+    deleted_lowq = kept.loc[lowq_mask].copy()
+    deleted_lowq["reason"] = "low_quality"
+    clean_df = kept.loc[~lowq_mask].copy()
+
+    # Save deleted
+    deleted_df = pd.concat([deleted_unmapped, deleted_chimera, deleted_lowq], ignore_index=True)
+    if not deleted_df.empty:
+        out_cols = cols + ["reason"]
+        for c in out_cols:
+            if c not in deleted_df.columns:
+                deleted_df[c] = pd.NA
+        deleted_df[out_cols].to_csv(deleted_out, index=False)
+
+    # Cleanup columns before return
+    clean_df = clean_df.drop(columns=["softclip_over_ref","edit_over_ref"], errors="ignore")
+    df = clean_df.reset_index(drop=True)
+    df.to_csv(clean_out, index=False)
+    return  df
+
+
+# Function to determine the ID for each query_name
+def determine_id(group):
+    """Determines the representative reference_name for a group (optimized)."""
+    if group.shape[0] == 1:  # faster than nunique
+        return group['reference_name'].iloc[0]
+    else:
+        try:
+            best_idx = np.lexsort((
+                group['deletion'].values,
+                group['insertion'].values,
+                group['mismatch'].values,
+                group['soft_clip'].values,
+                -group['reference_length'].values
+            ))
+            return group['reference_name'].iloc[best_idx[0]]
+        except Exception as e:
+            logging.error(f"Error in determine_id: {e}")
+            return None
+
+
+# Helper function for multiprocessing
+def process_group(group_tuple):
+    """Processes a single group (optimized)."""
+    query_name, group = group_tuple
+    try:
+        target = determine_id(group)
+        return query_name, target
+    except Exception as e:
+        logging.error(f"Error processing group {query_name}: {e}")
+        return query_name, None
+
+
+# Apply multiprocessing
+def determine_id_multiprocessing(df, num_processes=None, chunksize=10, profile=False):
+    """Determines representative IDs using multiprocessing with optional profiling."""
+
+    num_processes = num_processes or cpu_count()
+    # logging.info(f"Using {num_processes} processes.")
+
+    groups = df.groupby('query_name')
+
+    if profile:
+        profile_filename = "multiprocessing_profile.prof"
+        profiler = cProfile.Profile()
+        profiler.enable()
+
+        with Pool(num_processes) as pool:
+            results = list(pool.imap_unordered(process_group, groups, chunksize=chunksize))
+
+        profiler.disable()
+        stats = pstats.Stats(profiler)
+        stats.sort_stats('tottime').print_stats(10)
+        # No need to remove file as we are not using runctx with a filename
+
+    else:
+        start_time = time.time()
+        with Pool(num_processes) as pool:
+            results = list(pool.imap_unordered(process_group, groups, chunksize=chunksize))
+        end_time = time.time()
+        # logging.info(f"Multiprocessing execution time: {end_time - start_time} seconds")
+
+    id_mapping = pd.DataFrame(results, columns=['query_name', 'target'])
+    id_mapping['query_name'] = id_mapping['query_name'].astype('category')
+    id_mapping['target'] = id_mapping['target'].astype('category')
+    return id_mapping
+
+
+# Calculation relative
+def group_and_calculate_relative(df, groupby_col):
+    grouped = df.groupby(groupby_col, as_index=False)['sum_of_average_count'].sum()
+    total_count = grouped['sum_of_average_count'].sum()
+    grouped['relative_amount'] = grouped['sum_of_average_count'] / total_count * 100
+    return grouped
+
+
+# ajustsed Gene relative
+def gene_stats(file_path, sam_file, num_processes=15, chunksize=10, profile=False):
+    # Load taxonomy data
+    tax = pd.read_csv(file_path)
+
+    # Create dataset from SAM file
+    sim_sample = pd.DataFrame(create_dataset(sam_file, num_processes= num_processes, chunksize=chunksize))
+
+    # Perform ID mapping
+    id_mapping = determine_id_multiprocessing(sim_sample, num_processes, chunksize=chunksize, profile=profile)
+
+    # Merge alignment data
+    alignment_file = sim_sample.merge(id_mapping, on='query_name', how='left')
+
+    # Count target occurrences
+    AMR_Ab = pd.DataFrame(id_mapping['target'].value_counts()).reset_index()
+    AMR_Ab.columns = ['target', 'count']
+
+    # Merge with taxonomy data
+    AMR_Ab_tax = tax.merge(AMR_Ab, on='target', how='right')
+
+    # Calculate integer logarithm of counts
+    AMR_Ab_tax['log_count'] = AMR_Ab_tax['count'].apply(
+        lambda x: np.floor(np.log(x) / np.log(8)) if x > 0 else -np.inf)  # Handle 0 counts
+
+    def custom_aggregation(group):
+        if len(group['log_count'].unique()) == 1:  # All log counts are the same
+            return group['count'].mean()
+        else:
+            mean = group.groupby('log_count')['count'].mean()
+            return mean.sum()
+
+    gene_stats = AMR_Ab_tax.groupby(["gene", "class", "mechanism", "family", "group"]).apply(custom_aggregation, include_groups=False).reset_index(name='sum_of_average_count')
+    gene_stats = gene_stats.groupby(["gene", "class", "mechanism", "family"])["sum_of_average_count"].sum().reset_index()  # Sum across groups for the same gene
+    gene_stats['sum_of_average_count'] = gene_stats['sum_of_average_count'].round(1)
+
+    # Compute subgroup statistics
+    # subgroup_stats = AMR_Ab_tax.groupby(["gene", "group", "class", "mechanism", "family"])["count"].agg(
+    #   average_count="mean",
+    #  sum_count="sum"
+    # ).reset_index()
+
+    # Compute gene-level statistics
+    # gene_stats = subgroup_stats.groupby(["gene", "class", "mechanism", "family"]).agg(
+    #     sum_of_average_count=("average_count", "sum")
+    # ).reset_index()
+    # gene_stats['sum_of_average_count'] = gene_stats['sum_of_average_count'].round(1)
+
+    return gene_stats, AMR_Ab_tax
+
+
+# filter low abundance gene
+def filter_low_abundance_genes(gene_stats, min_count=0, max_gmm_components=3, low_abundance_mode=2):
+    count_column = "sum_of_average_count"
+    try:
+        df = gene_stats[gene_stats[count_column] > min_count].copy()
+
+        if len(df) == 0:
+            logging.warning("No reads remaining after low count filtering, returning original dataframe")
+            return gene_stats
+
+        df['log_count'] = np.log10(df[count_column] + 1)
+
+        # Negative Binomial/Poisson
+        mu = df[count_column].mean()
+        var = df[count_column].var(ddof=1)
+
+        if var <= mu:
+            size = mu
+            p = 1
+            df["p_value"] = poisson.cdf(df[count_column], mu) if var < mu else nbinom.cdf(df[count_column], size, p)
+        else:
+            size = (mu ** 2) / (var - mu)
+            p = mu / var
+            df["p_value"] = nbinom.cdf(df[count_column], size, p)
+
+        # Knee Method
+        sorted_p_values_1 = np.sort(df["p_value"])
+        sorted_p_values = np.log10(sorted_p_values_1)
+        try:
+            knee = KneeLocator(range(len(sorted_p_values)), sorted_p_values, curve="concave", direction="increasing")
+            p_knee_threshold = sorted_p_values[knee.knee] if knee.knee is not None else np.max(sorted_p_values)
+            df["flag_knee"] = np.log10(df["p_value"]) <= p_knee_threshold
+        except Exception as e:
+            logging.error(f"Error in knee detection, using max p-value: {e}")
+            df["flag_knee"] = df["p_value"] == np.max(df["p_value"])
+        # IQR
+
+        q1 = df["log_count"].quantile(0.25)
+        q3 = df["log_count"].quantile(0.75)
+        iqr = q3 - q1
+        lower_fence = q1 - 1.5 * iqr
+        #upper_fence = q3 + 1.5 * iqr
+
+
+        df["log_iqr_lower_fence"] = lower_fence
+        df["flag_log_iqr_low"] = df["log_count"] < lower_fence
+        #df["flag_iqr_high"] = df[count_column] > upper_fence  # optional diagnostic
+        # GMM
+        data_reshaped = df['log_count'].values.reshape(-1, 1)
+
+        n_components_range = range(1, min(len(df) + 1, max_gmm_components + 1))
+        aic_scores = []
+        bic_scores = []
+
+        df["GMM_low_cluster"] = False
+        gmm_used = False
+        if len(df) > 1:
+            for n in n_components_range:
+                gmm = GaussianMixture(n_components=n, random_state=42, reg_covar=1e-4)
+                gmm.fit(data_reshaped)
+                aic_scores.append(gmm.aic(data_reshaped))
+                bic_scores.append(gmm.bic(data_reshaped))
+
+            optimal_components = n_components_range[np.argmin(bic_scores)]
+            #print(f"Optimal number of components (BIC-based): {optimal_components}")
+
+            if optimal_components > 1:
+                best_gmm = GaussianMixture(n_components=optimal_components, random_state=42, reg_covar=1e-4)
+                best_gmm.fit(data_reshaped)
+                df['GMM_cluster'] = best_gmm.predict(data_reshaped)
+                cluster_means = best_gmm.means_.flatten()
+                low_cluster = np.argmin(cluster_means)
+                df['GMM_low_cluster'] = df['GMM_cluster'] == low_cluster
+                gmm_used = True
+            else:
+                logging.warning("Only one cluster found, skipping GMM")
+                #df['GMM_low_cluster'] = df["flag_knee"]
+                #df['GMM_low_cluster'] = False
+        else:
+            logging.warning("Only one data point, skipping GMM")
+            #df['GMM_low_cluster'] = df["flag_knee"]
+            #df['GMM_low_cluster'] = False
+
+        if gmm_used:
+            if low_abundance_mode == 3:
+                flag_columns = ["GMM_low_cluster", "flag_knee", "flag_log_iqr_low"]
+            else:
+                flag_columns = ["GMM_low_cluster", "flag_knee"]
+        else:
+            flag_columns = ["flag_log_iqr_low", "flag_knee"]
+
+        df["low_abundance_count"] = df[flag_columns].sum(axis=1)
+        df_filtered = df[df["low_abundance_count"] < low_abundance_mode].copy()
+
+        return df, df_filtered
+
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+        return gene_stats
+
+
+
+# Clean up temporary files
+def cleanup(output_dir, temp_dir):
+    temp_output_dir = os.path.join(output_dir, 'temp_output')
+    os.makedirs(temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*.sam')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*_trimmed.fastq.gz')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*.html')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*.json')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*.csv')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*_R1.fastq.gz')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, '*_R2.fastq.gz')):
+        shutil.move(f, temp_output_dir)
+    for f in glob.glob(os.path.join(temp_dir, 'AMR.*')):
+        shutil.move(f, temp_output_dir)
+
+
+
+# Define main function for EMU analysis
+
+def BAC(args):
+     # Check if all required arguments are provided
+    if not all([args.EMU_database, args.BAC_query_files, args.query_type, args.BAC_output]):
+        logging.error(colored("One or more required arguments are missing.", 'red'))
+        exit(1)
+        # Resolve relative paths before changing directories.
+        # This allows BAC to work with either relative or absolute paths.
+    original_cwd = os.getcwd()
+    args.EMU_database = os.path.abspath(os.path.expanduser(args.EMU_database))
+    args.BAC_query_files = os.path.abspath(os.path.expanduser(args.BAC_query_files))
+    args.BAC_output = os.path.abspath(os.path.expanduser(args.BAC_output))
+    BAC_output_dir = args.BAC_output
+    if not os.path.isdir(args.EMU_database):
+         logging.error(colored(f"EMU database directory not found: {args.EMU_database}", 'red'))
+         exit(1)
+    if not os.path.isdir(args.BAC_query_files):
+         logging.error(colored(f"BAC query directory not found: {args.BAC_query_files}", 'red'))
+         exit(1)
+    if os.path.exists(BAC_output_dir):
+       logging.error(colored("BAC output directory already exists. Please remove it or set an alternate output directory.", 'red'))
+       exit(1)
+    else:
+        os.mkdir(BAC_output_dir)
+
+    # Perform QC and adapter trimming using fastp
+    logging.info(colored("QC checks and adapter trimming", 'green'))
+    os.chdir(args.BAC_query_files)
+
+    if args.query_type == "PE":
+        # Rename files and perform QC for paired-end reads
+        for filename in glob.glob("*.fastq.gz"):
+            parts = filename.split('_')
+            new_filename = f"{parts[0]}_{parts[3]}.fastq.gz"
+            shutil.copy2(filename, new_filename)
+
+        for file in tqdm(glob.glob("*_R1.fastq.gz")):
+            j = file.replace("_R1.fastq.gz", "")
+            subprocess.run([
+                "fastp",
+                "-i", f"{j}_R1.fastq.gz",
+                "-I", f"{j}_R2.fastq.gz",
+                "-o", f"{j}_R1_f_trimmed.fastq.gz",
+                "-O", f"{j}_R2_f_trimmed.fastq.gz",
+                "-h", f"{j}_fastp.html",
+                "-j", f"{j}_fastp.json",
+                "-w", args.threads
+            ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    elif args.query_type == "ONT":
+        # Trim adapters for Oxford Nanopore reads
+        for file in tqdm(glob.glob("*.fastq.gz")):
+            j = file.replace(".fastq.gz", "")
+            subprocess.run(["porechop", "-i", f"{j}.fastq.gz", "-o", f"{j}_trimmed.fastq.gz"],
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            with subprocess.Popen(["gunzip", "-c", f"{j}_trimmed.fastq.gz"],
+                                  stdout=subprocess.PIPE) as gunzip_proc:
+                with subprocess.Popen(["chopper", "-q", "10", "--minlength", "1000", "--maxlength", "2000"],
+                                      stdin=gunzip_proc.stdout, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL) as nanofilt_proc:
+                    with subprocess.Popen(["gzip", "-c"], stdin=nanofilt_proc.stdout,
+                                          stdout=subprocess.PIPE) as gzip_proc:
+                        with open(f"{j}_f_trimmed.fastq.gz", "wb") as f:
+                            f.write(gzip_proc.communicate()[0])
+    logging.info(colored("Completed:checks and adapter trimming", 'green'))
+    # Characterization of microbial community using EMU
+    logging.info(colored("Characterization of microbial community", 'green'))
+
+    for file in tqdm(glob.glob("*_R1_f_trimmed.fastq.gz")) if args.query_type == "PE" else tqdm(glob.glob(
+            "*_f_trimmed.fastq.gz")):
+        j = file.replace("_R1_f_trimmed.fastq.gz", "") if args.query_type == "PE" else file.replace(
+            "_f_trimmed.fastq.gz", "")
+        if args.query_type == "PE":
+            r1 = file
+            r2 = f"{j}_R2_f_trimmed.fastq.gz"
+            if not os.path.exists(r2):
+                logging.warning(f"Skipping {j}: missing R2 file {r2}")
+                continue
+            subprocess.run([
+                "emu", "abundance",
+                "--type", "sr",
+                r1, r2,
+                "--db", args.EMU_database,
+                "--threads", str(args.threads),
+                "--keep-counts",
+                "--min-abundance", "0.0001",
+                "--output-dir", os.path.join(BAC_output_dir, j)
+            ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        else:
+            subprocess.run([
+                "emu", "abundance",
+                "--type", "map-ont",
+                file,
+                "--db", args.EMU_database,
+                "--threads", str(args.threads),
+                "--keep-counts",
+                "--min-abundance", "0.0001",
+                "--output-dir", os.path.join(BAC_output_dir, j)
+            ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    logging.info(colored("Completed:characterization of microbial community", 'green'))
+    # Combine EMU outputs
+    logging.info(colored("Combining output into a single csv file", 'green'))
+    os.mkdir(os.path.join(BAC_output_dir, 'combined'))
+
+    pattern = '*_R1_f_trimmed.fastq-*_R2_f_trimmed.fastq_rel-abundance.tsv'
+    file_paths = glob.glob(os.path.join(BAC_output_dir, '**', pattern), recursive=True)
+
+    for file_path in tqdm(file_paths):
+        filename = os.path.basename(file_path)
+        destination_path = os.path.join(BAC_output_dir, 'combined', filename)
+        shutil.copy(file_path, destination_path)
+
+    os.chdir(os.path.join(BAC_output_dir, 'combined'))
+    file_paths = glob.glob("*_R1_f_trimmed.fastq-*_R2_f_trimmed.fastq_rel-abundance.tsv")
+
+    for old_filepath in file_paths:
+        old_filename = os.path.basename(old_filepath)
+        parts = old_filename.split('_')
+        new_filename = f"{parts[0]}_rel-abundance.tsv"
+        os.rename(old_filepath, new_filename)
+
+    os.chdir(BAC_output_dir)
+    # Additional processing with EMU combine-outputs
+    subprocess.run(['emu', 'combine-outputs', 'combined', 'species'], stdout=subprocess.DEVNULL,
+                   stderr=subprocess.DEVNULL)
+    subprocess.run(['emu', 'combine-outputs', 'combined', 'genus'], stdout=subprocess.DEVNULL,
+                   stderr=subprocess.DEVNULL)
+    subprocess.run(['emu', 'combine-outputs', 'combined', 'species', '--counts'], stdout=subprocess.DEVNULL,
+                   stderr=subprocess.DEVNULL)
+    subprocess.run(['emu', 'combine-outputs', 'combined', 'genus', '--counts'], stdout=subprocess.DEVNULL,
+                   stderr=subprocess.DEVNULL)
+
+    # Clean up: move all the temp files to a folder
+    logging.info(colored("Completed:microbiome analysis", 'green'))
+    os.mkdir(os.path.join(args.BAC_query_files, 'fastp_output'))
+    fastp_output_dir = os.path.join(args.BAC_query_files, 'fastp_output')
+    os.chdir(args.BAC_query_files)
+    for f in glob.glob('*.sam'):
+        shutil.move(f, fastp_output_dir)
+    for f in glob.glob('*_trimmed.fastq.gz'):
+        shutil.move(f, fastp_output_dir)
+    for f in glob.glob('*.html'):
+        shutil.move(f, fastp_output_dir)
+    for f in glob.glob('*.json'):
+        shutil.move(f, fastp_output_dir)
+    for f in glob.glob('*_R1.fastq.gz'):
+        shutil.move(f, fastp_output_dir)
+    for f in glob.glob('*_R2.fastq.gz'):
+        shutil.move(f, fastp_output_dir)
+
+# Define main function for correlation analysis
+def COR(args):
+    #Cor_output_dir = args.Cor_output
+
+    # Check if input files are provided
+    if not all([args.Cor_input_AMR, args.Cor_input_BAC]):
+        logging.error(colored("One or more required input files are missing.", 'red'))
+        exit(1)
+
+    # Check if output directory is provided
+    if not args.Cor_output:
+        logging.error(colored("Correlation output directory not specified.", 'red'))
+        exit(1)
+        # Resolve relative paths before any copy/read/write operations.
+        # This allows COR to work with either relative or absolute paths.
+    args.Cor_input_AMR = os.path.abspath(os.path.expanduser(args.Cor_input_AMR))
+    args.Cor_input_BAC = os.path.abspath(os.path.expanduser(args.Cor_input_BAC))
+    args.anno_file = os.path.abspath(os.path.expanduser(args.anno_file))
+    args.Cor_output = os.path.abspath(os.path.expanduser(args.Cor_output))
+    Cor_output_dir = args.Cor_output
+
+    if not os.path.isdir(args.Cor_input_AMR):
+        logging.error(colored(f"COR AMR input directory not found: {args.Cor_input_AMR}", 'red'))
+        exit(1)
+
+    if not os.path.isdir(args.Cor_input_BAC):
+        logging.error(colored(f"COR BAC input directory not found: {args.Cor_input_BAC}", 'red'))
+        exit(1)
+
+    if not os.path.isfile(args.anno_file):
+        logging.error(colored(f"AMR annotation file not found: {args.anno_file}", 'red'))
+        exit(1)
+    logging.info(colored("Obtaining AMR and 16S results for correlation analysis", 'green'))
+
+    # Create output directory
+    os.makedirs(Cor_output_dir, exist_ok=True)
+
+    # Transfer data from AMR and EMU to correlation output folder
+    for filename in ['AMR_gene_combined.csv', 'emu-combined-genus.tsv']:
+        src_path = os.path.join(args.Cor_input_AMR if filename.startswith('AMR') else args.Cor_input_BAC, filename)
+        shutil.copy(src_path, Cor_output_dir)
+
+    logging.info(colored("Combining bacterial and AMR gene counts", 'green'))
+
+    # Read bacterial abundance file
+    # genus
+    genus_file = os.path.join(Cor_output_dir, 'emu-combined-genus.tsv')
+    genus_df = pd.read_csv(genus_file, sep="\t", header=0, index_col=0)
+    genus = genus_df.drop(columns=['family', 'order', 'class', 'phylum', 'superkingdom'])
+    genus_t = genus.T
+    genus_t = genus_t.drop(columns=['unassigned'])
+    genus_t = genus_t.loc[:, genus_t.columns.notna()]
+    genus_t = genus_t.fillna(0)
+
+    # Read AMR gene abundance file
+    amr_file = os.path.join(Cor_output_dir, 'AMR_gene_combined.csv')
+    amr_df = pd.read_csv(amr_file, sep=",", index_col= 1, header=0)
+    amr_df = amr_df.iloc[:, 1:]
+    amr_df = amr_df.fillna(0)
+    amr_family = amr_df.groupby('family').sum()
+    amr_df = amr_df.drop(columns=["class", "mechanism", "family"])
+    amr_family = amr_family.drop(columns=["class", "mechanism"])
+    amr_df_t = amr_df.T
+    amr_family_t = amr_family.T
+    # Read AMR group abundance file
+    #amr_group_file = os.path.join(Cor_output_dir, 'AMR_group_combined_rel-abundance.csv')
+    #amr_group_df = pd.read_csv(amr_group_file, sep="\t", index_col=0, header=0)
+    # amr_group_df_t = amr_group_df.T
+
+    # Combine bacterial and AMR gene counts
+    combined_df_genus_gene = merge_abundance_with_amr(genus_t, amr_df_t)
+    combined_df_genus_family = merge_abundance_with_amr(genus_t, amr_family_t)
+    combined_df_genus_gene_log = apply_log_transformation(combined_df_genus_gene)
+    combined_df_genus_family_log = apply_log_transformation(combined_df_genus_family)
+
+    logging.info(colored("Performing correlation analysis", 'green'))
+    # Calculate Pearson correlation coefficients_gene
+    cor_p_genus_gene_pe = calculate_correlation_pe(combined_df_genus_gene_log)
+    cor_p_genus_gene_sp = calculate_correlation_sp(combined_df_genus_gene)
+    cor_p_genus_family_pe = calculate_correlation_pe(combined_df_genus_family_log)
+    cor_p_genus_family_sp = calculate_correlation_sp(combined_df_genus_family)
+    #cor_p_spp = calculate_correlation(combined_df_spp)
+    cor_p_filtered_genus_gene_pe = filter_correlation(cor_p_genus_gene_pe, amr_df_t.columns, genus_t.columns)
+    cor_p_filtered_genus_gene_sp = filter_correlation(cor_p_genus_gene_sp, amr_df_t.columns, genus_t.columns)
+    cor_p_filtered_genus_family_pe = filter_correlation(cor_p_genus_family_pe, amr_family_t.columns, genus_t.columns)
+    cor_p_filtered_genus_family_sp = filter_correlation(cor_p_genus_family_sp, amr_family_t.columns, genus_t.columns)
+    cor_combined_genus_gene = cor_p_filtered_genus_gene_pe.merge(cor_p_filtered_genus_gene_sp, on=['gene', 'organism'])
+    cor_combined_genus_family = cor_p_filtered_genus_family_pe.merge(cor_p_filtered_genus_family_sp, on=['gene', 'organism'])
+
+    #read annotation file for prevalence info
+    pre_df_full = pd.read_csv(args.anno_file)
+    pre_df_family = (
+        pre_df_full.groupby('family')['organism']
+        .apply(lambda x: ' '.join(sorted(set(' '.join(x.dropna()).split()))))
+        .reset_index()
+    )
+    pre_df_gene = (
+        pre_df_full.groupby('gene')['organism']
+        .apply(lambda x: ' '.join(sorted(set(' '.join(x.dropna()).split()))))
+        .reset_index()
+    )
+    cor_combined_genus_gene_prv =cor_combined_genus_gene[cor_combined_genus_gene.apply(
+        lambda row: any(row['organism'] in organisms for organisms in
+                        pre_df_gene[pre_df_gene['gene'] == row['gene']]['organism'].values) if not
+        pre_df_gene[pre_df_gene['gene'] == row['gene']].empty else False, axis=1)]
+
+    cor_combined_genus_family_prv = cor_combined_genus_family[cor_combined_genus_family.apply(
+        lambda row: any(row['organism'] in organisms for organisms in
+                        pre_df_family[pre_df_family['family'] == row['gene']]['organism'].values) if not
+        pre_df_family[pre_df_family['family'] == row['gene']].empty else False, axis=1)]
+
+    #cor_p_filtered_spp = filter_correlation(cor_p_spp, amr_df_t.columns, spp_t.columns)
+    os.chdir(Cor_output_dir)
+    save_correlation_to_csv(cor_combined_genus_gene_prv, 'correlation_genus_gene.csv')
+    save_correlation_to_csv(cor_combined_genus_family_prv, 'correlation_genus_family.csv')
+
+    # Calculate Pearson correlation coefficients_group
+    #cor_p_genus_group = calculate_correlation(combined_df_genus_group)
+    #cor_p_spp_group = calculate_correlation(combined_df_spp_group)
+    #cor_p_filtered_genus_group = filter_correlation(cor_p_genus_group, amr_group_df_t.columns, genus_t.columns)
+    #cor_p_filtered_spp_group = filter_correlation(cor_p_spp_group, amr_group_df_t.columns, spp_t.columns)
+    #os.chdir(Cor_output_dir)
+    #save_correlation_to_csv(cor_p_filtered_genus_group, 'correlation_genus_group.csv')
+    # save_correlation_to_csv(cor_p_filtered_spp_group, 'correlation_species_group.csv')
+    logging.info(colored("Completed:correlation analysis", 'green'))
+
+def merge_abundance_with_amr(abundance_df, amr_df):
+    return pd.merge(abundance_df, amr_df, left_index=True, right_index=True)
+def apply_log_transformation(df):
+    df_log= df.apply(lambda x: np.log10(x + 1))
+    return df_log
+
+
+def calculate_correlation_pe(df):
+    cor_df = df.corr(method='pearson')
+    pvalue_df = df.corr(method=lambda x, y: pearsonr(x, y)[1]) - np.eye(len(df.columns))
+    return flatten_corr_matrix(cor_df, pvalue_df)
+
+
+def calculate_correlation_sp(df):
+    cor_df, pvalue_df = spearmanr(df, axis=0)
+
+    # Convert the correlation and p-value matrices into DataFrames
+    cor_df = pd.DataFrame(cor_df, columns=df.columns, index=df.columns)
+    pvalue_df = pd.DataFrame(pvalue_df, columns=df.columns, index=df.columns)
+
+    # Set the diagonal to NaN in pvalue_df (self-correlation is always 1)
+    np.fill_diagonal(pvalue_df.values, np.nan)
+
+    # Flatten the correlation and p-value matrices
+    return flatten_corr_matrix(cor_df, pvalue_df)
+
+
+def flatten_corr_matrix(cormat, pmat):
+    ut = np.triu_indices(len(cormat), 1)  # get the upper triangular indices
+
+    data = {
+        "organism": cormat.index[ut[0]],  # get the row names
+        "gene": cormat.index[ut[1]],  # get the column names
+        "cor": cormat.values[ut],  # get the correlation values
+        "p": pmat.values[ut]  # get the p values
+    }
+    return pd.DataFrame(data)  # return a data frame data frame
+
+def filter_correlation(cor_p, amr_columns, abundance_columns):
+    cor_p_1 = cor_p[~cor_p.organism.isin(amr_columns)]
+    cor_p_2 = cor_p_1[~cor_p_1.gene.isin(abundance_columns)]
+    return cor_p_2[(cor_p_2.cor >= 0.7) & (cor_p_2.p < 0.05)]
+
+def save_correlation_to_csv(df, filename):
+    df.to_csv(filename, sep='\t', index=True)
+
+# Define command-line argument parser
+def create_parser():
+    __version__ = "0.9.10_May_2026"
+    parser = argparse.ArgumentParser(description='Integrated reistome and microbiome analysis pipeline')
+    parser.add_argument('-v', '--version',action='version', version='%(prog)s v' + __version__)
+    subparsers = parser.add_subparsers(dest="subparser_name", help='sub-commands')
+    # AMR analysis sub-parser
+    parser_amr = subparsers.add_parser('AMR', help='Perform Illumina AMR research panel analysis')
+    parser_amr.add_argument('-amr_db', '--AMR_database', type=str, help='Path to AMR gene database', required=True)
+    parser_amr.add_argument('-a', '--anno_file', type=str, help='Annotation file for AMR database', required=True)
+    parser_amr.add_argument('-amr_q', '--AMR_query_files', type=str, help='Directory containing AMR query files', required=True)
+    parser_amr.add_argument('-amr_o', '--AMR_output', type=str, help='Output directory for AMR analysis results', required=True)
+    parser_amr.add_argument('-t', '--threads', type=str, default=default_threads, help='Number of threads to use')
+    parser_amr.add_argument(
+        "-m", "--filtering_mode",
+        type=int,
+        choices=[1, 2, 3],
+        default=2,
+        help=(
+            "Low-abundance filtering mode "
+            "(default: 2): "
+            "1 = specific; "
+            "2 = balanced; "
+            "3 = sensitive "
+        )
+    )
+    parser_amr.set_defaults(func=AMR)
+
+    # EMU analysis sub-parser
+    parser_emu = subparsers.add_parser('BAC', help='Perform 16s rRNA gene amplicon sequencing analysis')
+    parser_emu.add_argument('-emu_db', '--EMU_database', type=str, help='Path to EMU database', required=True)
+    parser_emu.add_argument('-bac_q', '--BAC_query_files', type=str, help='Directory containing BAC query files', required=True)
+    parser_emu.add_argument('-qt', '--query_type', type=str, choices=['PE', 'ONT'], help='Type of query (PE or ONT)', required=True)
+    parser_emu.add_argument('-bac_o', '--BAC_output', type=str, help='Output directory for BAC analysis results', required=True)
+    parser_emu.add_argument('-t', '--threads', type=str, default=default_threads, help='Number of threads to use')
+
+    parser_emu.set_defaults(func=BAC)
+
+    # Correlation analysis sub-parser
+    parser_corr = subparsers.add_parser('COR', help='Perform correlation analysis')
+    parser_corr.add_argument('-cor_amr', '--Cor_input_AMR', type=str, help='Input directory containing AMR analysis combined results', required=True)
+    parser_corr.add_argument('-cor_bac', '--Cor_input_BAC', type=str, help='Input directory containing BAC analysis combined results', required=True)
+    parser_corr.add_argument('-a', '--anno_file', type=str, help='Annotation file for AMR database', required=True)
+    parser_corr.add_argument('-cor_o', '--Cor_output', type=str, help='Output directory for correlation analysis results', required=True)
+
+    parser_corr.set_defaults(func=COR)
+
+    return parser
+
+# Main function
+def main():
+    # Create argument parser first. This allows --help/--version and
+    # handles the case where no subcommand is provided.
+    parser = create_parser()
+    args = parser.parse_args()
+
+    if not hasattr(args, "func"):
+        parser.print_help()
+        parser.exit(2, "\nError: Please choose one module: AMR, BAC, or COR.\n")
+
+    # Check only the tools needed by the selected module.
+    if args.subparser_name == "AMR":
+        required_tools = ["fastp", "bwa-mem2"]
+    elif args.subparser_name == "BAC":
+        if getattr(args, "query_type", None) == "ONT":
+            required_tools = ["porechop", "gunzip", "chopper", "emu"]
+        else:
+            required_tools = ["fastp", "emu"]
+    else:  # COR uses existing AMR/BAC result files.
+        required_tools = []
+
+    if required_tools:
+        check_tools(required_tools)
+
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()
+
