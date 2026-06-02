@@ -1,0 +1,32 @@
+name: MAMR
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.10
+  - pip
+
+  # Python packages
+  - pandas
+  - numpy
+  - scipy
+  - termcolor
+  - tqdm
+  - pysam
+  - kneed
+  - scikit-learn
+
+  # Testing
+  - pytest
+
+  # External tools 
+  - fastp
+  - bwa-mem2
+  - porechop
+  - chopper
+  - gzip
+  - emu
