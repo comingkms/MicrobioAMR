@@ -35,7 +35,7 @@ MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires th
   [tqdm](https://tqdm.github.io/)
 + Database:
     + The microbiome database, known as the Emu database, is available on the Emu GitHub page [Emu github](https://github.com/treangenlab/emu) or in the 'BAC_database' subdirectory. 
-    + The AMR database curated in this study based on AMR database inlcuding CARD<sup>5</sup>, NCBI<sup>6</sup>, ResFinder<sup>7</sup>, and MEGARes<sup>8</sup> is located in the 'AMR_database' subdirectory.
+    + The AMR database curated in this study,  based on AMR database inlcuding CARD<sup>5</sup>, NCBI<sup>6</sup>, ResFinder<sup>7</sup>, and MEGARes<sup>8</sup> is located in the 'AMR_database' subdirectory.
   
 
 ## Installation
@@ -244,12 +244,12 @@ OUTPUT_DIR/
 ```
 MAMR correlation results are saved in the `corelation_xxx.csv' files. The rest of the files in this output folder are copied from the output folders of modules 1 and 2.
 
-## Citation 
-
-
-
 ## Reference
 1. Curry KD, Wang Q, Nute MG, Tyshaieva A, Reeves E, Soriano S, Wu Q, Graeber E, Finzer P, Mendling W, Savidge T, Villapol S, Dilthey A, Treangen TJ. Emu: species-level microbial community profiling of full-length 16S rRNA Oxford Nanopore sequencing data. Nat Methods. 2022 Jul;19(7):845-853. doi: 10.1038/s41592-022-01520-4. Epub 2022 Jun 30. PMID: 35773532; PMCID: PMC9939874.
 2. Chen S, Zhou Y, Chen Y, Gu J. fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics. 2018 Sep 1;34(17):i884-i890. doi: 10.1093/bioinformatics/bty560. PMID: 30423086; PMCID: PMC6129281.
 3. De Coster W, Rademakers R. NanoPack2: population-scale evaluation of long-read sequencing data. Bioinformatics. 2023 May 4;39(5):btad311. doi: 10.1093/bioinformatics/btad311. PMID: 37171891; PMCID: PMC10196664.
-4. Bonin N, Doster E, Worley H, Pinnell LJ, Bravo JE, Ferm P, Marini S, Prosperi M, Noyes N, Morley PS, Boucher C. MEGARes and AMR++, v3.0: an updated comprehensive database of antimicrobial resistance determinants and an improved software pipeline for classification using high-throughput sequencing. Nucleic Acids Res. 2023 Jan 6;51(D1):D744-D752. doi: 10.1093/nar/gkac1047. PMID: 36382407; PMCID: PMC9825433.
+4. Vasimuddin Md, Sanchit Misra, Heng Li, Srinivas Aluru. Efficient Architecture-Aware Acceleration of BWA-MEM for Multicore Systems. IEEE Parallel and Distributed Processing Symposium (IPDPS), 2019. 10.1109/IPDPS.2019.00041
+5. Brian P Alcock, William Huynh, Romeo Chalil, et al. CARD 2023: expanded curation, support for machine learning, and resistome prediction at the Comprehensive Antibiotic Resistance Database, Nucleic Acids Research, Volume 51, Issue D1, 6 January 2023, Pages D690–D699, https://doi.org/10.1093/nar/gkac920
+6. Feldgarden, M., Brover, V., Gonzalez-Escalona, N. et al. AMRFinderPlus and the Reference Gene Catalog facilitate examination of the genomic links among antimicrobial resistance, stress response, and virulence. Sci Rep 11, 12728 (2021). https://doi.org/10.1038/s41598-021-91456-0
+7. Florensa AF, Kaas RS, Clausen PTLC, Aytan-Aktug D, Aarestrup FM. ResFinder - an open online resource for identification of antimicrobial resistance genes in next-generation sequencing data and prediction of phenotypes from genotypes. Microb Genom. 2022 Jan;8(1):000748. doi: 10.1099/mgen.0.000748. PMID: 35072601; PMCID: PMC8914360.
+8. Bonin N, Doster E, Worley H, Pinnell LJ, Bravo JE, Ferm P, Marini S, Prosperi M, Noyes N, Morley PS, Boucher C. MEGARes and AMR++, v3.0: an updated comprehensive database of antimicrobial resistance determinants and an improved software pipeline for classification using high-throughput sequencing. Nucleic Acids Res. 2023 Jan 6;51(D1):D744-D752. doi: 10.1093/nar/gkac1047. PMID: 36382407; PMCID: PMC9825433.
