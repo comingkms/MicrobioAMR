@@ -35,7 +35,7 @@ MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires th
   [tqdm](https://tqdm.github.io/)
 + Database:
     + The microbiome database, known as the Emu database, is available on the Emu GitHub page [Emu github](https://github.com/treangenlab/emu) or in the 'BAC_database' subdirectory. 
-    + The AMR database curated in this study,  based on AMR database inlcuding CARD<sup>5</sup>, NCBI<sup>6</sup>, ResFinder<sup>7</sup>, and MEGARes<sup>8</sup> is located in the 'AMR_database' subdirectory.
+    + The AMR database curated in this study,  based on AMR database inlcuding CARD<sup>5</sup>, NCBI<sup>6</sup>, ResFinder<sup>7</sup>, and MEGARes<sup>8</sup>, is located in the 'AMR_database' subdirectory.
   
 
 ## Installation
