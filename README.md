@@ -55,14 +55,67 @@ To ensure the availability of the `MAMR` command, it is essential to add the abs
 echo 'export PATH="/absolute/path/to/MAMR:$PATH"'>> ~/.bashrc && source ~/.bashrc
 ```
 ## Test
+1. Run the run_test.py 
+```
+pytest -v -s test/run_test.py
+```
+2. Results(example):
+```
+pytest -v -s test/run_test.py
+====================================test session starts ===========================
+platform linux -- Python 3.10.12, pytest-9.0.3, pluggy-1.6.0 -- /home/comingkms/anaconda3/envs/microbioteAMR/bin/python
+cachedir: .pytest_cache
+rootdir: /mnt/Mydata/kms/resistomeanalyzer/AMR/test
+collected 7 items                                                                                                                                                                                                                  
 
+test/run_test.py::test_layout 
+Project root: /mnt/Mydata/kms/resistomeanalyzer/AMR/test
+Test root: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/test
+MAMR: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/MAMR_9
+AMR database: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/AMR_database/AmpliSeq_amr_database_4.fasta
+AMR annotation: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/AMR_database/Tax_final_15.csv
+BAC database: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/Emu_database
+COR data: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/COR_data
+AMR input: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/test/AMR
+BAC input: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/test/BAC
+PASSED
+==================================================================================                                                                                                                                                  
+test/run_test.py::test_python_dependency 
+Python dependencies: {'pandas': '2.2.3', 'numpy': '2.2.4', 'scipy': '1.15.1', 'termcolor': '2.3.0', 'tqdm': '4.66.2', 'pysam': '0.21.0', 'kneed': '0.8.5', 'scikit-learn': '1.5.0'}
+PASSED
+==================================================================================                                                                                                                                                  
+test/run_test.py::test_external_pipeline 
+External pipelines: {'fastp': 'fastp 0.23.4', 'bwa-mem2': '2.2.1', 'porechop': '0.2.4', 'gunzip': 'gunzip (gzip) 1.10', 'chopper': 'chopper 0.7.0', 'emu': 'emu v3.4.5'}
+PASSED
+==================================================================================
+test/run_test.py::test_MAMR 
+MAMR_9 v0.9.10_May_2026
+PASSED
+==================================================================================
+test/run_test.py::test_AMR 
+Output: /tmp/pytest-of-comingkms/pytest-0/mamr_amr0/AMR_output/Resistomes/AMR_gene_combined.csv
+Samples: ['Test-2', 'Test-1']
+PASSED
+==================================================================================
+test/run_test.py::test_BAC 
+Genus: /tmp/pytest-of-comingkms/pytest-0/mamr_bac0/BAC_output/combined/emu-combined-genus.tsv
+Species: /tmp/pytest-of-comingkms/pytest-0/mamr_bac0/BAC_output/combined/emu-combined-species.tsv
+Sample files: ['Test-2_rel-abundance.tsv', 'Test-1_rel-abundance.tsv']
+PASSED
+==================================================================================
+test/run_test.py::test_COR 
+Input dir: /mnt/Mydata/kms/resistomeanalyzer/AMR/test/COR_data
+Gene output: /tmp/pytest-of-comingkms/pytest-0/test_COR0/COR_output/correlation_genus_gene.csv
+family output: /tmp/pytest-of-comingkms/pytest-0/test_COR0/COR_output/correlation_genus_family.csv
+PASSED
+==================================================================================                                                                                                                                                  
 
+======================7 passed in 80.76s (0:01:20) ===============================
+```
 ## Usage 
 
-To confirm the proper installation of MAMR, you can test a small dataset located in the `example` subdirectory.
-
 Here are some guidelines for the file names of the raw read files:
-1. For paired-end reads, the format of the input files' name should be: {sample_name}_Sxx_Lxxx_R1/R2_001.fastq.gz(defualt format form illumina) 
+1. For paired-end reads, the format of the input files' name should be: {sample_name}_Sxx_Lxxx_R1/R2_001.fastq.gz(Illumina standard format ) 
 2. For ONT reads, the format of the input file's name should be: {sample_name}.fastq.gz
 3. For module COR,  please ensure that the sample name matches the ones used for AMR and BAC moudels.
 
@@ -93,7 +146,7 @@ Module 1: Analysis of Illumina AMR reseach panel(AMR)
 
 ```
 $MAMR AMR -h
-usage: MAMR AMR [-h] -amr_db AMR_DATABASE -a ANNO_FILE -amr_q AMR_QUERY_FILES -amr_o AMR_OUTPUT [-t THREADS]
+usage: MAMR AMR [-h] -amr_db AMR_DATABASE -a ANNO_FILE -amr_q AMR_QUERY_FILES -amr_o AMR_OUTPUT [-t THREADS] [-m {1,2,3}]
 
 options:
   -h, --help            show this help message and exit
@@ -107,6 +160,8 @@ options:
                         Output directory for AMR analysis results
   -t THREADS, --threads THREADS
                         Number of threads to use
+  -m {1,2,3}, --filtering_mode {1,2,3}
+                        Low-abundance filtering mode (default: 2): 1 = specific; 2 = balanced; 3 = sensitive
 
 ```
 
@@ -155,15 +210,8 @@ Module 1: AMR
 ```
 OUTPUT_DIR/
 ├── Resistomes/
-    ├── AMR_combined.class.csv
-    ├── AMR_combined.gene.csv
-    ├── AMR_combined.class_rel_abundance.csv
-    ├── AMR_combined.gene_rel_abundance.csv
-    ├──{sample_1}_sam.class.tsv 
-    ├──{sample_1}_sam.gene.tsv
-    ├──{sample_1}_sam.group.tsv
-    ├──{sample_1}_sam.mechanism.tsv 
-    ├──...
+    ├── AMR_gene_combined.csv
+    ├── temp_output/
 ```
 MAMR combined outputs are stored in the `AMR_conbined.****.csv` files. 
 
