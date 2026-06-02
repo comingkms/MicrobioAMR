@@ -1,1 +1,1 @@
-1. Downloard emu database from the Emu GitHub page [Emu github](https://github.com/treangenlab/emu) and save into the Emu_database folder 
+1. Download the emu database from the EMU GitHub repository[Emu github](https://github.com/treangenlab/emu)  and save it to the Emu_database directory.
