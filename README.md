@@ -113,7 +113,7 @@ PASSED
 ```
 ## Usage 
 
-Here are some guidelines for the file names of the raw read files:
+Here are some guidelines for file names of the raw read files:
 1. For paired-end reads, the format of the input files' name should be: {sample_name}_Sxx_Lxxx_R1/R2_001.fastq.gz(Illumina standard format ) 
 2. For ONT reads, the format of the input file's name should be: {sample_name}.fastq.gz
 3. For module COR,  please ensure that the sample name matches the ones used for AMR and BAC moudels.
