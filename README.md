@@ -44,7 +44,8 @@ The easiest and most convenient way to install MAMR dependencies is by using con
 git clone https://github.com/comingkms/MicrobioAMR.git
 chmod +x MicrobioAMR/MAMR
 cd MicrobioAMR
-conda env create -n MAMR --file environment.yml
+conda env create -f MAMR.yml
+conda activate MAMR
 ```
 The whole installation process should take about 5-10 minutes.
 
