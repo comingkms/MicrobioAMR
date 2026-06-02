@@ -1,0 +1,791 @@
+target,gene,class,mechanism,family,group,organism
+aac_NT,aacA35,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac_NT,Acinetobacter Pseudomonas
+aac2prime-Ia_NT,'aac(2'')-Ia',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC2-PRIME,aac2prime-Ia_NT,Escherichia Klebsiella Providencia Serratia
+aac2prime-Ib_NT,'aac(2'')-Ib',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC2-PRIME,aac2prime-Ib_NT,Mycobacterium Mycolicibacterium
+aac2prime-Ic_NT,'aac(2'')-Ic',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC2-PRIME,aac2prime-Ic_NT,Escherichia Mycobacterium
+aac2prime-Id_NT,'aac(2'')-Id',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC2-PRIME,aac2prime-Id_NT,Mycolicibacterium
+aac2prime-Ie_NT,'aac(2'')-Ie',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC2-PRIME,aac2prime-Ie_NT,Mycobacterium
+aac3prime-Ic_NT,aac(3)-Ic,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-Ic_NT,Acinetobacter Citrobacter Escherichia Klebsiella Pseudomonas Raoultella Salmonella Serratia
+aac3prime-Id_NT,aac(3)-Id,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-Id_NT,Campylobacter Escherichia Morganella Proteus Providencia Pseudomonas Salmonella Stutzerimonas Vibrio
+aac3prime-If_NT,aac(3)-If,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-If_NT,Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Serratia 
+aac3prime-Ig_NT,aac(3)-Ig,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-Ig_NT,Saccharophagus
+aac3prime-Ih_NT,aac(3)-Ih,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-Ih_NT,Paracoccus
+aac3prime-Ii_NT,aac(3)-Ii,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-Ii_NT,Sphingopyxis
+aac3prime-Iib_NT,aac(3)-IIb,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-Iib_NT,Burkholderia Enterobacter Escherichia Paracoccus Pseudomonas Salmonella Serratia
+aac3prime-III_NT,aac(3)-IIe,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-III_NT,Acinetobacter Aeromonas Avibacterium Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Mannheimia Morganella Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Shinella Staphylococcus Stenotrophomonas Vibrio
+aac3prime-IIIa_NT,aac(3)-IIIa,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-IIIa_NT,Burkholderia Pseudomonas
+aac3prime-IIIb_NT,aac(3)-IIIb,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-IIIb_NT,Bosea Burkholderia Pseudomonas
+aac3prime-Ik_NT,aac(3)-Ik,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-Ik_NT,Staphylococcus
+aac3prime-Iva_NT,aac(3)-IVa,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-Iva_NT,Acinetobacter Aeromonas Bacillus Citrobacter Cronobacter Enterobacter Enterococcus Escherichia Klebsiella Morganella Pasteurella Proteus Providencia Pseudomonas Salmonella Serratia Shigella Stenotrophomonas Streptococcus Streptomyces Vibrio Yersinia
+aac3prime-via_NT,aac(3)-VIa,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aac3prime-via_NT,Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shigella
+aac6prime_NT,aacA34,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime_NT,Achromobacter Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Pantoea Pseudomonas Salmonella 
+aac6prime-31_NT,'aac(6'')-31/aacA8',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-31_NT,Acinetobacter Aeromonas Alcaligenes Citrobacter Delftia Enterobacter Escherichia Fluviibacter Klebsiella Pollutimonas Pseudomonas Raoultella Stenotrophomonas 
+aac6prime-32_NT,'aac(6'')-32',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-32_NT,Burkholderia Klebsiella Pseudomonas
+aac6prime-Ia_NT,'aac(6'')-Ia',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Ia_NT,Aeromonas Citrobacter Corynebacterium Enterobacter Escherichia Klebsiella Providencia Pseudomonas Serratia Shigella Stenotrophomonas Vibrio Wohlfahrtiimonas
+aac6prime-Iae_NT,'aac(6'')-Iae',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iae_NT,Citrobacter Enterobacter Escherichia Providencia Pseudomonas Salmonella
+aac6prime-Iai_NT,'aac(6'')-Iai',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iai_NT,Alcaligenes Escherichia Klebsiella Pseudomonas
+aac6prime-Ic_NT,'aac(6'')-Ic',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Ic_NT,Enterobacter Klebsiella Proteus Serratia
+aac6prime-Id_NT,'aac(6'')-Id',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Id_NT,Klebsiella
+aac6prime-If_NT,'aac(6'')-If',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-If_NT,Citrobacter Enterobacter Escherichia Vibrio
+aac6prime-ig_NT,'aac(6'')-Ig',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-ig_NT,Acinetobacter Pseudomonas
+aac6prime-Iia_NT,'aac(6'')-IIa',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iia_NT,Achromobacter Acinetobacter Actinobacillus Aeromonas Alcaligenes Bordetella Burkholderia Citrobacter Comamonas Corynebacterium Delftia Diaphorobacter Ectopseudomonas Edwardsiella Enterobacter Escherichia Klebsiella Laribacter Leclercia Morganella Neopusillimonas Pasteurella Phytobacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Stenotrophomonas Stutzerimonas Vibrio 
+aac6prime-Iib_NT,'aac(6'')-IIb',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iib_NT,Klebsiella Pseudomonas
+aac6prime-Iic_NT,'aac(6'')-IIc',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iic_NT,Acinetobacter Aeromonas Citrobacter Comamonas Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Pluralibacter Proteus Providencia Pseudescherichia Pseudomonas Salmonella Serratia Stenotrophomonas Vibrio
+aac6prime-Ij_NT,'aac(6'')-I',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Ij_NT,Acinetobacter Enterococcus Escherichia Klebsiella Listeria Pseudomonas Staphylococcus Streptococcus
+aac6prime-ik_NT,'aac(6'')-I',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-ik_NT,Acinetobacter Enterococcus Escherichia Klebsiella Listeria Pseudomonas Staphylococcus Streptococcus
+aac6prime-Il_NT,'aac(6'')-Ip',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Il_NT,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Salmonella Serratia
+aac6prime-Ir_NT,'aac(6'')-I',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Ir_NT,Acinetobacter Enterococcus Escherichia Klebsiella Listeria Pseudomonas Staphylococcus Streptococcus
+aac6prime-Ir_NT.1,'aac(6'')-Ir',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Ir_NT,Acinetobacter
+aac6prime-Is_NT,'aac(6'')-I',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Is_NT,Acinetobacter Enterococcus Escherichia Klebsiella Listeria Pseudomonas Staphylococcus Streptococcus
+aac6prime-Is_NT.1,'aac(6'')-I',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Is_NT,Acinetobacter Enterococcus Escherichia Klebsiella Listeria Pseudomonas Staphylococcus Streptococcus
+aac6prime-It,'aac(6'')-It',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-It,Acinetobacter
+aac6prime-Iu_NG,'aac(6'')-Iu',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iu_NG,Acinetobacter
+aac6prime-Iw_NT,'aac(6'')-Iw',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iw_NT,Acinetobacter
+aac6prime-Iw_NT.1,'aac(6'')-Iw',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iw_NT,Acinetobacter
+aac6prime-Ix_NT,'aac(6'')-I',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Ix_NT,Acinetobacter Enterococcus Escherichia Klebsiella Listeria Pseudomonas Staphylococcus Streptococcus
+aac6prime-Iy_NT,'aac(6'')-Iaa/ly',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6prime-Iy_NT,Salmonella
+aac6primeIi_NT,'aac(6'')-Ii',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6primeIi_NT,Enterococcus
+aac6primeIm_NT,'aac(6'')-Im',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aac6primeIm_NT,Campylobacter Citrobacter Clostridioides Clostridium Eggerthella Enterobacter Enterocloster Enterococcus Escherichia Haemophilus Histophilus Klebsiella Pasteurella Providencia Pseudomonas Salmonella Serratia Streptococcus [Clostridium] 
+aacA-ACI6_NG,aacA-ACI6,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aacA-ACI6_NG,Acinetobacter
+aacA29_NT,'aac(6'')-29',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aacA29_NT,Enterobacter Escherichia Klebsiella Pseudomonas Serratia 
+aacA43_NT,aacA43,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aacA43_NT,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas
+aacC1_NT,aac(3)-Ia,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,aacC1_NT,Acinetobacter Agrobacterium Azotobacter Bordetella Borreliella Brucella Burkholderia Citrobacter Cupriavidus Enterobacter Escherichia Helicobacter Klebsiella Legionella Morganella Pluralibacter Proteus Providencia Pseudomonas Rubrivivax Salmonella Serratia Stenotrophomonas Vibrio 
+aadA10_NT,aadA10,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA10_NT,Aeromonas Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Photobacterium Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Vibrio 
+aadA13_NT,aadA13/8,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA13_NT,Acinetobacter Aeromonas Enterobacter Escherichia Klebsiella Morganella Providencia Pseudoalteromonas Pseudomonas Salmonella Serratia Stenotrophomonas Stutzerimonas Vibrio Yersinia 
+aadA13_NT.1,aadA13,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA13_NT,Acinetobacter Aeromonas Alcaligenes Comamonas Enterobacter Escherichia Klebsiella Morganella Paralysiella Priestia Proteus Providencia Pseudoalteromonas Pseudomonas Salmonella Serratia Shewanella Stenotrophomonas Stutzerimonas Vibrio Yersinia 
+aadA14_NT,aadA14,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA14_NT,Pasteurella Proteus
+aadA16_NT,aadA16,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA16_NT,Acinetobacter Aeromonas Alcaligenes Citrobacter Comamonas Cronobacter Edwardsiella Enterobacter Escherichia Klebsiella Kluyvera_intermedia Laribacter Leclercia Morganella Photobacterium Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Vibrio
+aadA1b_NT,aadA1,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA1b_NT,Achromobacter Acinetobacter Actinobacillus Aeromonas Alcaligenes Anaplasma Avibacterium Bacillus Bordetella Burkholderia Campylobacter Citrobacter Clostridioides Corynebacterium Cronobacter Deinococcus Enterobacter Escherichia Glaesserella Klebsiella Kluyvera_intermedia Lactobacillus Leclercia Morganella Neisseria Parvimonas Pasteurella Pectobacterium Pluralibacter Prevotella Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Sphingobium Staphylococcus Stenotrophomonas Streptococcus Trueperella Vibrio Xanthomonas Yersinia bacterium 
+aadA4_NT,aadA4,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA4_NT,Acinetobacter Aeromonas Brevundimonas Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Pseudomonas Psychrobacter Raoultella Salmonella Shewanella Shigella Stenotrophomonas Streptomyces 
+aadA6_NT,aadA11/6,Aminoglycosides,Aminoglycoside_N-acetyltransferases,ANT3-DPRIME,aadA6_NT,Acinetobacter Aeromonas Alcaligenes Caldimonas Citrobacter Comamonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Shewanella Stenotrophomonas 
+aadA7_NT,aadA7,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA7_NT,Aeromonas Campylobacter Castellaniella Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Shewanella Vibrio
+aadA9_NT,aadA9,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT3-DPRIME,aadA9_NT,Brevibacterium Corynebacterium Escherichia Glutamicibacter Morganella Prescottella Proteus Rhodococcus Salmonella Staphylococcus Streptococcus Trueperella 
+aadE_NT,ant(6)-Ia,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT6,aadE_NT,Acinetobacter Aliarcobacter Bacillus Campylobacter Clostridioides Clostridium Enterobacter Enterococcus Erysipelothrix Escherichia Herbinix Jeotgalibaca Klebsiella Kurthia Lactococcus Ligilactobacillus Listeria Macrococcus Providencia Pseudomonas Salmonella Staphylococcus Stenotrophomonas Streptococcus Vagococcus Vibrio
+aadE_NT.1,ant(6)-Ia,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT6,aadE_NT,Acinetobacter Aliarcobacter Bacillus Campylobacter Clostridioides Clostridium Enterobacter Enterococcus Erysipelothrix Escherichia Herbinix Jeotgalibaca Klebsiella Kurthia Lactococcus Ligilactobacillus Listeria Macrococcus Phascolarctobacterium Providencia Pseudomonas Salmonella Staphylococcus Stenotrophomonas Streptococcus Vagococcus Vibrio
+aadK_NT,aadK,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT6,aadK_NT,Bacillus Klebsiella Streptococcus
+aadK_NT.1,aadK,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT6,aadK_NT,Bacillus Enterococcus Klebsiella Streptococcus
+aadK_NT.2,aadK,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT6,aadK_NT,Bacillus Enterococcus Klebsiella Streptococcus
+aadS_NT,aadS,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT6,aadS_NT,Alistipes Bacteroidales Bacteroides Bergeyella Butyricimonas Chryseobacterium Cloacibacterium Elizabethkingia Empedobacter Escherichia Faecalibacter Flavobacterium Myroides Parabacteroides Phocaeicola Riemerella Salmonella Segatella Sphingobacterium Vaginella 
+ampC_NT,blaDHA,betalactams,Class_C_betalactamases,DHA,ampC_NT,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Leclercia Morganella Oceanimonas Pluralibacter Proteus Providencia Pseudescherichia Pseudomonas Raoultella Salmonella Serratia Vibrio
+ant4prime-ib_NT,'ant(4'')-Ib',Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT4-PRIME,ant4prime-ib_NT,Bacillus Shouchella
+ant4prime-ib_NT.1,'ant(4'')-Ib',Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT4-PRIME,ant4prime-ib_NT,Bacillus Shouchella
+ant4prime-IIa_NT,'ant(4'')-IIa',Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT4-PRIME,ant4prime-IIa_NT,Pseudomonas
+ant4prime-IIb_NT,'ant(4'')-IIb',Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT4-PRIME,ant4prime-IIb_NT,Achromobacter Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Stenotrophomonas
+ant6prime-ib_NT,ant(6)-Ib,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT6,ant6prime-ib_NT,Acholeplasma Campylobacter Clostridioides Clostridium Erysipelatoclostridium Streptococcus 
+ant9prime-ib_or_aad9_NT,ant(9)-Ib,Aminoglycosides,Aminoglycoside_O-nucleotidyltransferases,ANT9,ant9prime-ib_or_aad9_NT,Aerococcus Aeromonas Bacillus Enterococcus Escherichia Mycobacterium Salmonella Streptococcus Vallitaleaceae
+aph2prime-Ia_NT,'aac(6′)-Ie-aph(2″)-Ia/aph(2'''')-Ia',Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aph2prime-Ia_NT,Anaerostipes Arcobacter Bacillus Bacteroides Campylobacter Clostridioides Clostridium Eggerthella Enterobacter Enterococcus Erysipelatoclostridium Escherichia Eubacterium Faecalibacterium Glaesserella Helicobacter Klebsiella Lactococcus Ligilactobacillus Mediterraneibacter Morganella NA Oscillospiraceae Ruthenibacterium Staphylococcus Stenotrophomonas Streptococcus
+aph2prime-ia_NT,aac(6′)-Ie-aph(2″)-Ia,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC6-PRIME,aph2prime-ia_NT,Anaerostipes Arcobacter Bacillus Bacteroides Bifidobacterium Campylobacter Clostridioides Clostridium Eggerthella Enterobacter Enterococcus Erysipelatoclostridium Escherichia Eubacterium Faecalibacterium Glaesserella Helicobacter Klebsiella Lactococcus Ligilactobacillus Mediterraneibacter Morganella NA Oscillospiraceae Ruthenibacterium Staphylococcus Stenotrophomonas Streptococcus
+aph2prime-Ib_NT,'aph(2'''')-IIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH2-DPRIME,aph2prime-Ib_NT,Campylobacter Citrobacter Clostridioides Clostridium Enterobacter Enterocloster Enterococcus Escherichia Haemophilus Histophilus Klebsiella Pasteurella Providencia Pseudomonas Salmonella Serratia Streptococcus 
+aph2prime-Ib_NT.1,'aph(2'''')-IIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH2-DPRIME,aph2prime-Ib_NT,Campylobacter Citrobacter Clostridioides Clostridium Enterobacter Enterocloster Enterococcus Escherichia Haemophilus Histophilus Klebsiella Pasteurella Providencia Pseudomonas Salmonella Serratia Streptococcus 
+aph2prime-Ic_NT,'aph(2'''')-IIIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH2-DPRIME,aph2prime-Ic_NT,Campylobacter Enterococcus Klebsiella Staphylococcus Streptococcus
+aph2prime-Ic_NT.1,'aph(2'''')-IIIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH2-DPRIME,aph2prime-Ic_NT,Campylobacter Enterococcus Klebsiella Staphylococcus Streptococcus
+aph2prime-Id_NT,'aph(2'''')-Iva/Ie',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH2-DPRIME,aph2prime-Id_NT,Enterococcus 
+aph3prime-ib_NT,'aph(3'')-Ib',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-ib_NT,Acinetobacter Bacteroides Burkholderia Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Moraxella Morganella Neopusillimonas Phocaeicola Pseudomonas Salmonella Serratia 
+aph3prime-ib_NT.1,'aph(3'')-Ib',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-ib_NT,Acinetobacter Bacteroides Burkholderia Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Moraxella Morganella Neopusillimonas Phocaeicola Pseudomonas Salmonella Serratia 
+aph3prime-id_NT,'aph(3'')-Id',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-id_NT,Escherichia Salmonella 
+aph3prime-iib_NT,'aph(3'')-IIb',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-iib_NT,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Serratia Staphylococcus Stenotrophomonas Vibrio
+aph3prime-iic_NT,'aph(3'')-IIc',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-iic_NT,Acinetobacter Elizabethkingia Klebsiella Pseudomonas Salmonella Stenotrophomonas
+aph3prime-III_NT,'aph(3'')-IIIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-III_NT,Acinetobacter Aliarcobacter Anaerostipes Bacillus Bacteroides Bifidobacterium Butyricimonas Campylobacter Clostridioides Clostridium Corynebacterium Eggerthella Enterobacter Enterocloster Enterococcus Erysipelothrix Escherichia Eubacterium Fusobacterium Gordonibacter Helicobacter Klebsiella Lachnospiraceae Legionella Leptospira Listeria Mannheimia Mycobacterium Neisseria Parabacteroides Phocaeicola Providencia Pseudomonas Roseburia Salmonella Staphylococcus Streptococcus Vagococcus Vibrio
+aph3prime-Iva_NT,'aph(3'')-IVa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-Iva_NT,Enterococcus Niallia Paenibacillus
+aph3prime-va_NT,'aph(3'')-Va',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-va_NT,Streptomyces
+aph3prime-vc_NT,'aph(3'')-Vc',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-vc_NT,Micromonospora NA
+aph3prime-viia_NT,'aph(3'')-VIIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-viia_NT,Campylobacter
+aph3prime-viii_NT,'aph(3'')-VIIIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-viii_NT,Streptomyces
+aph3prime-xv_NT,'aph(3'')-XV',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aph3prime-xv_NT,Achromobacter Acinetobacter Aeromonas Brevundimonas Citrobacter Ectopseudomonas Enterobacter Escherichia Klebsiella Kluyvera Leclercia Morganella Proteus Providencia Pseudomonas Salmonella Solilutibacter Stenotrophomonas Vibrio 
+aph4-ia_NT,aph(4)-Ia,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH4,aph4-ia_NT,Acinetobacter Aeromonas Bacillus Citrobacter Enterobacter Escherichia Klebsiella Listeria Morganella Mycobacterium Pasteurella Proteus Providencia Pseudomonas Salmonella Serratia Shigella Stenotrophomonas Streptococcus Vibrio Yersinia
+aph4-ib_NT,'aph(7'''')-Ia',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH7-DPRIME,aph4-ib_NT,Escherichia Klebsiella Mycobacterium Streptomyces
+aph6-ia_NT,aph(6)-Ia,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH6,aph6-ia_NT,Streptomyces streptomycete
+aph6-ia_NT.1,aph(6)-Ia,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH6,aph6-ia_NT,Streptomyces
+aph6-ib_NT,aph(6)-Ib,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH6,aph6-ib_NT,Streptomyces
+aph6-ic_NT,aph(6)-Ic,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH6,aph6-ic_NT,Acinetobacter Aeromonas Agrobacterium Burkholderia Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Salmonella Serratia Shigella Sinorhizobium Stenotrophomonas Vibrio 
+aph9-ia_NT,aph(9)-Ia,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH9,aph9-ia_NT,Legionella
+aph9-ib_NT,aph(9)-Ib,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH9,aph9-ib_NT,Streptomyces
+aphA2_NT,'aph(3'')-IIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-DPRIME,aphA2_NT,Acinetobacter Aeromonas Agrobacterium Azotobacter Bacillus Burkholderia Citrobacter Clostridium Corynebacterium Edwardsiella Elizabethkingia Enterobacter Enterococcus Escherichia Klebsiella Leptospira Listeria Mycobacterium Neisseria Phocaeicola Proteus Providencia Pseudomonas Rhizobium Rhodopseudomonas Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Streptococcus Vibrio Xanthomonas
+aphA6_NT,'aph(3'')-VIa',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aphA6_NT,Acinetobacter Actinobacillus Aeromonas Alcaligenes Burkholderia Citrobacter Clostridium Corynebacterium Enterobacter Escherichia Klebsiella Morganella Pasteurella Proteus Providencia Pseudomonas Salmonella Serratia Stenotrophomonas Stutzerimonas
+aphA6_NT.1,'aph(3'')-VI',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-PRIME,aphA6_NT,Acinetobacter Aeromonas Alcaligenes Burkholderia Citrobacter Ectopseudomonas Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Stenotrophomonas Stutzerimonas Vibrio
+aphAI_NT,'aph(3'')-Ia',Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH3-DPRIME,aphAI_NT,Acinetobacter Actinobacillus Aeromonas Alcaligenes Avibacterium Bacillus Bartonella Bordetella Brucella Burkholderia Campylobacter Citrobacter Clostridioides Comamonas Corynebacterium Cronobacter Deinococcus Delftia Edwardsiella Enterobacter Escherichia Faecalibacterium Francisella Gardnerella Glaesserella Haemophilus Histophilus Klebsiella Kluyvera_intermedia Laribacter Leclercia Legionella Listeria Mannheimia Moraxella Morganella Mycobacterium Neisseria Pasteurella Photobacterium Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Streptococcus Treponema Trueperella Vibrio Xanthomonas Yersinia 
+apmA_NT,apmA,Aminoglycosides,Aminoglycoside_N-acetyltransferases,APMA,apmA_NT,Campylobacter Clostridioides Enterococcus Staphylococcus Streptococcus
+armA_NT,armA,Aminoglycosides,16S_rRNA_methyltransferases,ARMA,armA_NT,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Haemophilus Klebsiella Leclercia Morganella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Staphylococcus Vibrio
+bla1_T,bla1,betalactams,Class_A_betalactamases,BLA1,bla1_T,Bacillus Enterococcus
+bla1_T.1,bla1,betalactams,Class_A_betalactamases,BLA1,bla1_T,Bacillaceae Bacillus Enterococcus
+bla1_T.2,bla1,betalactams,Class_A_betalactamases,BLA1,bla1_T,Bacillus Enterococcus
+bla1_T.3,bla1,betalactams,Class_A_betalactamases,BLA1,bla1_T,Bacillus Enterococcus
+bla2_T,BcII,betalactams,Class_B_betalactamases,BCII,bla2_T,Bacillus Enterococcus Vibrio
+bla2_T.1,BcII,betalactams,Class_B_betalactamases,BCII,bla2_T,Bacillus Enterococcus Vibrio [Bacillus
+bla2_T.2,BcII,betalactams,Class_B_betalactamases,BCII,bla2_T,Bacillus Enterococcus Vibrio
+blaACC-2_T,blaACC,betalactams,Class_C_betalactamases,ACC,blaACC-2_T,Citrobacter Enterobacter Enterobacteriaceae Escherichia Hafnia Klebsiella Kluyvera Proteus Salmonella 
+blaACC-2_T.1,blaACC,betalactams,Class_C_betalactamases,ACC,blaACC-2_T,Citrobacter Enterobacter Enterobacteriaceae Escherichia Hafnia Klebsiella Kluyvera Proteus Salmonella 
+blaACC-2_T.2,blaACC,betalactams,Class_C_betalactamases,ACC,blaACC-2_T,Citrobacter Enterobacter Enterobacteriaceae Escherichia Hafnia Klebsiella Kluyvera Proteus Salmonella 
+blaACC-2_T.3,blaACC,betalactams,Class_C_betalactamases,ACC,blaACC-2_T,Citrobacter Enterobacter Enterobacteriaceae Escherichia Hafnia Klebsiella Kluyvera Proteus Salmonella 
+blaACT_T,blaACT,betalactams,Class_C_betalactamases,ACT,blaACT_T,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Pseudomonas Serratia Streptococcus
+blaACT_T.1,blaACT,betalactams,Class_C_betalactamases,ACT,blaACT_T,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Pseudomonas Serratia Streptococcus
+blaACT_T.2,blaACT,betalactams,Class_C_betalactamases,ACT,blaACT_T,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Pseudomonas Serratia Streptococcus
+blaACT_T.3,blaACT,betalactams,Class_C_betalactamases,ACT,blaACT_T,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Pseudomonas Streptococcus
+blaACT_T.4,blaACT,betalactams,Class_C_betalactamases,ACT,blaACT_T,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Pseudomonas Serratia Streptococcus
+blaACT-159_NG,blaACT-159,betalactams,Class_C_betalactamases,ACT,blaACT-159_NG,Enterobacter Escherichia 
+blaACT-53_NG,blaACT-53,betalactams,Class_C_betalactamases,ACT,blaACT-53_NG,Citrobacter Enterobacter Escherichia Flavobacterium Klebsiella
+blaADC-10.family_T,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-10.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-10.family_T.2,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-10.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-10.family_T.3,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-10.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-10.family_T.4,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-10.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-10.family_T.5,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-10.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-127_NG,blaADC-127,betalactams,Class_C_betalactamases,ADC,blaADC-127_NG,Acinetobacter
+blaADC-136_NG,blaADC-136,betalactams,Class_C_betalactamases,ADC,blaADC-136_NG,Acinetobacter
+blaADC-138_NG,blaADC-138,betalactams,Class_C_betalactamases,ADC,blaADC-138_NG,Acinetobacter
+blaADC-149_NG,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-149_NG,Acinetobacter
+blaADC-15.family_T,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-15.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-15.family_T.1,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-15.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-15.family_T.2,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-15.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-15.family_T.3,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-15.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-15.family_T.4,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-15.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-15.family_T.5,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-15.family_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-193_NG,blaADC-193,betalactams,Class_C_betalactamases,ADC,blaADC-193_NG,Acinetobacter
+blaADC-207_NG,blaADC-207,betalactams,Class_C_betalactamases,ADC,blaADC-207_NG,Acinetobacter
+blaADC-207_NG_1,blaADC-207,betalactams,Class_C_betalactamases,ADC,blaADC-207_NG,Acinetobacter
+blaADC-25_T.4,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-25_T,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaADC-254_NG,blaADC-254,betalactams,Class_C_betalactamases,ADC,blaADC-254_NG,Acinetobacter
+blaADC-254_NG_1,blaADC-254,betalactams,Class_C_betalactamases,ADC,blaADC-254_NG,Acinetobacter
+blaADC-292_NG,blaADC-292,betalactams,Class_C_betalactamases,ADC,blaADC-292_NG,Acinetobacter
+blaADC-335_NG,blaADC-335,betalactams,Class_C_betalactamases,ADC,blaADC-335_NG,Acinetobacter
+blaADC-340_NG,blaADC-340,betalactams,Class_C_betalactamases,ADC,blaADC-340_NG,Acinetobacter
+blaADC-340_NG_1,blaADC-340,betalactams,Class_C_betalactamases,ADC,blaADC-340_NG,Acinetobacter
+blaADC-8_T,blaADC-8,betalactams,Class_C_betalactamases,ADC,blaADC-8_T,Acinetobacter
+blaADC-8_T.1,blaADC-8,betalactams,Class_C_betalactamases,ADC,blaADC-8_T,Acinetobacter
+blaADC-8_T.2,blaADC-8,betalactams,Class_C_betalactamases,ADC,blaADC-8_T,Acinetobacter
+blaADC-8_T.3,blaADC-8,betalactams,Class_C_betalactamases,ADC,blaADC-8_T,Acinetobacter
+blaADC-8_T.4,blaADC-8,betalactams,Class_C_betalactamases,ADC,blaADC-8_T,Acinetobacter
+blaADC-8_T.5,blaADC-8,betalactams,Class_C_betalactamases,ADC,blaADC-8_T,Acinetobacter
+blaADC-83_NG,blaADC-83,betalactams,Class_C_betalactamases,ADC,blaADC-83_NG,Acinetobacter
+blaADC-84_NG,blaADC-84,betalactams,Class_C_betalactamases,ADC,blaADC-84_NG,Acinetobacter
+blaADC-85_NG,blaADC-85,betalactams,Class_C_betalactamases,ADC,blaADC-85_NG,Acinetobacter
+blaAIM-1_T,blaAIM-1/2,betalactams,Class_B_betalactamases,AIM,blaAIM-1_T,Pseudomonas Pseudoxanthomonas 
+blaAIM-1_T.1,blaAIM-1/2,betalactams,Class_B_betalactamases,AIM,blaAIM-1_T,Pseudomonas Pseudoxanthomonas 
+blaAIM-1_T.2,blaAIM-1/2,betalactams,Class_B_betalactamases,AIM,blaAIM-1_T,Pseudomonas Pseudoxanthomonas 
+blaAIM-1_T.3,blaAIM-1/2,betalactams,Class_B_betalactamases,AIM,blaAIM-1_T,Pseudomonas Pseudoxanthomonas 
+blaB_T,hugA,betalactams,Class_A_betalactamases,HUGA,blaB_T,Escherichia Proteus Providencia Vibrio
+blaB_T.1,hugA,betalactams,Class_A_betalactamases,HUGA,blaB_T,Escherichia Proteus Providencia Vibrio
+blaB_T.2,hugA,betalactams,Class_A_betalactamases,HUGA,blaB_T,Escherichia Proteus Providencia Vibrio
+blaB_T.3,hugA,betalactams,Class_A_betalactamases,HUGA,blaB_T,Escherichia Proteus Providencia Vibrio
+blaBEL_T,blaBEL,betalactams,Class_A_betalactamases,BEL,blaBEL_T,Citrobacter Klebsiella Pseudomonas Raoultella 
+blaBEL_T.1,blaBEL,betalactams,Class_A_betalactamases,BEL,blaBEL_T,Citrobacter Klebsiella Pseudomonas Raoultella 
+blaBEL_T.2,blaBEL,betalactams,Class_A_betalactamases,BEL,blaBEL_T,Citrobacter Klebsiella Pseudomonas Raoultella 
+blaBEL_T.3,blaBEL,betalactams,Class_A_betalactamases,BEL,blaBEL_T,Citrobacter Klebsiella Pseudomonas Raoultella 
+blaBES-1_T,blaBES-1,betalactams,Class_A_betalactamases,BES,blaBES-1_T,Serratia
+blaBES-1_T.1,blaBES-1,betalactams,Class_A_betalactamases,BES,blaBES-1_T,Serratia
+blaBES-1_T.2,blaBES-1,betalactams,Class_A_betalactamases,BES,blaBES-1_T,Serratia
+blaBES-1_T.3,blaBES-1,betalactams,Class_A_betalactamases,BES,blaBES-1_T,Serratia
+blaBIC_T,blaBIC-1/2,betalactams,Class_A_betalactamases,BIC,blaBIC_T,Pseudomonas
+blaBIC_T.1,blaBIC-1/2,betalactams,Class_A_betalactamases,BIC,blaBIC_T,Pseudomonas
+blaBIC_T.2,blaBIC-1/2,betalactams,Class_A_betalactamases,BIC,blaBIC_T,Pseudomonas
+blaBIC_T.3,blaBIC-1/2,betalactams,Class_A_betalactamases,BIC,blaBIC_T,Pseudomonas
+blaBIC_T.4,blaBIC-1/2,betalactams,Class_A_betalactamases,BIC,blaBIC_T,Pseudomonas
+blaBPS_T.1,blaPEN-I,betalactams,Class_A_betalactamases,PENI,blaBPS_T,Burkholderia
+blaBPS_T.2,blaPEN-I,betalactams,Class_A_betalactamases,PENI,blaBPS_T,Burkholderia
+blaBPS_T.3,blaPEN-I,betalactams,Class_A_betalactamases,PENI,blaBPS_T,Burkholderia
+blaCARB-5_T,blaCARB,betalactams,Class_A_betalactamases,CARB,blaCARB-5_T,Acinetobacter Moraxella Oligella Proteus Psychrobacter Vibrio 
+blaCARB-5_T.1,blaCARB,betalactams,Class_A_betalactamases,CARB,blaCARB-5_T,Acinetobacter Moraxella Oligella Proteus Psychrobacter Vibrio 
+blaCARB-5_T.2,blaCARB,betalactams,Class_A_betalactamases,CARB,blaCARB-5_T,Acinetobacter Moraxella Oligella Proteus Psychrobacter Vibrio 
+blaCARB-5_T.3,blaCARB,betalactams,Class_A_betalactamases,CARB,blaCARB-5_T,Acinetobacter Moraxella Oligella Proteus Psychrobacter Vibrio 
+blaCcrA_or_CfiA_T,cfiA,betalactams,Class_B_betalactamases,CFIA,blaCcrA_or_CfiA_T,Bacteroides Escherichia 
+blaCcrA_or_CfiA_T.1,cfiA,betalactams,Class_B_betalactamases,CCRA,blaCcrA_or_CfiA_T,Bacteroides Escherichia
+blaCcrA_or_CfiA_T.2,cfiA,betalactams,Class_B_betalactamases,CFIA,blaCcrA_or_CfiA_T,Bacteroides Escherichia 
+blaCFE_T.2,blaCFE-1,betalactams,Class_C_betalactamases,CFE,blaCFE_T,Citrobacter Escherichia
+blaCFE_T.3,blaCFE-1,betalactams,Class_C_betalactamases,CFE,blaCFE_T,Citrobacter Escherichia 
+blaCFE_T.4,blaCFE-1,betalactams,Class_C_betalactamases,CFE,blaCFE_T,Citrobacter Escherichia 
+blaCFE-1_NG,blaCFE-1,betalactams,Class_C_betalactamases,CFE,blaCFE-1_NG,Citrobacter Escherichia 
+blaCGB-1_T,blaCGB-1,betalactams,Class_B_betalactamases,IND,blaCGB-1_T,Chryseobacterium
+blaCGB-1_T.1,blaCGB-1,betalactams,Class_B_betalactamases,IND,blaCGB-1_T,Chryseobacterium
+blaCGB-1_T.2,blaCGB-1,betalactams,Class_B_betalactamases,IND,blaCGB-1_T,Chryseobacterium
+blaCME_T,blaCME,betalactams,Class_A_betalactamases,CME,blaCME_T,Elizabethkingia
+blaCME_T.1,blaCME,betalactams,Class_A_betalactamases,CME,blaCME_T,Elizabethkingia
+blaCME_T.2,blaCME,betalactams,Class_A_betalactamases,CME,blaCME_T,Elizabethkingia
+blaCME_T.3,blaCME,betalactams,Class_A_betalactamases,CME,blaCME_T,Elizabethkingia
+blaCMY-100_NG,blaCMY,betalactams,Class_C_betalactamases,CMY,blaCMY-100_NG,Citrobacter Escherichia 
+blaCMY-190_NG,blaCMY-190,betalactams,Class_C_betalactamases,CFE,blaCMY-190_NG,Citrobacter Escherichia mixed 
+blaCTX-M-13_T,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-13_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shigella Staphylococcus Vibrio
+blaCTX-M-13_T.1,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-13_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shigella Staphylococcus Vibrio
+blaCTX-M-15_T,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-15_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shigella Staphylococcus Vibrio
+blaCTX-M-15_T.1,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-15_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Staphylococcus Vibrio
+blaCTX-M-15_T.2,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-15_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Staphylococcus Vibrio
+blaCTX-M-15_T.3,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-15_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Staphylococcus Vibrio
+blaCTX-M-2_T,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-2_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Staphylococcus Vibrio
+blaCTX-M-2_T.1,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-2_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Morganella Phytobacter Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Staphylococcus Vibrio
+blaCTX-M-2_T.2,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-2_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Staphylococcus Vibrio mixed
+blaCTX-M-25_T,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-25_T,Acinetobacter Aeromonas Citrobacter Cytobacillus Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Morganella Pantoea Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Staphylococcus Vibrio 
+blaCTX-M-25_T.1,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-25_T,Acinetobacter Aeromonas Citrobacter Cytobacillus Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Morganella Pantoea Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Staphylococcus Vibrio
+blaCTX-M-25_T.2,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-25_T,Acinetobacter Aeromonas Citrobacter Cytobacillus Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Morganella Pantoea Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Staphylococcus Vibrio
+blaCTX-M-25_T.3,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-25_T,Acinetobacter Aeromonas Citrobacter Cytobacillus Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Morganella Pantoea Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Staphylococcus Vibrio 
+blaCTX-M-8_T.3,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-8_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Morganella Pantoea Pluralibacter Providencia Pseudomonas Salmonella Serratia Staphylococcus Vibrio
+blaCTX-M-9_T,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-9_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shigella Staphylococcus Vibrio
+blaCTX-M-9_T.2,blaCTX-M,betalactams,Class_A_betalactamases,CTX,blaCTX-M-9_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Leclercia Mixta Morganella Pluralibacter Providencia Pseudomonas Raoultella Salmonella Serratia Staphylococcus Vibrio
+blaDES_T,blaDES-1,betalactams,Class_A_betalactamases,DES,blaDES_T,Desulfovibrio
+blaDES_T.1,blaDES-1,betalactams,Class_A_betalactamases,DES,blaDES_T,Desulfovibrio
+blaDES_T.2,blaDES-1,betalactams,Class_A_betalactamases,DES,blaDES_T,Desulfovibrio
+blaDES_T.3,blaDES-1,betalactams,Class_A_betalactamases,DES,blaDES_T,Desulfovibrio
+blaDHA-2_NG,blaDHA-2,betalactams,Class_C_betalactamases,DHA,blaDHA-2_NG,Citrobacter Enterobacter Escherichia Klebsiella Leclercia Morganella Oceanimonas Proteus Pseudescherichia Raoultella 
+blaDIM_T,blaDIM-1,betalactams,Class_B_betalactamases,DIM,blaDIM_T,Enterobacter Pseudomonas Stutzerimonas
+blaDIM_T.1,blaDIM-1,betalactams,Class_B_betalactamases,DIM,blaDIM_T,Enterobacter Pseudomonas Stutzerimonas
+blaDIM_T.2,blaDIM-1,betalactams,Class_B_betalactamases,DIM,blaDIM_T,Enterobacter Pseudomonas Stutzerimonas
+blaDIM_T.3,blaDIM-1,betalactams,Class_B_betalactamases,DIM,blaDIM_T,Enterobacter Pseudomonas Stutzerimonas
+blaEBR-1_T,blaEBR,betalactams,Class_B_betalactamases,EBR,blaEBR-1_T,Empedobacter
+blaEBR-1_T.1,blaEBR-1/2,betalactams,Class_B_betalactamases,EBR,blaEBR-1_T,Empedobacter
+blaERP_T,blaERP-1,betalactams,Class_A_betalactamases,ERP,blaERP_T,Erwinia
+blaERP_T.1,blaERP-1,betalactams,Class_A_betalactamases,ERP,blaERP_T,Erwinia
+blaERP_T.2,blaERP-1,betalactams,Class_A_betalactamases,ERP,blaERP_T,Erwinia
+blaERP_T.3,blaERP-1,betalactams,Class_A_betalactamases,ERP,blaERP_T,Erwinia
+blaERP_T.4,blaERP-1,betalactams,Class_A_betalactamases,ERP,blaERP_T,Erwinia
+blaFAR_T,blaFAR-1,betalactams,Class_A_betalactamases,FAR1,blaFAR_T,Nocardia
+blaFAR_T.1,blaFAR-1,betalactams,Class_A_betalactamases,FAR1,blaFAR_T,Nocardia
+blaFAR_T.2,blaFAR-1,betalactams,Class_A_betalactamases,FAR1,blaFAR_T,Nocardia
+blaFOX-1_T,blaFOX,betalactams,Class_C_betalactamases,FOX,blaFOX-1_T,Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Providencia Pseudomonas Salmonella Serratia
+blaFOX-1_T.1,blaFOX,betalactams,Class_C_betalactamases,FOX,blaFOX-1_T,Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Providencia Pseudomonas Salmonella Serratia
+blaFOX-1_T.2,blaFOX,betalactams,Class_C_betalactamases,FOX,blaFOX-1_T,Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Providencia Pseudomonas Salmonella Serratia
+blaFOX-1_T.3,blaFOX,betalactams,Class_C_betalactamases,FOX,blaFOX-1_T,Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Providencia Pseudomonas Salmonella Serratia
+blaFOX-18_NG,blaFOX-18,betalactams,Class_C_betalactamases,FOX,blaFOX-18_NG,Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Providencia Pseudomonas Serratia
+blaGES_T,blaGES,betalactams,Class_A_betalactamases,GES,blaGES_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Raoultella Serratia Stenotrophomonas 
+blaGES_T.1,blaGES,betalactams,Class_A_betalactamases,GES,blaGES_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Raoultella Serratia Stenotrophomonas
+blaGES_T.2,blaGES,betalactams,Class_A_betalactamases,GES,blaGES_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Raoultella Serratia 
+blaGES_T.3,blaGES,betalactams,Class_A_betalactamases,GES,blaGES_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Morganella Pseudomonas Raoultella Serratia Stenotrophomonas 
+blaGES-7_T.2,blaGES,betalactams,Class_A_betalactamases,GES,blaGES-7_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Fluviibacter Klebsiella Pseudomonas Raoultella Serratia Stenotrophomonas 
+blaGIM-1_T,blaGIM-1/2,betalactams,Class_B_betalactamases,GIM,blaGIM-1_T,Achromobacter Acinetobacter Citrobacter Ectopseudomonas Enterobacter Escherichia Pseudomonas Serratia
+blaGIM-1_T.1,blaGIM-1/2,betalactams,Class_B_betalactamases,GIM,blaGIM-1_T,Achromobacter Acinetobacter Citrobacter Ectopseudomonas Enterobacter Escherichia Klebsiella Pseudomonas Serratia
+blaGOB_T,blaGOB,betalactams,Class_B_betalactamases,GOB,blaGOB_T,Elizabethkingia
+blaGOB_T.1,blaGOB,betalactams,Class_B_betalactamases,GOB,blaGOB_T,Elizabethkingia
+blaGOB_T.2,blaGOB,betalactams,Class_B_betalactamases,GOB,blaGOB_T,Elizabethkingia
+blaHERA_T,blaHER-1/4,betalactams,Class_A_betalactamases,HERA,blaHERA_T,Atlantibacter Escherichia Salmonella
+blaHERA_T.1,blaHER,betalactams,Class_A_betalactamases,HERA,blaHERA_T,Atlantibacter Escherichia Salmonella
+blaHERA_T.2,blaHER,betalactams,Class_A_betalactamases,HERA,blaHERA_T,Atlantibacter Escherichia Salmonella
+blaHERA_T.3,blaHER-1/4,betalactams,Class_A_betalactamases,HERA,blaHERA_T,Atlantibacter Escherichia Salmonella
+blaIMI-3_or_nmc_T,blaIMI,betalactams,Class_A_betalactamases,IMI,blaIMI-3_or_nmc_T,Enterobacter Escherichia Klebsiella Raoultella 
+blaIMI-3_or_nmc_T.2,blaIMI,betalactams,Class_A_betalactamases,IMI,blaIMI-3_or_nmc_T,Enterobacter Escherichia Klebsiella Raoultella 
+blaIMP-1_T,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-1_T,Acinetobacter Aeromonas Aquipseudomonas Brucella Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Morganella Providencia Pseudomonas Serratia Stutzerimonas 
+blaIMP-1_T.1,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-1_T,Acinetobacter Aeromonas Aquipseudomonas Brucella Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Providencia Pseudomonas Serratia Stutzerimonas 
+blaIMP-1_T.2,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-1_T,Acinetobacter Aeromonas Aquipseudomonas Brucella Citrobacter Enterobacter Escherichia Klebsiella Providencia Pseudomonas Serratia Stutzerimonas 
+blaIMP-1_T.3,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-1_T,Acinetobacter Aeromonas Aquipseudomonas Citrobacter Enterobacter Escherichia Klebsiella Providencia Pseudomonas Serratia Stutzerimonas 
+blaIMP-100_NG,blaIMP-100,betalactams,Class_B_betalactamases,IMP,blaIMP-100_NG,Acinetobacter Aquipseudomonas Citrobacter Enterobacter Klebsiella Providencia Pseudomonas Stenotrophomonas bacterium
+blaIMP-11.family_T,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-11.family_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas 
+blaIMP-11.family_T.1,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-11.family_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas
+blaIMP-11.family_T.2,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-11.family_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas
+blaIMP-12.family_T,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-12.family_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas
+blaIMP-12.family_T.1,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-12.family_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Providencia Pseudomonas Serratia
+blaIMP-12.family_T.2,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-12.family_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Providencia Pseudomonas Serratia
+blaIMP-12.family_T.3,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-12.family_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas 
+blaIMP-14_T,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-14_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas 
+blaIMP-14_T.1,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-14_T,Achromobacter Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Providencia Pseudomonas Serratia
+blaIMP-14_T.2,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-14_T,Achromobacter Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Providencia Pseudomonas Serratia
+blaIMP-2_T,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-2_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas
+blaIMP-2_T.1,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-2_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas 
+blaIMP-2_T.2,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-2_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Brucella Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia Stenotrophomonas
+blaIMP-46_NG,blaIMP-46,betalactams,Class_B_betalactamases,IMP,blaIMP-46_NG,Pseudomonas
+blaIMP-5.family_T.1,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-5.family_T,Achromobacter Acinetobacter Aquipseudomonas Citrobacter Enterobacter Escherichia Klebsiella Providencia Pseudomonas Raoultella Serratia 
+blaIMP-5.family_T.2,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-5.family_T,Achromobacter Acinetobacter Aquipseudomonas Citrobacter Enterobacter Escherichia Klebsiella Leclercia Providencia Pseudomonas Serratia 
+blaIMP-5.family_T.3,blaIMP,betalactams,Class_B_betalactamases,IMP,blaIMP-5.family_T,Achromobacter Acinetobacter Aquipseudomonas Citrobacter Enterobacter Escherichia Klebsiella Providencia Pseudomonas Serratia Stenotrophomonas bacterium 
+blaIND_T,blaIND-1/7,betalactams,Class_B_betalactamases,IND,blaIND_T,Chryseobacterium
+blaIND_T.1,blaIND-1/5/7,betalactams,Class_B_betalactamases,IND,blaIND_T,Chryseobacterium
+blaIND_T.2,blaIND-1/7,betalactams,Class_B_betalactamases,IND,blaIND_T,Chryseobacterium
+blaIND-5_NG,blaIND-5,betalactams,Class_B_betalactamases,IND,blaIND-5_NG,Chryseobacterium
+blaJOHN-1_T,blaJOHN-1,betalactams,Class_B_betalactamases,JOHN,blaJOHN-1_T,Flavobacterium
+blaJOHN-1_T.1,blaJOHN-1,betalactams,Class_B_betalactamases,JOHN,blaJOHN-1_T,Flavobacterium
+blaJOHN-1_T.2,blaJOHN-1,betalactams,Class_B_betalactamases,JOHN,blaJOHN-1_T,Flavobacterium
+blaKHM_T,blaKHM-1,betalactams,Class_B_betalactamases,KHM,blaKHM_T,Citrobacter Enterobacter Escherichia Klebsiella
+blaKHM_T.1,blaKHM-1,betalactams,Class_B_betalactamases,KHM,blaKHM_T,Cellvibrio Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas 
+blaKHM_T.2,blaKHM-1,betalactams,Class_B_betalactamases,KHM,blaKHM_T,Citrobacter Enterobacter Escherichia Klebsiella
+blaKPC_T,blaKPC,betalactams,Class_A_betalactamases,KPC,blaKPC_T,Acinetobacter Aeromonas Citrobacter Enterobacter Enterococcus Escherichia Klebsiella Morganella Proteus Pseudomonas Raoultella Serratia Staphylococcus
+blaKPC_T.1,blaKPC,betalactams,Class_A_betalactamases,KPC,blaKPC_T, Acinetobacter Aeromonas Citrobacter Enterobacter Enterococcus Escherichia Klebsiella Morganella Pseudomonas Serratia Staphylococcus
+blaKPC_T.2,blaKPC,betalactams,Class_A_betalactamases,KPC,blaKPC_T,Acinetobacter Aeromonas Citrobacter Enterobacter Enterococcus Escherichia Klebsiella Morganella Pseudomonas Serratia Staphylococcus
+blaKPC-107,blaKPC-107,betalactams,Class_A_betalactamases,KPC,blaKPC-107,Klebsiella
+blaLCR-1_T,blaLCR-1,betalactams,Class_D_betalactamases,LCR,blaLCR-1_T,Achromobacter Aeromonas Providencia Pseudomonas 
+blaLCR-1_T.1,blaLCR-1,betalactams,Class_D_betalactamases,LCR,blaLCR-1_T,Aeromonas Pseudomonas 
+blaLEN-1_T.2,blaLEN,betalactams,Class_A_betalactamases,LEN,blaLEN-1_T,Klebsiella Serratia
+blaLEN-1_T.3,blaLEN,betalactams,Class_A_betalactamases,LEN,blaLEN-1_T,Klebsiella 
+blaLUT_T,blaLUT,betalactams,Class_A_betalactamases,LUT,blaLUT_T,Pseudomonas
+blaLUT_T.1,blaLUT,betalactams,Class_A_betalactamases,LUT,blaLUT_T,Pseudomonas
+blaLUT_T.2,blaLUT,betalactams,Class_A_betalactamases,LUT,blaLUT_T,Pseudomonas
+blaLUT_T.3,blaLUT,betalactams,Class_A_betalactamases,LUT,blaLUT_T,Pseudomonas
+blaLUT_T.4,blaLUT,betalactams,Class_A_betalactamases,LUT,blaLUT_T,Pseudomonas
+blaMIR-1_T.2,blaMIR,betalactams,Class_C_betalactamases,MIR,blaMIR-1_T,Enterobacter Klebsiella 
+blaMIR-6_T,blaMIR,betalactams,Class_C_betalactamases,MIR,blaMIR-6_T,Enterobacter Klebsiella 
+blaMIR-6_T.1,blaMIR,betalactams,Class_C_betalactamases,MIR,blaMIR-6_T,Enterobacter Escherichia Klebsiella 
+blaMIR-6_T.2,blaMIR,betalactams,Class_C_betalactamases,MIR,blaMIR-6_T,Enterobacter Escherichia Klebsiella 
+blaMUS_T,blaMUS-1/2,betalactams,Class_B_betalactamases,MUS,blaMUS_T,Myroides
+blaMUS_T.1,blaMUS-1/2,betalactams,Class_B_betalactamases,MUS,blaMUS_T,Myroides
+blaNDM-1_T,blaNDM,betalactams,Class_B_betalactamases,NDM,blaNDM-1_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Vibrio
+blaNDM-1_T.1,blaNDM,betalactams,Class_B_betalactamases,NDM,blaNDM-1_T,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Vibrio
+blaNDM-1_T.2,blaNDM,betalactams,Class_B_betalactamases,NDM,blaNDM-1_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Morganella Providencia Pseudomonas Salmonella Serratia Vibrio
+blaOCH_T,blaOCH,betalactams,Class_C_betalactamases,OCH,blaOCH_T,Brucella Ochrobactrum
+blaOCH_T.1,blaOCH,betalactams,Class_C_betalactamases,OCH,blaOCH_T,Brucella Ochrobactrum
+blaOCH_T.2,blaOCH,betalactams,Class_C_betalactamases,OCH,blaOCH_T,Brucella Ochrobactrum
+blaOCH_T.3,blaOCH,betalactams,Class_C_betalactamases,OCH,blaOCH_T,Brucella Ochrobactrum
+blaOCH_T.4,blaOCH,betalactams,Class_C_betalactamases,OCH,blaOCH_T,Brucella Ochrobactrum
+blaOKP-A_T.1,blaOKP,betalactams,Class_A_betalactamases,OKP,blaOKP-A_T,Klebsiella 
+blaOKP-A_T.3,blaOKP,betalactams,Class_A_betalactamases,OKP,blaOKP-A_T,Klebsiella
+blaOKP-A-15_NG,blaOKP-A-15,betalactams,Class_A_betalactamases,OKP,blaOKP-A-15_NG,Klebsiella
+blaOKP-C-1_NG,blaOKP-C-1,betalactams,Class_A_betalactamases,SHV,blaOKP-C-1_NG,Citrobacter Enterobacter Escherichia Klebsiella Salmonella
+blaOKP-C-1_NG_1,blaOKP-C-1,betalactams,Class_A_betalactamases,LEN,blaOKP-C-1_NG,Klebsiella Serratia
+blaOXA-1_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-1_T,Achromobacter Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Denitrificimonas Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-1_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-1_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-1_T.2,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-1_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-10_or_PSE-2_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-10_or_PSE-2_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Moellerella Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-10_or_PSE-2_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-10_or_PSE-2_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Moellerella Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-10_or_PSE-2_T.3,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-10_or_PSE-2_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Moellerella Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-134_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-134_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-134_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-134_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-134_T.2,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-134_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-134_T.3,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-134_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-2.family_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-2.family_T,Acinetobacter Aeromonas Alcaligenes Burkholderia Campylobacter Citrobacter Corynebacterium Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Phytobacter Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio bacterium 
+blaOXA-23_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-23_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-23_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-23_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-23_T.2,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-23_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-231_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-231_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-231_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-231_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-231_T.2,blaOXA-143/231,betalactams,Class_D_betalactamases,OXA,blaOXA-231_T,Acinetobacter
+blaOXA-231_T.3,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-231_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-231_T.4,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-231_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-24_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-24_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-24_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-24_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-24_T.2,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-24_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-362_NG,blaOXA-362,betalactams,Class_D_betalactamases,OXA,blaOXA-362_NG,Acinetobacter
+blaOXA-363_NG,blaOXA-363,betalactams,Class_D_betalactamases,OXA,blaOXA-363_NG,Acinetobacter
+blaOXA-48_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-48_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-48_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-48_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-50_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-50_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-50_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-50_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-50_T.2,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-50_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-50_T.3,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-50_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-51-like_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-51-like_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-51-like_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-51-like_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-51-like_T.2,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-51-like_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-55_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-55_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-55_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-55_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-55_T.2,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-55_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-58_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-58_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-58_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-58_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-58_T.2,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-58_T,Acinetobacter Aeromonas Burkholderia Campylobacter Citrobacter Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio
+blaOXA-646_NG,blaOXA-646,betalactams,Class_D_betalactamases,OXA,blaOXA-646_NG,Acinetobacter
+blaOXA-7_T,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-7_T,Acinetobacter Aeromonas Alcaligenes Burkholderia Campylobacter Citrobacter Ectopseudomonas Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-7_T.1,blaOXA,betalactams,Class_D_betalactamases,OXA,blaOXA-7_T,Acinetobacter Aeromonas Alcaligenes Burkholderia Campylobacter Citrobacter Ectopseudomonas Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-7_T.2,blaOXA-1168,betalactams,Class_D_betalactamases,OXA,blaOXA-7_T,Acinetobacter Aeromonas Alcaligenes Burkholderia Campylobacter Citrobacter Ectopseudomonas Elizabethkingia Enterobacter Enterococcus Escherichia Flavobacterium Klebsiella Kluyvera_intermedia Legionella Listeria Mannheimia Morganella Mycobacterium Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Staphylococcus Stenotrophomonas Vibrio 
+blaOXA-9_T,blaOXA-9/896,betalactams,Class_D_betalactamases,OXA,blaOXA-9_T,Acinetobacter Aeromonas Alcaligenes Citrobacter Enterobacter Escherichia Klebsiella Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Vibrio
+blaOXA-9_T.1,blaOXA-9/896,betalactams,Class_D_betalactamases,OXA,blaOXA-9_T,Acinetobacter Aeromonas Alcaligenes Citrobacter Enterobacter Escherichia Klebsiella Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Vibrio
+blaOXA-962_NG,blaOXA-962,betalactams,Class_D_betalactamases,OXA,blaOXA-962_NG,Shewanella 
+blaOXY-1_T,blaOXY,betalactams,Class_A_betalactamases,OXY,blaOXY-1_T,Citrobacter Escherichia Klebsiella Pseudomonas 
+blaOXY-1_T.1,blaOXY,betalactams,Class_A_betalactamases,OXY,blaOXY-1_T,Citrobacter Escherichia Klebsiella Pseudomonas 
+blaOXY-1_T.2,blaOXY,betalactams,Class_A_betalactamases,OXY,blaOXY-1_T,Citrobacter Escherichia Klebsiella Pseudomonas 
+blaOXY-2_T,blaOXY-2,betalactams,Class_A_betalactamases,OXY,blaOXY-2_T,Escherichia Klebsiella 
+blaOXY-2_T.1,blaOXY-2,betalactams,Class_A_betalactamases,OXY,blaOXY-2_T,Klebsiella 
+blaOXY-2_T.2,blaOXY-2,betalactams,Class_A_betalactamases,OXY,blaOXY-2_T,Klebsiella 
+blaOXY-2_T.3,blaOXY-2,betalactams,Class_A_betalactamases,OXY,blaOXY-2_T,Klebsiella Raoultella 
+blaOXY-2_T.4,blaOXY-2,betalactams,Class_A_betalactamases,OXY,blaOXY-2_T,Escherichia Klebsiella Raoultella
+blaPEN-I_NG,blaPEN-I,betalactams,Class_A_betalactamases,PENI,blaPEN-I_NG,Burkholderia
+blaPEN-I_NG_1,blaPEN-I,betalactams,Class_A_betalactamases,PENI,blaPEN-I_NG,Burkholderia
+blaPEN-J_NG,blaPEN-J,betalactams,Class_A_betalactamases,PENI,blaPEN-J_NG,Burkholderia
+blaPEN-M_NG,blaPEN-M,betalactams,Class_A_betalactamases,PENI,blaPEN-M_NG,Burkholderia
+blaPER-1_T,blaPER,betalactams,Class_A_betalactamases,PER,blaPER-1_T,Acinetobacter Aeromonas Klebsiella Micrococcus Proteus Providencia Pseudomonadaceae Pseudomonas Shewanella Vibrio 
+blaPER-1_T.1,blaPER,betalactams,Class_A_betalactamases,PER,blaPER-1_T,Acinetobacter Klebsiella Morganella Proteus Providencia Pseudomonadaceae Pseudomonas Shewanella Vibrio 
+blaPER-1_T.2,blaPER,betalactams,Class_A_betalactamases,PER,blaPER-1_T,Acinetobacter Ectopseudomonas Klebsiella Proteus Providencia Pseudomonadaceae Pseudomonas Shewanella Vibrio 
+blaPER-1_T.3,blaPER,betalactams,Class_A_betalactamases,PER,blaPER-1_T,Acinetobacter Aeromonas Klebsiella Proteus Providencia Pseudomonadaceae Pseudomonas Raoultella Shewanella Vibrio 
+blaPER-1_T.4,blaPER,betalactams,Class_A_betalactamases,PER,blaPER-1_T,Acinetobacter Aeromonas Klebsiella Proteus Providencia Pseudomonadaceae Pseudomonas Shewanella Stenotrophomonas Vibrio bacterium mixed 
+blaPER-2_T,blaPER-2/14,betalactams,Class_A_betalactamases,PER,blaPER-2_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Providencia Raoultella Rheinheimera Salmonella
+blaPER-2_T.1,blaPER-2/14 ,betalactams,Class_A_betalactamases,PER,blaPER-2_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Providencia Raoultella Rheinheimera Salmonella
+blaPER-2_T.2,blaPER-2/14 ,betalactams,Class_A_betalactamases,PER,blaPER-2_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Providencia Raoultella Rheinheimera Salmonella
+blaPER-6,blaPER-6,betalactams,Class_A_betalactamases,PER,blaPER-6,Aeromonas Rheinheimera
+blaPME_T,blaPME-1,betalactams,Class_A_betalactamases,PME,blaPME_T,Aeromonas Alcaligenes Burkholderia Citrobacter Morganella Pseudomonas Stenotrophomonas
+blaPME_T.1,blaPME-1,betalactams,Class_A_betalactamases,PME,blaPME_T,Aeromonas Alcaligenes Burkholderia Citrobacter Morganella Pseudomonas Stenotrophomonas
+blaPME_T.2,blaPME-1,betalactams,Class_A_betalactamases,PME,blaPME_T,Aeromonas Alcaligenes Burkholderia Citrobacter Morganella Pseudomonas Stenotrophomonas
+blaPME_T.3,blaPME-1,betalactams,Class_A_betalactamases,PME,blaPME_T,Aeromonas Alcaligenes Burkholderia Citrobacter Morganella Pseudomonas Stenotrophomonas
+blaPSE-1_or_CARB-2_T,blaCARB,betalactams,Class_A_betalactamases,CARB,blaPSE-1_or_CARB-2_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Enterobacter Escherichia Klebsiella Morganella Oceanimonas Proteus Providencia Pseudomonas Salmonella Shewanella Vibrio
+blaPSE-1_or_CARB-2_T.1,blaCARB,betalactams,Class_A_betalactamases,CARB,blaPSE-1_or_CARB-2_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Enterobacter Escherichia Klebsiella Morganella Oceanimonas Proteus Pseudomonas Salmonella Shewanella Vibrio
+blaPSE-1_or_CARB-2_T.2,blaCARB,betalactams,Class_A_betalactamases,CARB,blaPSE-1_or_CARB-2_T,Achromobacter Acinetobacter Aeromonas Alcaligenes Enterobacter Escherichia Klebsiella Morganella Oceanimonas Proteus Pseudomonas Salmonella Shewanella Vibrio
+blaPSE-1_or_CARB-2_T.3,blaCARB,betalactams,Class_A_betalactamases,CARB,blaPSE-1_or_CARB-2_T,Achromobacter Acinetobacter Alcaligenes Comamonas Enterobacter Escherichia Klebsiella Morganella Oceanimonas Proteus Providencia Pseudomonas Salmonella Shewanella Vibrio
+blaRAHN_T,blaRAHN,betalactams,Class_A_betalactamases,RAHN,blaRAHN_T,Rahnella 
+blaRAHN_T.1,blaRAHN,betalactams,Class_A_betalactamases,RAHN,blaRAHN_T,Rahnella
+blaRAHN_T.2,blaRAHN,betalactams,Class_A_betalactamases,RAHN,blaRAHN_T,Rahnella 
+blaRAHN_T.3,blaRAHN,betalactams,Class_A_betalactamases,RAHN,blaRAHN_T,Rahnella
+blaROB_T,blaROB,betalactams,Class_A_betalactamases,ROB,blaROB_T,Actinobacillus Bergeyella Bibersteinia Escherichia Glaesserella Haemophilus Lysinibacillus Mannheimia Moraxella Neisseria Pasteurella Pasteurellaceae Salmonella Wielerella [Pasteurella] 
+blaROB_T.1,blaROB,betalactams,Class_A_betalactamases,ROB,blaROB_T,Actinobacillus Bergeyella Bibersteinia Escherichia Glaesserella Haemophilus Lysinibacillus Mannheimia Moraxella Neisseria Pasteurella Pasteurellaceae Salmonella Wielerella [Pasteurella] 
+blaROB_T.2,blaROB,betalactams,Class_A_betalactamases,ROB,blaROB_T,Actinobacillus Bergeyella Bibersteinia Escherichia Glaesserella Haemophilus Lysinibacillus Mannheimia Moraxella Neisseria Pasteurella Pasteurellaceae Salmonella Wielerella [Pasteurella] 
+blaSCO_T,blaSCO-1,betalactams,Class_A_betalactamases,SCO,blaSCO_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shigella Vibrio 
+blaSCO_T.1,blaSCO-1,betalactams,Class_A_betalactamases,SCO,blaSCO_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shigella Vibrio 
+blaSCO_T.2,blaSCO-1,betalactams,Class_A_betalactamases,SCO,blaSCO_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shigella Vibrio 
+blaSFC_T,blaSFC,betalactams,Class_A_betalactamases,SFC,blaSFC_T,Serratia
+blaSFH-1_T,blaSFH-1,betalactams,Class_B_betalactamases,SFH,blaSFH-1_T,Serratia
+blaSFH-1_T.1,blaSFH-1,betalactams,Class_B_betalactamases,SFH,blaSFH-1_T,Serratia
+blaSFH-1_T.2,blaSFH-1,betalactams,Class_B_betalactamases,SFH,blaSFH-1_T,Serratia
+blaSFO_T,blaSFO,betalactams,Class_A_betalactamases,SFO,blaSFO_T,Aeromonas Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Leclercia Providencia Salmonella Serratia
+blaSFO_T.1,blaSFO,betalactams,Class_A_betalactamases,SFO,blaSFO_T,Aeromonas Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Leclercia Providencia Salmonella 
+blaSHV-1_or_PIT_T,blaSHV,betalactams,Class_A_betalactamases,SHV,blaSHV-1_or_PIT_T,Acinetobacter Atlantibacter Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Pluralibacter Providencia Pseudomonas Salmonella Serratia Staphylococcus
+blaSHV-1_or_PIT_T.1,blaSHV,betalactams,Class_A_betalactamases,SHV,blaSHV-1_or_PIT_T,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Providencia Pseudomonas Salmonella Serratia Staphylococcus
+blaSHV-16_NG,blaSHV-16,betalactams,Class_A_betalactamases,SHV,blaSHV-16_NG,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Morganella Salmonella
+blaSHV-203_NG,blaSHV,betalactams,Class_A_betalactamases,SHV,blaSHV-203_NG,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Providencia Pseudomonas Salmonella Serratia Staphylococcus
+blaSHV-242_NG,blaSHV,betalactams,Class_A_betalactamases,SHV,blaSHV-242_NG,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pluralibacter Providencia Pseudomonas Salmonella Serratia Staphylococcus
+blaSIM-1_T,blaSIM-1/2,betalactams,Class_B_betalactamases,SIM,blaSIM-1_T,Acinetobacter Enterobacter Klebsiella Pseudomonas
+blaSIM-1_T.1,blaSIM-1/2,betalactams,Class_B_betalactamases,SIM,blaSIM-1_T,Acinetobacter Enterobacter Klebsiella Pseudomonas
+blaSME_T,blaSME,betalactams,Class_A_betalactamases,SME,blaSME_T,Serratia
+blaSME_T.1,blaSME,betalactams,Class_A_betalactamases,SME,blaSME_T,Pseudomonas Serratia
+blaSME_T.2,blaSME,betalactams,Class_A_betalactamases,SME,blaSME_T,Pseudomonas Serratia
+blaSME_T.3,blaSME,betalactams,Class_A_betalactamases,SME,blaSME_T,Serratia
+blaSME_T.4,blaSME,betalactams,Class_A_betalactamases,SME,blaSME_T,Serratia
+blaSPM-1_T,blaSPM-1,betalactams,Class_B_betalactamases,SPM,blaSPM-1_T,Acinetobacter Pseudomonas
+blaSPM-1_T.1,blaSPM-1,betalactams,Class_B_betalactamases,SPM,blaSPM-1_T,Acinetobacter Pseudomonas
+blaTEM-1_T,blaTEM,betalactams,Class_A_betalactamases,TEM,blaTEM-1_T,Acinetobacter Aeromonas Bacillus Burkholderia Campylobacter Citrobacter Clostridioides Clostridium Cronobacter Edwardsiella Elizabethkingia Enterobacter Enterococcus Escherichia Haemophilus Klebsiella Kluyvera_intermedia Listeria Morganella Mycobacterium Neisseria Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Streptococcus Vibrio Yersinia
+blaTEM-1_T.1,blaTEM,betalactams,Class_A_betalactamases,TEM,blaTEM-1_T,Acinetobacter Aeromonas Bacillus Burkholderia Campylobacter Citrobacter Clostridioides Clostridium Cronobacter Edwardsiella Elizabethkingia Enterobacter Enterococcus Escherichia Haemophilus Klebsiella Kluyvera_intermedia Listeria Morganella Mycobacterium Neisseria Pluralibacter Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Streptococcus Vibrio Yersinia
+blaTEM-1_T.2,blaTEM,betalactams,Class_A_betalactamases,TEM,blaTEM-1_T,Acinetobacter Aeromonas Bacillus Burkholderia Campylobacter Citrobacter Clostridioides Clostridium Cronobacter Edwardsiella Elizabethkingia Enterobacter Enterococcus Escherichia Gallibacterium Haemophilus Klebsiella Kluyvera_intermedia Listeria Morganella Mycobacterium Neisseria Pluralibacter Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Staphylococcus Streptococcus Vibrio Yersinia
+blaTLA-1_T,blaTLA-1,betalactams,Class_A_betalactamases,TLA,blaTLA-1_T,Enterobacter Escherichia Serratia 
+blaTLA-1_T.1,blaTLA-1,betalactams,Class_A_betalactamases,TLA,blaTLA-1_T,Enterobacter Escherichia Serratia 
+blaTLA-1_T.2,blaTLA-1/3,betalactams,Class_A_betalactamases,TLA,blaTLA-1_T,Enterobacter Escherichia Serratia 
+blaTLA-1_T.3,blaTLA-1,betalactams,Class_A_betalactamases,TLA,blaTLA-1_T,Enterobacter Escherichia Klebsiella Serratia
+blaTMB_T,blaTMB-1/2,betalactams,Class_B_betalactamases,TMB,blaTMB_T,Achromobacter Acinetobacter Enterobacter
+blaTMB_T.1,blaTMB-1/2,betalactams,Class_B_betalactamases,TMB,blaTMB_T,Achromobacter Acinetobacter Enterobacter
+blaTUS_T,blaTUS-1,betalactams,Class_B_betalactamases,TUS,blaTUS_T,Myroides
+blaTUS_T.1,blaTUS-1,betalactams,Class_B_betalactamases,TUS,blaTUS_T,Myroides
+blaVEB-1_T,blaVEB,betalactams,Class_A_betalactamases,VEB,blaVEB-1_T,Acinetobacter Aeromonas Aliarcobacter Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Morganella Pasteurella Proteus Providencia Pseudomonas Salmonella Shewanella Vibrio Wohlfahrtiimonas bacterium 
+blaVEB-1_T.1,blaVEB,betalactams,Class_A_betalactamases,VEB,blaVEB-1_T,Acinetobacter Aeromonas Aliarcobacter Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Morganella Providencia Pseudomonas Salmonella Shewanella Vibrio Wohlfahrtiimonas bacterium 
+blaVEB-1_T.2,blaVEB,betalactams,Class_A_betalactamases,VEB,blaVEB-1_T,Acinetobacter Aeromonas Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Vibrio Wohlfahrtiimonas 
+blaVIM-2_T,blaVIM,betalactams,Class_B_betalactamases,VIM,blaVIM-2_T,Acinetobacter Citrobacter Ectopseudomonas Enterobacter Escherichia Klebsiella Morganella Providencia Pseudomonadaceae Pseudomonas Serratia
+blaVIM-2_T.1,blaVIM,betalactams,Class_B_betalactamases,VIM,blaVIM-2_T,Acinetobacter Citrobacter Ectopseudomonas Enterobacter Escherichia Klebsiella Morganella Providencia Pseudomonadaceae Pseudomonas Serratia
+blaVIM-7_T,blaVIM-7/61/69,betalactams,Class_B_betalactamases,VIM,blaVIM-7_T,Pseudomonas
+blaVIM-7_T.1,blaVIM-7/61/69,betalactams,Class_B_betalactamases,VIM,blaVIM-7_T,Pseudomonas
+blaVIM-7_T.2,blaVIM-7/61/69,betalactams,Class_B_betalactamases,VIM,blaVIM-7_T,Pseudomonas
+blaZ_or_PC1_T.1,blaZ,betalactams,Class_A_betalactamases,BLAZ,blaZ_T,Acinetobacter Bacillus Campylobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Listeria Mycobacterium Neisseria Providencia Pseudomonas Salmonella Serratia Staphylococcus Streptococcus Vibrio
+blaZ_T,blaZ,betalactams,Class_A_betalactamases,BLAZ,blaZ_T,Acinetobacter Bacillus Campylobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Listeria Mycobacterium Neisseria Providencia Pseudomonas Salmonella Serratia Staphylococcus Streptococcus Vibrio
+blaZ_T.1,blaZ,betalactams,Class_A_betalactamases,BLAZ,blaZ_T,Acinetobacter Bacillus Campylobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Listeria Mycobacterium Neisseria Providencia Pseudomonas Salmonella Serratia Staphylococcus Streptococcus Vibrio
+blaZ_T.2,blaZ,betalactams,Class_A_betalactamases,BLAZ,blaZ_T,Acinetobacter Bacillus Campylobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Listeria Mycobacterium NA Neisseria Providencia Pseudomonas Salmonella Serratia Staphylococcus Streptococcus Vibrio
+bleMBL_NT,ble-MBL,Glycopeptides,Bleomycin_resistance_protein,BRP,bleMBL_NT,Acinetobacter Aeromonas Bordetella Citrobacter Comamonas Enterobacter Escherichia Klebsiella Leclercia Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shigella Stenotrophomonas Vibrio
+carA_NT,car(A),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,CARA,carA_NT,Streptomyces
+cat_NT,catA4,Phenicol,Chloramphenicol_acetyltransferases,CATA,cat_NT,Proteus
+cat_pSCS5_NT,catA8,Phenicol,Chloramphenicol_acetyltransferases,CATA,cat_pSCS5_NT,Enterococcus Glaesserella Lactobacillus Lactococcus Listeria Staphylococcus Streptococcus 
+cat_pSCS5_NT.1,catA8,Phenicol,Chloramphenicol_acetyltransferases,CATA,cat_pSCS5_NT,Enterococcus Glaesserella Lactobacillus Lactococcus Ligilactobacillus Listeria Staphylococcus Streptococcus
+cat_pSCS7_NT,catA8,Phenicol,Chloramphenicol_acetyltransferases,CATA,cat_pSCS7_NT,Abyssicoccus Enterococcus Glaesserella Lactobacillus Lactococcus Ligilactobacillus Listeria Staphylococcus Streptococcus
+cat_pSCS7_NT.1,catA8,Phenicol,Chloramphenicol_acetyltransferases,CATA,cat_pSCS7_NT,Abyssicoccus Enterococcus Glaesserella Lactobacillus Lactococcus Listeria Staphylococcus Streptococcus 
+cat.C.coli_NT,catA13,Phenicol,Chloramphenicol_acetyltransferases,CAT,cat.C.coli_NT,Aeromonas Campylobacter Clostridioides Clostridium Enterococcus Faecalibacterium Klebsiella Mannheimia Peptostreptococcus Salmonella 
+catA1_NT,catA1,Phenicol,Chloramphenicol_acetyltransferases,CATA,catA1_NT,Acinetobacter Aeromonas Alcaligenes Bacillus Burkholderia Chlamydia Citrobacter Clostridioides Comamonas Cronobacter Cupriavidus Edwardsiella Enterobacter Enterococcus Escherichia Helicobacter Klebsiella Leclercia Legionella Listeria Morganella Neisseria Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Shigella Staphylococcus Streptococcus Vibrio Yersinia
+catA2_NT,catA2,Phenicol,Chloramphenicol_acetyltransferases,CATA,catA2_NT,Acinetobacter Aeromonas Citrobacter Cronobacter Edwardsiella Enterobacter Escherichia Haemophilus Klebsiella Kluyvera_intermedia Legionella Morganella Neisseria Pasteurella Photobacterium Pluralibacter Providencia Pseudomonas Rheinheimera Salmonella Serratia Shewanella Staphylococcus Vibrio
+catA3_NT,catA3,Phenicol,Chloramphenicol_acetyltransferases,CATA,catA3_NT,Actinobacillus Aeromonas Bibersteinia Edwardsiella Escherichia Gallibacterium Glaesserella Klebsiella Mannheimia Pasteurella Proteus Providencia Pseudomonas Salmonella Serratia Vibrio [Pasteurella] 
+catB_NT,catB,Phenicol,Chloramphenicol_acetyltransferases,CAT,catB_NT,Clostridium Parabacteroides
+catB1_NT,catB1,Phenicol,Chloramphenicol_acetyltransferases,CAT,catB1_NT,Agrobacterium
+catB2_NT,catB2,Phenicol,Chloramphenicol_acetyltransferases,CAT,catB2_NT,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Leclercia Morganella Neisseria Nitratidesulfovibrio Pasteurella Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Staphylococcus Vibrio Yersinia 
+catB7_NT,catB7,Phenicol,Chloramphenicol_acetyltransferases,CAT,catB7_NT,Escherichia Klebsiella Morganella Pseudomonas Staphylococcus
+catB7_NT.1,catB7,Phenicol,Chloramphenicol_acetyltransferases,CAT,catB7_NT,Escherichia Klebsiella Morganella Pseudomonas Staphylococcus
+catB9_NT,catB9,Phenicol,Chloramphenicol_acetyltransferases,CATB,catB9_NT,Escherichia Vibrio
+catP_NT,catP/D,Phenicol,Chloramphenicol_acetyltransferases,CATP,catP_NT,Avibacterium Clostridioides Clostridium Faecalibacterium Haemophilus Intestinibacillus Neisseria Paenibacillus Pasteurella Streptococcus
+catPC221_NT,catA7,Phenicol,Chloramphenicol_acetyltransferases,CATA,catPC221_NT,Brevibacillus Enterococcus Gallibacterium Klebsiella Mammaliicoccus Staphylococcus Streptococcus Vagococcus
+catQ_NT,catA16,Phenicol,Chloramphenicol_acetyltransferases,CAT,catQ_NT,Anaerocolumna Clostridioides Clostridium Pseudomonas Streptococcus 
+catS_NT,catS,Phenicol,Chloramphenicol_acetyltransferases,CATS,catS_NT,Anaerostipes Enterocloster Faecalibacterium Haemophilus Neisseria Parvimonas Streptococcus [Haemophilus] 
+catS_NT.1,catS,Phenicol,Chloramphenicol_acetyltransferases,CATS,catS_NT,Anaerostipes Enterocloster Faecalibacterium Haemophilus Neisseria Parvimonas Streptococcus [Haemophilus] 
+catTC_NT,catA9/cat-TC,Phenicol,Chloramphenicol_acetyltransferases,CATA,catTC_NT, Bacillus Campylobacter Enterococcus Escherichia Jeotgalibaca Latilactobacillus Limosilactobacillus Staphylococcus Streptococcus Virgibacillus
+cepA_NT,cepA,betalactams,Class_A_betalactamases,CEPA,cepA_NT,Bacteroides Escherichia 
+cfr_NT,cfr,Multi-drug_resistance,MDR_23S_ribosomal_RNA_methyltransferase,CFRA,cfr_NT,Bacillus Citrobacter Clostridioides Clostridium Enterococcus Escherichia Klebsiella Leclercia Lysinibacillus Mammaliicoccus Morganella Pasteurella Phocicoccus Proteus Providencia Salmonella Staphylococcus Streptococcus Vibrio
+cfxA_NT,cfxA,betalactams,Class_A_betalactamases,CFX,cfxA_NT,Bacteroidales Bacteroides Butyricimonas Campylobacter Capnocytophaga Clostridioides Elizabethkingia Escherichia Hoylesella Odoribacteraceae Parabacteroides Phocaeicola Porphyromonas Prevotella Salmonella Segatella Veillonella 
+cfxA6_NT,cfxA6,betalactams,Class_A_betalactamases,CFX,cfxA6_NT,Bacteroides Prevotella Segatella 
+cmeB_NT,cmeB,Drug_and_biocide_and_metal_resistance,rug_and_biocide_and_metal_RND_efflux_pumps,CMEB,cmeB_NT,Campylobacter
+cmlA1_NT,cmlR,Phenicol,Phenicol_resistance_MFS_efflux_pumps,CMLR,cmlA1_NT,Streptomyces
+cmlv_NT,cmlv,Phenicol,Chloramphenicol_phosphotransferase,CMLV,cmlv_NT,Streptomyces
+cmlv_NT.1,cmlv,Phenicol,Chloramphenicol_phosphotransferase,CMLV,cmlv_NT,Streptomyces
+cmr_or_cmx_NT,cmx,Phenicol,Phenicol_resistance_MFS_efflux_pumps,CMX,cmr_or_cmx_NT,Achromobacter Acinetobacter Aeromonas Arthrobacter Bifidobacterium Burkholderia Cellulosimicrobium Citricoccus Comamonas Corynebacterium Deinococcus Dermabacter Enterobacter Escherichia Glutamicibacter Klebsiella Laribacter Microbacterium Micrococcus Propionibacterium Proteus Providencia Pseudomonas Salmonella Schaalia Serratia Shewanella Staphylococcus Stenotrophomonas Streptococcus Trueperella Vibrio 
+cmr.C.glutamicum_NT,cmr.C.glutamicum,Multi-drug_resistance,Multi-drug_MFS_efflux_pumps,CMR,cmr.C.glutamicum_NT,Corynebacterium [Brevibacterium]
+cmr.E.coli_NT,mdfA,Drug_and_biocide_resistance,Drug_and_biocide_MFS_efflux_pumps,MDFA,cmr.E.coli_NT,Citrobacter Enterobacter Escherichia Klebsiella Salmonella Shigella
+cmr.E.coli_NT.1,mdfA,Drug_and_biocide_resistance,Drug_and_biocide_MFS_efflux_pumps,MDFA,cmr.E.coli_NT,Citrobacter Enterobacter Escherichia Klebsiella Salmonella Shigella
+cmrA_NT,cmrA,Phenicol,Phenicol_resistance_MFS_efflux_pumps,CMRA,cmrA_NT,Rhodococcoides Rhodococcus
+cphA_NT,cphA,betalactams,Class_B_betalactamases,CPHA,cphA_NT,Aeromonas Vibrio
+cumA_NT,hugA,betalactams,Class_A_betalactamases,HUGA,cumA_NT,Escherichia Proteus Providencia Vibrio
+cumA_NT.1,hugA,betalactams,Class_A_betalactamases,HUGA,cumA_NT,Escherichia Proteus Providencia Vibrio
+dfrA_NT,dfrS1,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA_NT,Corynebacterium Enterococcus Serratia Staphylococcus Streptococcus
+dfrA_NT.1,dfrA25,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA_NT,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Proteus Providencia Pseudomonas Salmonella Serratia 
+dfrA10_NT,dfrA10,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA10_NT,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Vibrio
+dfrA13_NT,dfrA13/21,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA13_NT,Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Pseudomonas Salmonella Serratia 
+dfrA14_NT,dfrA14,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA14_NT,Acinetobacter Aeromonas Burkholderia Citrobacter Cronobacter Edwardsiella Enterobacter Escherichia Histophilus Klebsiella Kluyvera_intermedia Leclercia Mannheimia Morganella Oceanimonas Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Trabulsiella Vibrio Yersinia
+dfrA15_NT,dfrA15,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA15_NT,Acinetobacter Aeromonas Alcaligenes Campylobacter Citrobacter Corynebacterium Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Proteus Providencia Pseudoalteromonas Pseudomonas Salmonella Shewanella Shigella Stenotrophomonas Vibrio 
+dfrA16_NT,dfrA16,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA16_NT,Acinetobacter Actinobacillus Aeromonas Citrobacter Comamonas Corynebacterium Delftia Enterobacter Escherichia Klebsiella Kluyvera_intermedia Kocuria Microbacterium Mixta Morganella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Staphylococcus Thauera Vibrio 
+dfrA17_NT,dfrA17,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA17_NT,Acinetobacter Aeromonas Alcaligenes Burkholderia Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Laribacter Listeria Morganella Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Staphylococcus Vibrio Yersinia 
+dfrA18_NT,dfrA18,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA18_NT,Klebsiella Vibrio 
+dfrA19_NT,dfrA19,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA19_NT,Acinetobacter Aeromonas Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Leclercia Morganella Pluralibacter Proteus Providencia Pseudescherichia Pseudomonas Raoultella Salmonella Serratia Vibrio
+dfrA20_NT,dfrA20,Trimethoprim,Dihydrofolate_reductase,DFRA ,dfrA20_NT,Acinetobacter Klebsiella Pasteurella Providencia
+dfrA21_NT,dfrA,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA21_NT,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Morganella Providencia Pseudomonas Salmonella Serratia Staphylococcus Vibrio 
+dfrA21_NT.1,dfrA21,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA21_NT,Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Kluyvera_intermedia Providencia Pseudomonas Salmonella Serratia Shewanella 
+dfrA23_NT,dfrA,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA23_NT,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Morganella Providencia Pseudomonas Salmonella Serratia Staphylococcus Vibrio 
+dfrA24_NT,dfrA24,Trimethoprim,Dihydrofolate_reductase,DFRA ,dfrA24_NT,Escherichia Morganella
+dfrA26_NT,dfrA26,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA26_NT,Citrobacter Enterobacter Escherichia Klebsiella
+dfrA27_NT,dfrA27/28,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA27_NT,Acinetobacter Aeromonas Citrobacter Comamonas Edwardsiella Enterobacter Escherichia Klebsiella Laribacter Leclercia Morganella Photobacterium Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Vibrio
+dfrA29_NT,dfrA29,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA29_NT,Citrobacter Enterobacter Escherichia Klebsiella Salmonella 
+dfrA3_NT,dfrA3,Trimethoprim,Dihydrofolate_reductase,DFRA ,dfrA3_NT,Escherichia
+dfrA30_NT,dfrA30,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA30_NT,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Morganella Providencia Pseudomonas Salmonella Serratia Vibrio bacterium
+dfrA32_NT,dfrA32,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA32_NT,Acinetobacter Actinobacillus Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Laribacter Morganella Pasteurella Proteus Providencia Pseudoalteromonas Pseudomonas Salmonella Shinella Vibrio 
+dfrA3b_NT,dfrA3b,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA3b_NT,Citrobacter Escherichia Klebsiella Proteus Shigella
+dfrA47_NG,dfrA47,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA47_NG,Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Kluyvera Pseudomonas Salmonella Serratia Vibrio 
+dfrA5_NT,dfrA5,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA5_NT,Acinetobacter Aeromonas Citrobacter Comamonas Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Shigella Stenotrophomonas Vibrio 
+dfrA6_NT,dfrA6,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA6_NT,Acinetobacter Actinobacillus Escherichia Klebsiella Melaminivora Proteus Providencia Pseudomonas Rheinheimera Stutzerimonas Vibrio 
+dfrA7_NT,dfrA7,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA7_NT,Acinetobacter Aeromonas Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Morganella Providencia Pseudomonas Salmonella Serratia Shigella Vibrio
+dfrA8_NT,dfrA8,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA8_NT,Citrobacter Enterobacter Escherichia Klebsiella Morganella Providencia Pseudomonas Salmonella Serratia Shewanella Shigella Staphylococcus Vibrio 
+dfrA9_NT,dfrA9,Trimethoprim,Dihydrofolate_reductase,DFRA,dfrA9_NT,Escherichia
+dfrB_NT,dfrB,Trimethoprim,Dihydrofolate_reductase,DFRB,dfrB_NT,Aeromonas Enterobacter Escherichia Klebsiella Methylorubrum Pseudomonas
+dfrB_NT.1,dfrB,Trimethoprim,Dihydrofolate_reductase,DFRB,dfrB_NT,Aeromonas Enterobacter Escherichia Klebsiella Methylorubrum Pseudomonas
+dfrD_NT,dfrD,Trimethoprim,Dihydrofolate_reductase,DFRD,dfrD_NT,Enterococcus Listeria Staphylococcus Streptococcus
+dfrG_NT,dfrG,Trimethoprim,Dihydrofolate_reductase,DFRG,dfrG_NT,Acinetobacter Campylobacter Enterobacter Enterococcus Escherichia Jeotgalibaca Klebsiella Lactococcus Ligilactobacillus Listeria Salmonella Staphylococcus Streptococcus
+dfrK_NT,dfrK,Trimethoprim,Dihydrofolate_reductase,DFRK,dfrK_NT,Enterococcus Jeotgalibaca Macrococcoides Mammaliicoccus Staphylococcus Streptococcus
+emrD_NT,vctP,Drug_and_biocide_resistance,Drug_and_biocide_MFS_efflux_pumps,VCTP,emrD_NT,Vibrio
+eptA_NT,eptA,Cationic_antimicrobial_peptides,Lipid_A_modification,EPTA,eptA_NT,Acinetobacter Escherichia Klebsiella Shigella
+ereA_NT,ere(A),MLS,Macrolide_esterases,EREA,ereA_NT,Achromobacter Acinetobacter Actinobacillus Aeromonas Citrobacter Comamonas Cronobacter Deinococcus Enterobacter Escherichia Helicobacter Klebsiella Kluyvera_intermedia Laribacter Morganella Pandoraea Pasteurella Pluralibacter Proteus Providencia Pseudoalteromonas Pseudomonas Salmonella Serratia Shinella Stenotrophomonas Vibrio Vogesella 
+ereA2_NT,ere(A2)/(A),MLS,Macrolide_esterases,EREA,ereA2_NT,Acinetobacter Aeromonas Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pasteurella Pluralibacter Proteus Providencia Pseudescherichia Pseudomonas Rhodospirillales Salmonella Serratia Vibrio
+ereB_NT,ere(B),MLS,Macrolide_esterases,EREB,ereB_NT,Acinetobacter Enterobacter Escherichia Klebsiella Morganella Providencia
+erm30_or_pikR1_NT,erm(30),MLS,23S_rRNA_methyltransferases,ERM30,erm30_or_pikR1_NT,Streptomyces
+erm31_NT,erm(31),MLS,23S_rRNA_methyltransferases,ERM,erm31_NT,Streptomyces
+erm32_or_tlrB_NT,erm(32),MLS,23S_rRNA_methyltransferases,ERM32,erm32_or_tlrB_NT,Streptomyces
+erm33_NT,erm(33),MLS,23S_rRNA_methyltransferases,ERMA,erm33_NT,Bacillus Ligilactobacillus Limosilactobacillus Mammaliicoccus Oceanobacillus Pelagerythrobacter Staphylococcus Vagococcus 
+erm34_NT,erm(34),MLS,23S_rRNA_methyltransferases,ERM,erm34_NT,Alkalihalobacillus Bacillus Shouchella
+erm34_NT.1,erm(34),MLS,23S_rRNA_methyltransferases,ERM,erm34_NT,Alkalihalobacillus Bacillus Shouchella
+erm35_NT,erm(35),MLS,23S_rRNA_methyltransferases,ERM,erm35_NT,Bacteroides Parabacteroides Phocaeicola Riemerella
+erm36_or_ermML_NT,erm(36),MLS,23S_rRNA_methyltransferases,ERM,erm36_or_ermML_NT,Micrococcus
+erm37_NT,erm(37),MLS,23S_rRNA_methyltransferases,ERM37,erm37_NT,Mycobacterium Stenotrophomonas
+erm39_NT,erm(39),MLS,23S_rRNA_methyltransferases,ERM,erm39_NT,Mycobacterium Mycolicibacterium
+erm40_NT,erm(40),MLS,23S_rRNA_methyltransferases,ERM,erm40_NT,Mycobacterium Mycolicibacterium
+erm41_NT,erm(41),MLS,23S_rRNA_methyltransferases,ERM,erm41_NT,Mycobacterium Mycobacteroides
+erm42_NT,erm(42),MLS,23S_rRNA_methyltransferases,ERM42,erm42_NT,Acinetobacter Actinobacillus Alcaligenes Citrobacter Enterobacter Escherichia Histophilus Klebsiella Mannheimia Morganella Oceanimonas Pasteurella Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Shigella Vibrio
+erm43_NT,erm(43),MLS,23S_rRNA_methyltransferases,ERM,erm43_NT,Mammaliicoccus Staphylococcus
+erm43_NT.1,erm(43),MLS,23S_rRNA_methyltransferases,ERM,erm43_NT,Mammaliicoccus Staphylococcus
+ermA_or_ermTR_NT,erm(A),MLS,23S_rRNA_methyltransferases,ERMA,ermA_or_ermTR_NT,Acinetobacter Aerococcus Anaerococcus Bacillus Campylobacter Citrobacter Clostridioides Clostridium Enterococcus Escherichia Ezakiella Fenollaria Finegoldia Helcococcus Klebsiella Lactobacillus Listeria Nocardia Parvimonas Pasteurella Peptoniphilus Providencia Staphylococcus Streptococcus
+ermA_or_ermTR_NT.1,erm(A),MLS,23S_rRNA_methyltransferases,ERMA,ermA_or_ermTR_NT,Acinetobacter Aerococcus Anaerococcus Bacillus Campylobacter Citrobacter Clostridioides Clostridium Enterococcus Escherichia Ezakiella Fenollaria Finegoldia Helcococcus Klebsiella Lactobacillus Listeria Parvimonas Pasteurella Peptoniphilus Providencia Staphylococcus Streptococcus
+ermB_NT,erm(B),MLS,23S_rRNA_methyltransferases,ERMB,ermB_NT,Acinetobacter Bacillus Bacteroides Campylobacter Citrobacter Clostridiales Clostridioides Clostridium Edwardsiella Enterobacter Enterococcus Escherichia Faecalibacterium Faecalimonas Haemophilus Klebsiella Listeria Lysinibacillus Mammaliicoccus Morganella Mycobacterium Neisseria Providencia Pseudomonas Salmonella Serratia Solobacterium Staphylococcus Streptococcus Vagococcus Vibrio [Clostridium] [Ruminococcus]
+ermD_NT,erm(D),MLS,23S_rRNA_methyltransferases,ERMD,ermD_NT,Bacillus
+ermE_NT,erm(E),MLS,23S_rRNA_methyltransferases,ERME,ermE_NT,Saccharopolyspora
+ermF_NT,erm(F),MLS,23S_rRNA_methyltransferases,ERMF,ermF_NT,Alistipes Bacteroides Barnesiella Campylobacter Capnocytophaga Chryseobacterium Clostridioides Dysgonomonas Elizabethkingia Empedobacter Escherichia Fermentimonas Myroides Neisseria Parabacteroides Phocaeicola Prevotella Riemerella Salmonella Segatella Sphingobacterium 
+ermF_NT.1,erm(F),MLS,23S_rRNA_methyltransferases,ERMF,ermF_NT,Alistipes Bacteroides Barnesiella Campylobacter Clostridioides Dysgonomonas Elizabethkingia Escherichia Neisseria Ornithobacterium Parabacteroides Phocaeicola Prevotella Riemerella Salmonella Segatella 
+ermG_NT,erm(G),MLS,23S_rRNA_methyltransferases,ERMG,ermG_NT,Alistipes Bacillus Bacteroides Clostridioides Clostridium Coprobacter Enterococcus Escherichia Exiguobacterium Klebsiella Lacticaseibacillus Listeria Lysinibacillus Maliibacterium Oceanobacillus Phocaeicola Salmonella Segatella Streptococcus [Clostridium] 
+ermH_or_carB_NT,erm(H),MLS,23S_rRNA_methyltransferases,ERMH,ermH_or_carB_NT,Streptomyces
+ermN_NT,erm(N),MLS,23S_rRNA_methyltransferases,ERMN,ermN_NT,Streptomyces
+ermO_NT,erm(O),MLS,23S_rRNA_methyltransferases,ERMO,ermO_NT,Streptomyces
+ermO_NT.1,erm(O),MLS,23S_rRNA_methyltransferases,ERMO,ermO_NT,Streptomyces
+ermQ_NT,erm(Q),MLS,23S_rRNA_methyltransferases,ERMQ,ermQ_NT,Clostridioides Clostridium Intestinibacter Paeniclostridium Peptacetobacter Turicibacter
+ermR_NT,erm(R),MLS,23S_rRNA_methyltransferases,ERMR,ermR_NT,Aeromicrobium Arthrobacter
+ermR_NT.1,erm(R),MLS,23S_rRNA_methyltransferases,ERMR,ermR_NT,Aeromicrobium Arthrobacter
+ermSF_NT,erm(S),MLS,23S_rRNA_methyltransferases,ERMS,ermSF_NT,Streptomyces
+ermT_or_ermGT_NT,erm(T),MLS,23S_rRNA_methyltransferases,ERMR,ermT_or_ermGT_NT,Avibacterium Clostridioides Clostridium Enterococcus Erysipelothrix Escherichia Klebsiella Lactobacillus Ligilactobacillus Limosilactobacillus Listeria Mannheimia Moraxella Pasteurella Providencia Salmonella Staphylococcus Streptococcus 
+ermU_NT,erm(U),MLS,23S_rRNA_methyltransferases,ERMU,ermU_NT,Streptomyces
+ermU_or_lmrB_NT,ermU_or_lmrB,MLS,23S_rRNA_methyltransferases,ERMU,ermU_or_lmrB_NT,Corynebacterium [Brevibacterium]
+ermV_NT,erm(V),MLS,23S_rRNA_methyltransferases,ERMV,ermV_NT,Streptomyces
+ermW_or_myrB_NT,erm(W),MLS,23S_rRNA_methyltransferases,ERM,ermW_or_myrB_NT,Micromonospora
+ermX_or_ermCD_NT,erm(X),MLS,23S_rRNA_methyltransferases,ERMX,ermX_or_ermCD_NT,Acinetobacter Bifidobacterium Corynebacterium Cutibacterium Escherichia Gardnerella Mycobacterium Staphylococcus Streptococcus Trueperella Winkia
+ermY_or_ermGM_NT,erm(Y),MLS,23S_rRNA_methyltransferases,ERMB,ermY_or_ermGM_NT,Listeria Nosocomiicoccus Staphylococcus Vagococcus
+ermZ_or_srmD_NT,erm(Z),MLS,23S_rRNA_methyltransferases,ERM,ermZ_or_srmD_NT,Streptomyces
+farA_NT,fusB,Fusidic_acid,Ribosomal_zinc-binding_protein,FUSB,farA_NT,Clostridioides Listeria Staphylococcus
+femA_NT,femA,methicillin resistance,methicillin resistance factor,FEMA,femA_NT,Staphylococcus
+femA_NT.1,femA,methicillin resistance,methicillin resistance factor,FEMA,femA_NT,Staphylococcus
+femB_NT,femB,methicillin resistance,methicillin resistance factor,FEMB,femB_NT,Staphylococcus
+femB_NT.1,femB,methicillin resistance,methicillin resistance factor,FEMB,femB_NT,Staphylococcus
+fexA_NT,fexA,Drug_and_biocide_resistance,Drug_and_biocide_MFS_efflux_pumps,FEXA,fexA_NT,Bacillus Campylobacter Clostridium Enterococcus Escherichia Klebsiella Lactococcus Listeria Salmonella Staphylococcus Streptococcus Vagococcus
+floR_NT,floR,Fluoroquinolones,Phenicol_resistance_MFS_efflux_pumps,FLOR,floR_NT,Acinetobacter Aeromonas Brevundimonas Burkholderia Citrobacter Cronobacter Edwardsiella Elizabethkingia Enterobacter Escherichia Klebsiella Kluyvera_intermedia Listeria Mannheimia Morganella Pasteurella Photobacterium Proteus Providencia Pseudomonas Psychrobacter Riemerella Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Streptococcus Vibrio Yersinia 
+floR_NT.1,floR,Phenicol,Phenicol_resistance_MFS_efflux_pumps,FLOR,floR_NT,Acinetobacter Aeromonas Brucella Burkholderia Citrobacter Cronobacter Devosia Edwardsiella Elizabethkingia Enterobacter Escherichia Klebsiella Kluyvera_intermedia Listeria Mannheimia Morganella Paracoccus Pasteurella Photobacterium Porphyrobacter Proteus Providencia Pseudochrobactrum Pseudomonas Rhodobacteraceae Salmonella Serratia Shewanella Shigella Sphingomonas Staphylococcus Stenotrophomonas Streptococcus Stutzerimonas Vibrio Yersinia 
+fmrO_NT,fmrO,Aminoglycosides,16S_rRNA_methyltransferases,FMRO,fmrO_NT,Micromonospora
+folA_NT,folA,Diaminopyrimidine,dihydrofolate reductase,FOLA,folA_NT,Acinetobacter
+fosA_NT,fosA,Fosfomycin,Fosfomycin_thiol_transferases,FOSA,fosA_NT,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Kosakonia Listeria Pluralibacter Providencia Pseudomonas Salmonella Serratia Staphylococcus Stenotrophomonas Vibrio Yersinia
+fosA2_NT,fosA2,Fosfomycin,Fosfomycin_thiol_transferases,FOSA,fosA2_NT,Cronobacter Enterobacter Escherichia Klebsiella Providencia Salmonella
+fosX_NT,fosX,Fosfomycin,Fosfomycin_thiol_transferases,FOSX,fosX_NT,Clostridioides Clostridium Enterobacter Enterococcus Escherichia Klebsiella Listeria Morganella Pseudomonas Salmonella
+fusB_NT,fusB,Fusidic_acid,Ribosomal_zinc-binding_protein,FUSB,fusB_NT,Clostridioides Listeria Staphylococcus
+fusC_NT,fusC,Fusidic_acid,Ribosomal_zinc-binding_protein,FUSC,fusC_NT,Macrococcoides Macrococcus Staphylococcus
+grm_NT,grm,Aminoglycosides,16S_rRNA_methyltransferases,GRM,grm_NT,Micromonospora
+grmA_NT,grmA,Aminoglycosides,16S_rRNA_methyltransferases,GRM,grmA_NT,Micromonospora
+grmO_NT,grmO,Aminoglycosides,16S_rRNA_methyltransferases,GRM,grmO_NT,Micromonospora
+kmr_NT,kmr,Aminoglycosides,16S_rRNA_methyltransferases,KMR,kmr_NT,Streptomyces
+lmrA_NT,lmrA,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,LMRA,lmrA_NT,Streptomyces
+lmrC_NT,lmrC,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,LMRC,lmrC_NT,Streptomyces
+lnuA_or_linA_NT,lnu(A),MLS,Lincosamide_nucleotidyltransferases,LNUA,lnuA_or_linA_NT,Acinetobacter Bacillus Campylobacter Citrobacter Clostridioides Clostridium Enterococcus Escherichia Geobacillus Haemophilus Klebsiella Latilactobacillus Ligilactobacillus Limosilactobacillus Listeria Macrococcoides Mammaliicoccus Mycobacterium Neisseria Pediococcus Pseudomonas Salmonella Staphylococcus Streptococcus Streptomyces Vibrio
+lnuB_or_linB_NT,lnu(B),MLS,Lincosamide_nucleotidyltransferases,LNUB,lnuB_or_linB_NT,Campylobacter Clostridioides Clostridium Enterococcus Escherichia Klebsiella Ligilactobacillus Listeria Staphylococcus Streptococcus Vagococcus
+lnuC_NT,lnu(C),MLS,Lincosamide_nucleotidyltransferases,LNUC,lnuC_NT,Akkermansia Bifidobacterium Brachyspira Campylobacter Candidatus Cetobacterium Cloacibacillus Clostridioides Clostridium Enterococcus Escherichia Eubacteriales Eubacterium Fannyhessea Fusobacterium Glaesserella Lachnospiraceae Lactobacillus Lentisphaeria Ligilactobacillus Listeria Megamonas Megasphaera Phascolarctobacterium Salmonella Streptococcus Succiniclasticum Veillonella 
+lnuD_NT,lnu(D),MLS,Lincosamide_nucleotidyltransferases,LNUC,lnuD_NT,Listeria Streptococcus Sedimentibacter Enterococcus
+lnuD_NT.1,lnu(D),MLS,Lincosamide_nucleotidyltransferases,LNUC,lnuD_NT,Listeria Streptococcus Sedimentibacter Enterococcus 
+lnuF_or_linF_NT,lnu(F),MLS,Lincosamide_nucleotidyltransferases,LNUF,lnuF_or_linF_NT,Acinetobacter Citrobacter Deinococcus Enterobacter Enterococcus Escherichia Klebsiella Moellerella Morganella Nitratidesulfovibrio Proteus Providencia Pseudomonas Salmonella Yersinia 
+lnuG_or_linG_NT,lnu(F),MLS,Lincosamide_nucleotidyltransferases,LNUF,lnuG_or_linG_NT,Acinetobacter Citrobacter Enterobacter Enterococcus Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Rheinheimera Salmonella Serratia Yersinia
+lsaA_NT,lsa(A),MLS,MLS_resistance_ABC_efflux_pumps,LSA,lsaA_NT,Campylobacter Clostridioides Clostridium Enterococcus Escherichia Klebsiella Listeria Providencia Pseudomonas Salmonella Staphylococcus Streptococcus
+lsaA_NT.1,lsa(A),MLS,MLS_resistance_ABC_efflux_pumps,LSA,lsaA_NT,Campylobacter Clostridioides Clostridium Enterococcus Escherichia Klebsiella Listeria Providencia Pseudomonas Salmonella Staphylococcus Streptococcus
+lsaB_NT,lsa(B),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,LSAB,lsaB_NT,Enterococcus Lysinibacillus Mammaliicoccus Staphylococcus
+lsaC_NT,lsa(C),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,LSAC,lsaC_NT,Arcanobacterium Candidatus Cardiobacterium Eikenella Fusobacterium Gardnerella Gemella Lachnoanaerobaculum Lachnospiraceae Leptotrichia NA Neisseria Sneathia Staphylococcus Streptococcus Veillonella
+lsaE_NT,lsa(E),MLS,MLS_resistance_ABC_efflux_pumps,LSA,lsaE_NT,Campylobacter Clostridioides Clostridium Enterococcus Escherichia Klebsiella Ligilactobacillus Listeria Staphylococcus Streptococcus
+macA_NT,macA,MLS,Multi-drug_ABC_efflux_pumps,MACA,macA_NT,Escherichia Neisseria
+macA_NT.1,macA,MLS,Multi-drug_ABC_efflux_pumps,MACA,macA_NT,Escherichia Neisseria Shigella
+macA.Kp_NT,macA.Kp,MLS,Multi-drug_ABC_efflux_pumps,MACA,macA.Kp_NT,Klebsiella
+macA.Kp_NT.1,macA.Kp,MLS,Multi-drug_ABC_efflux_pumps,MACA,macA.Kp_NT,Klebsiella
+macB_NT,macB,MLS,Multi-drug_ABC_efflux_pumps,MACB,macB_NT,Escherichia Neisseria Shigella
+macB_NT.1,macB,MLS,Multi-drug_ABC_efflux_pumps,MACB,macB_NT,Escherichia Neisseria Shigella
+macB.Kp_NT,macB.Kp,MLS,Multi-drug_ABC_efflux_pumps,MACB,macB.Kp_NT,Klebsiella
+mdtA_NT,mdtA,Drug_and_biocide_and_metal_resistance,Drug_and_biocide_and_metal_RND_efflux_pumps,MDTA,mdtA_NT,Escherichia Lactococcus Shigella Streptococcus
+mdtA_NT.1,mdtA,Drug_and_biocide_and_metal_resistance,Drug_and_biocide_and_metal_RND_efflux_pumps,MDTA,mdtA_NT,Escherichia Lactococcus Shigella Streptococcus
+mecA_NT,mecA,betalactams,Penicillin_binding_protein,MECA,mecA_NT,Escherichia Klebsiella Listeria Mammaliicoccus Salmonella Staphylococcus Streptococcus
+mefA_NT,mef(A),MLS,MLS_resistance_MFS_efflux_pumps,MEFA,mefA_NT,Acidilutibacter Acidovorax Alistipes Anaerotignum Bacillus Bacteroidales Bacteroides Blautia Butyricimonas Candidatus Clostridioides Clostridium Enterococcus Escherichia Eubacterium Gemella Haemophilus Haloimpatiens Heyndrickxia Klebsiella Listeria Mediterraneibacter Neisseria Phocaeicola Proteiniborus Pseudomonas Roseburia Salmonella Streptococcus Turicibacter 
+mefB_NT,mef(B),MLS,MLS_resistance_MFS_efflux_pumps,MEFB,mefB_NT,Acetivibrio Avibacterium Campylobacter Citrobacter Escherichia Klebsiella Pasteurella Salmonella Shigella Yersinia
+mefE_NT,mef(A),MLS,MLS_resistance_MFS_efflux_pumps,MEFA,mefE_NT,Bacillus Clostridioides Clostridium Enterococcus Escherichia Gardnerella Haemophilus Klebsiella Lactobacillus Listeria NA Neisseria Pseudomonas Salmonella Streptococcus
+mgtA_or_gimA_NT,mgtA,MLS,Macrolide_glycosyltransferases,GIMA,mgtA_or_gimA_NT,Streptomyces
+mphA_NT,mph(A),MLS,Macrolide_phosphotransferases,MPHA,mphA_NT,Acinetobacter Aeromonas Citrobacter Cronobacter Edwardsiella Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Leclercia Listeria Morganella Oceanimonas Pluralibacter Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Streptococcus Vibrio Yersinia 
+mphB_NT,mph(B),MLS,Macrolide_phosphotransferases,MPHB,mphB_NT,Bacillus Citrobacter Clostridioides Clostridium Desemzia Enterobacter Enterococcus Escherichia Jeotgalibaca Klebsiella Kurthia Listeria Lysinibacillus Providencia Salmonella Sporosarcina Streptococcus Yersinia 
+mphC_NT,mph(C),MLS,Macrolide_phosphotransferases,MPHC,mphC_NT,Acinetobacter Clostridioides Enterococcus Escherichia Klebsiella Listeria Mycobacterium Neisseria Pseudomonas Staphylococcus Streptococcus Yersinia
+mphC_NT.1,mph(C),MLS,Macrolide_phosphotransferases,MPHC,mphC_NT,Acinetobacter Clostridioides Enterococcus Escherichia Klebsiella Listeria Mycobacterium Neisseria Pseudomonas Staphylococcus Streptococcus Yersinia
+mphD_NT,mph(D),MLS,Macrolide_phosphotransferases,MPHD,mphD_NT,Pseudomonas
+mphD_NT.1,mph(D),MLS,Macrolide_phosphotransferases,MPHD,mphD_NT,Pseudomonas
+mphE_NT,mph(E),MLS,Macrolide_phosphotransferases,MPHE,mphE_NT,Acinetobacter Aeromonas Bacillus Citrobacter Comamonas Enterobacter Escherichia Haemophilus Klebsiella Mannheimia Morganella Pasteurella Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Thiopseudomonas Staphylococcus Stenotrophomonas Vibrio Yersinia 
+mphF_NT,mph(F),MLS,Macrolide_phosphotransferases,MPHE,mphF_NT,Advenella Citrobacter Delftia Enterobacter Escherichia Klebsiella Pseudomonas Salmonella Stenotrophomonas Vibrio 
+mphK_NT,mph(A),MLS,Macrolide_phosphotransferases,MPHA,mphA_NT,Acinetobacter Aeromonas Citrobacter Cronobacter Edwardsiella Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Leclercia Listeria Morganella Oceanimonas Pluralibacter Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Streptococcus Vibrio Yersinia 
+mreA_NT,mreA,MLS,MLS_resistance_ABC_efflux_pumps ,MREA,mreA_NT,Streptococcus
+msrA_NT,msr(A),MLS,MLS_resistance_ABC_efflux_pumps,MSRA,msrA_NT,Acinetobacter Campylobacter Clostridioides Corynebacterium Enterococcus Escherichia Klebsiella Listeria Mycobacterium NA Neisseria Providencia Pseudomonas Staphylococcus Streptococcus Vibrio Yersinia
+msrA_NT.1,msr(A),MLS,MLS_resistance_ABC_efflux_pumps,MSRA,msrA_NT,Acinetobacter Campylobacter Citrobacter Clostridioides Corynebacterium Enterococcus Escherichia Klebsiella Listeria Mycobacterium NA Neisseria Providencia Pseudomonas Staphylococcus Streptococcus Vibrio Yersinia
+msrC_NT,msr(C),MLS,MLS_resistance_ABC_efflux_pumps,MSRC,msrC_NT,Enterococcus Escherichia Klebsiella Listeria Pediococcus Staphylococcus Streptococcus
+msrD_or_mel_NT,msr(D),MLS,MLS_resistance_ABC_efflux_pumps,MSRD,msrD_or_mel_NT,Bacillus Clostridioides Clostridium Enterococcus Escherichia Gardnerella Haemophilus Klebsiella Lactobacillus Listeria NA Neisseria Pseudomonas Salmonella Streptococcus 
+mupA_NT,mupA,Mupirocin,Mupirocin-resistant_isoleucyl-tRNA_synthetase,MUPA,mupA_NT,Bacillus Campylobacter Corynebacterium Enterococcus Klebsiella Staphylococcus
+mupB_NT,mupB,Mupirocin,Mupirocin-resistant_isoleucyl-tRNA_synthetase,MUPB,mupB_NT,Staphylococcus
+mupB_NT.1,mupB,Mupirocin,Mupirocin-resistant_isoleucyl-tRNA_synthetase,MUPB,mupB_NT,Staphylococcus
+nbrB_NT,nbrB,Aminoglycosides,16S_rRNA_methyltransferases,NBRB,nbrB_NT,Streptoalloteichus
+nimA_NT,nimA,Metronidazole,nim_nitroimidazole_reductase,NIMA,nimA_NT,Bacteroides Campylobacter Eikenella Enterocloster Faecalibacterium Phocaeicola 
+nimA.Cb_NT,nimA.Cb,Metronidazole,nim_nitroimidazole_reductase,NIMA,nimA.Cb_NT,Clostridium
+nimB_NT,nimB,Metronidazole,nim_nitroimidazole_reductase,NIMB,nimB_NT,Bacteroides
+nimC_NT,nimC,Metronidazole,nim_nitroimidazole_reductase,NIMC,nimC_NT,Bacteroides
+nimD_NT,nimD,Metronidazole,nim_nitroimidazole_reductase,NIMD,nimD_NT,Bacteroides 
+nimE_NT,nimE,Metronidazole,nim_nitroimidazole_reductase,NIME,nimE_NT,Bacteroides Escherichia Phocaeicola Salmonella Veillonella 
+nimE_NT.1,nimE,Metronidazole,nim_nitroimidazole_reductase,NIME,nimE_NT,Bacteroides Escherichia Phocaeicola Salmonella Veillonella 
+nimF_NT,nimF,Metronidazole,nim_nitroimidazole_reductase,NIMF,nimF_NT,Phocaeicola 
+nimF_NT.1,nimF,Metronidazole,nim_nitroimidazole_reductase,NIMF,nimF_NT,Phocaeicola
+norA_NT,norA,Drug_and_biocide_resistance,Drug_and_biocide_MFS_efflux_pumps,NORA,norA_NT,Staphylococcus
+oleB_NT,ole(B),MLS,MLS_resistance_ABC_efflux_pumps,OLEB,oleB_NT,Streptomyces
+oleC_NT,oleC,MLS,MLS_resistance_ABC_efflux_pumps,OLEC,oleC_NT,Streptomyces
+oleC_NT.1,oleC,MLS,MLS_resistance_ABC_efflux_pumps,OLEC,oleC_NT,Streptomyces
+oleD_NT,oleD,MLS,MLS_resistance_ABC_efflux_pumps,OLED,oleD_NT,Streptomyces
+oqxA_NT,oqxA,Drug_and_biocide_resistance,Drug_and_biocide_RND_efflux_pumps,OQXA,oqxA_NT,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Kosakonia Leclercia Pluralibacter Providencia Pseudomonas Salmonella Serratia Shigella Vibrio
+oqxB_NT,oqxB,Drug_and_biocide_resistance,Drug_and_biocide_RND_efflux_pumps,OQXB,oqxB_NT,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Kosakonia Morganella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shigella
+oqxB_NT.1,oqxB,Drug_and_biocide_resistance,Drug_and_biocide_RND_efflux_pumps,OQXB,oqxB_NT,Acinetobacter Citrobacter Cronobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Kosakonia Morganella Pluralibacter Providencia Pseudomonas Salmonella Serratia Shigella
+otrA_NT,otr(A),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,OTRA,otrA_NT,Bacillus Pseudomonas Rhizobium Streptomyces
+otrB_NT,otr(B),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,OTRB,otrB_NT,Streptomyces
+otrC_NT,otrC,Tetracyclines,Tetracycline_resistance_ABC_efflux_pumps,OTRC,otrC_NT,Streptomyces
+pbp1A_NT,pbp1A,betalactams,Penicillin_binding_protein,PBP1A,pbp1A_NT,Streptococcus
+pbp1A_NT.1,pbp1A,betalactams,Penicillin_binding_protein,PBP1A,pbp1A_NT,Streptococcus
+pbp2a_NT,pbp2a,betalactams,Penicillin_binding_protein,PBP2A,pbp2a_NT,Streptococcus
+pbp2a_NT.1,pbp2a,betalactams,Penicillin_binding_protein,PBP2A,pbp2a_NT,Streptococcus
+pbp3_NT,pbp2,betalactams,Penicillin_binding_protein,PBP2,pbp3_NT,Neisseria Staphylococcus
+pbp5_NT,pbp5,betalactams,Penicillin_binding_protein,PBP5,pbp5_NT,Enterococcus
+pbp5_NT.1,pbp5,betalactams,Penicillin_binding_protein,PBP5,pbp5_NT,Enterococcus Listeria
+penA_NT,penA,betalactams,Penicillin_binding_protein,PBP2,penA_NT,Neisseria
+penA_NT.1,penA,betalactams,Penicillin_binding_protein,PBP2,penA_NT,Neisseria
+pexA_NT,pexA,Phenicol,Phenicol_resistance_MFS_efflux_pumps,PEXA,pexA_NT,
+ptmP3_NT,ptmP3,Platensimycin/Platencin_resistance,KAS II condensing enzymes,PTM,ptmP3_NT,Streptomyces
+qacA_or_B.family_NT,qacA/B,Drug_and_biocide_resistance,Drug_and_biocide_MFS_efflux_pumps,QACAB,qacA_or_B.family_NT,Staphylococcus
+qacA_or_B.family_NT.1,qacA/B ,Drug_and_biocide_resistance,Drug_and_biocide_MFS_efflux_pumps,QACAB,qacA_or_B.family_NT,Staphylococcus
+qacJ_NT,qacJ,Drug_and_biocide_resistance,Drug_and_biocide_SMR_efflux_pumps,QACJ,qacJ_NT,Achromobacter Acinetobacter Actinobacillus Aeromonas Aggregatibacter Aliarcobacter Avibacterium Bacillus Bordetella Brevibacillus Brucella Burkholderia Capnocytophaga Chryseobacterium Citrobacter Clostridium Comamonas Coxiella Cronobacter Cupriavidus Delftia Elizabethkingia Enterobacter Enterococcus Escherichia Francisella Fusobacterium Gemella Haemophilus Klebsiella Lactobacillus Lactococcus Leclercia Leptospira Ligilactobacillus Listeria Macrococcus Micrococcus Moraxella Morganella Mycobacterium Mycoplasma Nocardia Orrella Paenibacillus Pectobacterium Photobacterium Photorhabdus Proteus Providencia Pseudomonas Ralstonia Raoultella Rhizobium Rhodopseudomonas Salmonella Serratia Shigella Staphylococcus Stenotrophomonas Streptococcus Vibrio Xanthomonas Yersinia
+qepA_NT,qepA,Fluoroquinolones,Quinolone_active_efflux,QEPA,qepA_NT,Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Raoultella Salmonella
+qnr_T,qnrA,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRA,qnr_T,Acinetobacter Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Kluyvera Proteus Providencia Pseudomonas Salmonella Shewanella Vibrio
+qnr_T.1,qnrA1/9,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRA,qnr_T,Citrobacter Enterobacter Escherichia Klebsiella Moellerella Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Vibrio
+qnrAH_T,qnrAH,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRA,qnrAH_T,Aeromonas
+qnrAH_T.1,qnrAH,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRA,qnrAH_T,Aeromonas
+qnrB27a_T,qnrB,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB27a_T,Acinetobacter Aeromonas Citrobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Leclercia Listeria Morganella Providencia Pseudomonas Salmonella Serratia Shigella Staphylococcus Streptococcus Vibrio
+qnrB27a_T.1,qnrB,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB27a_T,Acinetobacter Aeromonas Citrobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Listeria Morganella Providencia Pseudomonas Salmonella Serratia Staphylococcus Streptococcus Vibrio
+qnrB31a_T,qnrB31/53,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB31a_T,Klebsiella
+qnrB31a_T.1,qnrB31/53,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB31a_T,Citrobacter Enterobacter Escherichia Klebsiella Pantoea Pseudomonas Salmonella
+qnrB31a_T.2,qnrB,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB31a_T,Acinetobacter Aeromonas Citrobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Listeria Morganella Providencia Pseudomonas Salmonella Serratia Staphylococcus Streptococcus Vibrio
+qnrB35_T,qnrB,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB35_T,Acinetobacter Aeromonas Citrobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Leclercia Listeria Morganella Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Staphylococcus Streptococcus Vibrio
+qnrB35_T.1,qnrB35,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB35_T,Citrobacter Enterobacter Escherichia Klebsiella Salmonella
+qnrB39_T,qnrB39,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB39_T,Citrobacter Escherichia Klebsiella Salmonella
+qnrB6_T,qnrB,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB6_T,Acinetobacter Aeromonas Citrobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Leclercia Listeria Morganella Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Staphylococcus Streptococcus Vibrio
+qnrB6_T.1,qnrB,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB6_T,Achromobacter Acinetobacter Aeromonas Citrobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Listeria Morganella Providencia Pseudomonas Salmonella Serratia Staphylococcus Streptococcus Vibrio
+qnrB9_T,qnrB11/12,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB9_T,Citrobacter Enterobacter Escherichia Klebsiella Raoultella Salmonella
+qnrB9_T.1,qnrB11/12/34,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB9_T,Citrobacter Enterobacter Escherichia Klebsiella Raoultella Salmonella
+qnrB9_T.2,qnrB,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,qnrB9_T,Acinetobacter Aeromonas Citrobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Listeria Morganella Providencia Pseudomonas Raoultella Salmonella Serratia Staphylococcus Streptococcus Vibrio
+qnrC_T,qnrC,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRC,qnrC_T,Achromobacter Proteus Serratia Vibrio
+qnrC_T.1,qnrC,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRC,qnrC_T,Achromobacter Proteus Serratia Vibrio
+qnrD_T,qnrD,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRD,qnrD_T,Acinetobacter Brucella Citrobacter Clostridioides Enterobacter Escherichia Klebsiella Listeria Moellerella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Streptococcus Vibrio
+qnrD_T.1,qnrD,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRD,qnrD_T,Acinetobacter Brucella Citrobacter Clostridioides Enterobacter Escherichia Klebsiella Listeria Moellerella Morganella Proteus Providencia Pseudomonas Salmonella Serratia Shewanella Staphylococcus Streptococcus Vibrio
+qnrS_T,qnrS,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRS,qnrS_T,Aeromonas Citrobacter Cronobacter Edwardsiella Enterobacter Escherichia Klebsiella Morganella Photobacterium Providencia Pseudomonas Raoultella Salmonella Serratia Vibrio
+qnrS_T.1,qnrS,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRS,qnrS_T,Aeromonas Atlantibacter Citrobacter Cronobacter Edwardsiella Enterobacter Escherichia Klebsiella Morganella Photobacterium Providencia Pseudomonas Raoultella Salmonella Serratia Vibrio
+qnrS_T.2,qnrS,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRS,qnrS_T,Aeromonas Citrobacter Cronobacter Edwardsiella Enterobacter Escherichia Klebsiella Morganella Photobacterium Providencia Pseudomonas Raoultella Salmonella Serratia Trabulsiella Vibrio
+qnrS2a_T,qnrS2/6,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRS,qnrS2a_T,Aeromonas Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Leclercia Nitrincola Pseudomonas Salmonella Shewanella Shigella Vibrio 
+qnrS2a_T.1,qnrS2/6,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRS,qnrS2a_T,Aeromonas Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Leclercia Nitrincola Pseudomonas Salmonella Shewanella Shigella Vibrio 
+qnrS2a_T.2,qnrS2/6,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRS,qnrS2a_T,Aeromonas Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Leclercia Nitrincola Pseudomonas Salmonella Shigella Vibrio 
+qnrS2a_T.3,qnrS2/6,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRS,qnrS2a_T,Aeromonas Citrobacter Edwardsiella Enterobacter Escherichia Klebsiella Leclercia Nitrincola Pseudomonas Salmonella Shigella Vibrio 
+qnrVC1_T,qnrVC1/3,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRVC,qnrVC1_T,Aeromonas Ectopseudomonas Marinobacter Pseudomonas Salmonella Shewanella Stutzerimonas Vibrio
+qnrVC1_T.1,qnrVC1/3,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRVC,qnrVC1_T,Aeromonas Ectopseudomonas Marinobacter Pseudomonas Ralstonia Shewanella Stutzerimonas Vibrio 
+rmtA_NT,rmtA,Aminoglycosides,16S_rRNA_methyltransferases,RMTA,rmtA_NT,Pseudomonas
+rmtB_NT,rmtB,Aminoglycosides,16S_rRNA_methyltransferases,RMTB,rmtB_NT,Acinetobacter Aeromonas Burkholderia Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Salmonella Shigella
+rmtB_NT.1,rmtB1/4,Aminoglycosides,16S_rRNA_methyltransferases,RMTB,rmtB_NT,Citrobacter Enterobacter Escherichia Klebsiella Proteus Pseudomonas Salmonella
+rmtC_NT,rmtC,Aminoglycosides,16S_rRNA_methyltransferases,RMTC,rmtC_NT,Acinetobacter Aeromonas Citrobacter Enterobacter Escherichia Klebsiella Morganella Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shigella Vibrio
+rmtD_NT,rmtD,Aminoglycosides,16S_rRNA_methyltransferases,RMTD,rmtD_NT,Burkholderia Citrobacter Enterobacter Klebsiella Pseudomonas 
+rmtE_NT,rmtE1/2,Aminoglycosides,16S_rRNA_methyltransferases,RMTE,rmtE_NT,Acinetobacter Enterobacter Escherichia Klebsiella Salmonella
+sat2_NT,sat2,Nucleosides,Streptothricin_acetyltransferase,SAT,sat2_NT,Acinetobacter Aeromonas Campylobacter Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Moellerella Morganella Pluralibacter Proteus Providencia Pseudomonas Psychrobacter Salmonella Serratia Shigella Staphylococcus Vibrio Yersinia
+sat3_NT,sat3,Nucleosides,Streptothricin_acetyltransferase,SAT,sat3_NT,Escherichia 
+sat4_NT,sat4,Nucleosides,Streptothricin_acetyltransferase,SAT,sat4_NT,Acinetobacter Aliarcobacter Bacillus Bifidobacterium Campylobacter Claveliimonas Clostridioides Clostridium Enterobacter Enterococcus Escherichia Klebsiella Kurthia Listeria Mycobacterium Neisseria Pseudomonas Salmonella Staphylococcus Stenotrophomonas Streptococcus Vagococcus
+satG_NT,aac(3)-Il,Aminoglycosides,Aminoglycoside_N-acetyltransferases,AAC3,satG_NT,Acinetobacter Citrobacter Enterobacter Escherichia Klebsiella Mannheimia Morganella Pasteurella Pseudomonas Shinella
+smqnr1_NT,smqnr1,Fluoroquinolones,Quinolone_resistance_protein_Qnr,QNRB,smqnr1_NT,Stenotrophomonas
+sph_NT,aph(6)-Ic,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH6,sph_NT,Acinetobacter Aeromonas Agrobacterium Burkholderia Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Salmonella Serratia Shigella Sinorhizobium Stenotrophomonas Vibrio 
+srmB_NT,srm(B),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,SRMB,srmB_NT,Streptomyces
+strB_or_aph6_NT,aph(6)-Id,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH6,strB_or_aph6_NT,Achromobacter Acinetobacter Actinobacillus Aeromonas Alcaligenes Avibacterium Bacillus Bacteroides Bordetella Burkholderia Campylobacter Citrobacter Clostridioides Comamonas Corynebacterium Cronobacter Edwardsiella Thiopseudomonas Elizabethkingia Enterobacter Enterococcus Escherichia Faecalibacterium Glaesserella Haemophilus Histophilus Kingella Klebsiella Kluyvera_intermedia Laribacter Leclercia Legionella Listeria Mannheimia Moraxella Morganella Mycobacterium Neisseria Oceanimonas Pasteurella Phocaeicola Photobacterium Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Streptococcus Streptomyces Trueperella Vibrio Xanthomonas Yersinia 
+strB_or_aph6_NT.1,aph(6)-Id,Aminoglycosides,Aminoglycoside_O-phosphotransferases,APH6,strB_or_aph6_NT,Achromobacter Acinetobacter Actinobacillus Aeromonas Alcaligenes Avibacterium Bacillus Bacteroides Bordetella Burkholderia Campylobacter Citrobacter Clostridioides Comamonas Corynebacterium Cronobacter Edwardsiella Elizabethkingia Enterobacter Enterococcus Escherichia Faecalibacterium Glaesserella Haemophilus Histophilus Kingella Klebsiella Kluyvera_intermedia Laribacter Leclercia Legionella Listeria Mannheimia Moraxella Morganella Mycobacterium Neisseria Oceanimonas Pasteurella Phocaeicola Photobacterium Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Streptococcus Streptomyces Trueperella Vibrio Xanthomonas Yersinia 
+sulIII_NT,sul3,Sulfonamides,Sulfonamide-resistant_dihydropteroate_synthases,SULIII,sulIII_NT,Acinetobacter Avibacterium Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Morganella Pasteurella Proteus Providencia Salmonella Serratia Shigella Stenotrophomonas Yersinia
+tcr3_NT,tcr3,Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TCR3,tcr3_NT,Kitasatospora
+tet30_NT,tet(30),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET30,tet30_NT,Agrobacterium Pararhizobium
+tet31_NT,tet(31),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET31,tet31_NT,Aeromonas Bordetella Escherichia Gallibacterium Piscirickettsia Providencia Pseudoalteromonas Rheinheimera Salmonella Thiopseudomonas 
+tet32_NT,tet(W/32/O),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TET32,tet32_NT,Actinobacillus Amygdalobacter Anaerostipes Blautia Campylobacter Claveliimonas Dorea Dysosmobacter Enterococcus Gleimia Lactobacillus Mediterraneibacter Sellimonas Streptococcus Trueperella [Eubacterium]
+tet33_NT,tet(33),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET33,tet33_NT,Brevibacterium Cellulosimicrobium Citricoccus Corynebacterium Glutamicibacter Leucobacter Microbacterium Mycolicibacterium Paenarthrobacter Prescottella Propioniciclava Tessaracoccus Trueperella Vibrio
+tet34_NT,tet(34),Tetracyclines,Tetracycline_inactivation_enzymes,TET34,tet34_NT,Vibrio
+tet35_or_effJ_NT,tet(35),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET35,tet35_or_effJ_NT,Vibrio
+tet36_NT,tet(36),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TET36,tet36_NT,Bacteroidales Bacteroides Chryseobacterium Clostridium Elizabethkingia Empedobacter Enterococcus Flavobacterium Fusobacterium Herbinix Myroides Staphylococcus 
+tet37_NT,tet(37),Tetracyclines,Tetracycline_inactivation_enzymes,TET37,tet37_NT,Prevotella 
+tet38_NT,tet(38),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET38,tet38_NT,Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus Streptococcus
+tet38_NT.1,tet(38),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET38,tet38_NT,Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus Streptococcus
+tet39_NT,tet(39),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET39,tet39_NT,Acinetobacter Escherichia Klebsiella NA Serratia Staphylococcus 
+tet40_NT,tet(40),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TET40,tet40_NT,Anaerostipes Bifidobacterium Blautia Chordicoccus Clostridiaceae Clostridiales Clostridioides Clostridium Dorea Enterocloster Enterococcus Eubacterium Faecalibacterium Faecalimonas Fusobacterium Mediterraneibacter Megasphaera Monoglobus Oscillospiraceae Pseudoflavonifractor Roseburia Ruthenibacterium Salmonella Sellimonas Simiaoa Streptococcus Vescimonas Wujia [Clostridium] [Ruminococcus] 
+tet41_NT,tet(41),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETA,tet41_NT,Serratia
+tet42_NT,tet(42),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET42,tet42_NT,Microbacterium Micrococcus
+tet43_NT,tet(43),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET43,tet43_NT,
+tet44_NT,tet(44),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TET44,tet44_NT,Acholeplasma Allocoprobacillus Amedibacterium Campylobacter Clostridioides Clostridium Coprobacillaceae Enterococcus Erysipelatoclostridium Streptococcus 
+tet45_NT,tet(45),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TET45,tet45_NT,Actinobacillus Aliarcobacter Anaerostipes Bacillus Bhargavaea Brevibacillus Campylobacter Enterococcus Gardnerella Klebsiella Lactobacillus Lactococcus Listeria Lysinibacillus Megasphaera Morganella Providencia Pseudomonas Rhizobium Staphylococcus Streptococcus 
+tetA_NT,tet(A),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETA,tetA_NT,Acinetobacter Aeromonas Alcaligenes Avibacterium Burkholderia Campylobacter Citrobacter Cronobacter Edwardsiella Enterobacter Enterococcus Escherichia Klebsiella Kluyvera_intermedia Laribacter Leclercia Listeria Morganella Neisseria Oceanimonas Pasteurella Plesiomonas Pluralibacter Proteus Providencia Pseudomonas Raoultella Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Vibrio Yersinia
+tetB_NT,tet(B),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETB,tetB_NT,Acinetobacter Actinobacillus Avibacterium Citrobacter Cronobacter Edwardsiella Enterobacter Escherichia Gallibacterium Glaesserella Haemophilus Kingella Klebsiella Leclercia Morganella Neisseria Pasteurella Photobacterium Pluralibacter Proteus Providencia Pseudomonas Salmonella Serratia Shigella Streptococcus Vibrio Yersinia
+tetC_NT,tet(C),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETC,tetC_NT,Achromobacter Acinetobacter Actinobacillus Aeromonas Agrobacterium Alcaligenes Bacillus Bacteroides Bifidobacterium Burkholderia Chlamydia Citrobacter Comamonas Cronobacter Deinococcus Edwardsiella Enterobacter Enterococcus Escherichia Fusobacterium Haemophilus Helicobacter Hydrogenophaga Klebsiella Laribacter Leclercia Listeria Micrococcus Moraxella Morganella Mycobacterium Neisseria Paenalcaligenes Pasteurella Phocaeicola Proteus Providencia Pseudomonas Saccharopolyspora Salmonella Serratia Shewanella Shigella Snodgrassella Staphylococcus Stenotrophomonas Streptococcus Streptomyces Vibrio Xanthomonas Yersinia 
+tetC_NT.1,tet(C),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETC,tetC_NT,Achromobacter Acinetobacter Actinobacillus Aeromonas Agrobacterium Alcaligenes Bacillus Bacteroides Bifidobacterium Burkholderia Chlamydia Citrobacter Comamonas Cronobacter Deinococcus Edwardsiella Enterobacter Enterococcus Escherichia Fusobacterium Haemophilus Helicobacter Hydrogenophaga Klebsiella Laribacter Leclercia Listeria Melaminivora Micrococcus Moraxella Morganella Mycobacterium Neisseria Pasteurella Phocaeicola Proteus Providencia Pseudomonas Saccharopolyspora Salmonella Serratia Shewanella Shigella Staphylococcus Stenotrophomonas Streptococcus Streptomyces Vibrio Yersinia 
+tetD_NT,tet(D),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETC,tetD_NT,Acinetobacter Aeromonas Bordetella Citrobacter Comamonas Corynebacterium Cronobacter Delftia Edwardsiella Enterobacter Escherichia Klebsiella Kluyvera_intermedia Laribacter Morganella Pasteurella Photobacterium Plesiomonas Pluralibacter Proteus Providencia Pseudomonas Raoultella Rhodobacteraceae Salmonella Serratia Shewanella Trueperella Vibrio Yersinia
+tetE_NT,tet(E),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETE,tetE_NT,Acinetobacter Aeromonas Aliivibrio Citrobacter Enterobacter Escherichia Klebsiella Pseudomonas Raoultella Salmonella Vibrio Yersinia 
+tetG_NT,tet(G),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETG,tetG_NT,Acinetobacter Aeromonas Alcaligenes Burkholderia Citrobacter Comamonas Ectopseudomonas Enterobacter Escherichia Klebsiella Morganella Paracoccus Proteus Providencia Pseudomonas Salmonella Serratia Stenotrophomonas Vibrio
+tetH_NT,tet(H),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETH,tetH_NT,Acinetobacter Actinobacillus Aeromonas Aliarcobacter Avibacterium Bibersteinia Escherichia Glaesserella Histophilus Klebsiella Mannheimia Moellerella Moraxella Morganella Pasteurella Pasteurellaceae Proteus Providencia Psychrobacter Salmonella Streptococcus Vibrio Wohlfahrtiimonas Yersinia
+tetH_NT.1,tet(H),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETH,tetH_NT,Acinetobacter Actinobacillus Aeromonas Aliarcobacter Avibacterium Escherichia Histophilus Klebsiella Mannheimia Moellerella Moraxella Morganella Pasteurella Pasteurellaceae Proteus Providencia Salmonella Streptococcus Vibrio Wohlfahrtiimonas Yersinia
+tetJ_NT,tet(J),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETJ,tetJ_NT,Acinetobacter Citrobacter Escherichia Klebsiella Proteus Providencia Pseudomonas Salmonella Staphylococcus Vibrio
+tetK_NT,tet(K),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETK,tetK_NT,Acinetobacter Campylobacter Clostridioides Enterobacter Enterococcus Escherichia Klebsiella Listeria Mammaliicoccus Mycobacterium Neisseria Providencia Pseudomonas Salmonella Shigella Staphylococcus Streptococcus Vibrio Yersinia
+tetLc_NT,tet(L),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETL,tetLc_NT,Acinetobacter Bacillus Campylobacter Clostridioides Clostridium Corynebacterium Enterobacter Enterococcus Escherichia Klebsiella Listeria Mannheimia Morganella Neisseria Pasteurella Providencia Pseudomonas Salmonella Staphylococcus Streptococcus Vibrio
+tetLp_NT,tet(L),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETL,tetLp_NT,Acinetobacter Aliarcobacter Bacillus Campylobacter Clostridioides Clostridium Corynebacterium Enterobacter Enterococcus Escherichia Klebsiella Lactococcus Ligilactobacillus Listeria Mannheimia Morganella Neisseria Pasteurella Providencia Pseudomonas Salmonella Staphylococcus Streptococcus Vibrio
+tetM_NT,tet(M),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TETM,tetM_NT,Acinetobacter Aliarcobacter Anaerococcus Anaerostipes Bacillus Bifidobacterium Blautia Campylobacter Citrobacter Clostridioides Clostridium Edwardsiella Enterobacter Enterococcus Erysipelatoclostridium Erysipelothrix Escherichia Eubacterium Facklamia Fusobacterium Gardnerella Gemella Haemophilus Histophilus Jeotgalibaca Klebsiella Lactobacillus Lactococcus Ligilactobacillus Listeria Megasphaera Morganella Mycoplasma Neisseria Parvimonas Peptoniphilus Photobacterium Proteus Providencia Pseudomonas Salmonella Shigella Staphylococcus Streptococcus Vagococcus Veillonella Vibrio
+tetM_NT.1,tet(M),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TETM,tetM_NT,Acinetobacter Aliarcobacter Anaerococcus Anaerostipes Bacillus Bifidobacterium Blautia Campylobacter Citrobacter Clostridioides Clostridium Edwardsiella Enterobacter Enterococcus Erysipelatoclostridium Erysipelothrix Escherichia Eubacterium Fusobacterium Gardnerella Gemella Haemophilus Helcococcus Histophilus Jeotgalibaca Klebsiella Lactobacillus Lactococcus Ligilactobacillus Listeria Lysinibacillus Megasphaera Morganella Mycoplasma Neisseria Nitratidesulfovibrio Parvimonas Peptoniphilus Photobacterium Proteus Providencia Pseudomonas Salmonella Shigella Staphylococcus Streptococcus Vagococcus Vibrio
+tetQ_NT,tet(Q),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TETQ,tetQ_NT,Acinetobacter Alistipes Anaerostipes Bacteroides Butyricimonas Campylobacter Capnocytophaga Collinsella Elizabethkingia Enterocloster Escherichia Eubacterium Muribaculaceae Ornithobacterium Paeniclostridium Parabacteroides Phocaeicola Porphyromonas Prevotella Providencia Riemerella Salmonella Segatella Sodaliphilus Staphylococcus Tannerella 
+tetS_NT,tet(S),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TETS,tetS_NT,Enterococcus Escherichia Klebsiella Lactococcus Listeria Macrococcoides Mammaliicoccus Staphylococcus Streptococcus
+tetV_NT,tet(V),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETV,tetV_NT,Mycolicibacterium
+tetW_NT,tet(W/O),Tetracyclines,Tetracycline_resistance_ribosomal_protection_proteins,TETW,tetW_NT,Bifidobacterium Candidatus Clostridiales Collinsella Corynebacterium Faecalibacterium Gordonibacter Lactobacillus Ligilactobacillus Limosilactobacillus Rothia Streptococcus Trueperella [Clostridium] 
+tetX_NT,tet(X2),Tetracyclines,Tetracycline_inactivation_enzymes,TETX,tetX_NT,Acinetobacter Advenella Bacteroidales Bacteroides Butyricimonas Campylobacter Chryseobacterium Elizabethkingia Empedobacter Escherichia Ignavibacteria Myroides Ornithobacterium Parabacteroides Phocaeicola Prevotella Providencia Proteiniphilum Riemerella Salmonella Segatella Sphingobacterium Vibrio 
+tetX-1_NT,tet(X1),Tetracyclines,Tetracycline_inactivation_enzymes,TETX,tetX-1_NT,Bacteroides Parabacteroides Phocaeicola 
+tetY_NT,tet(Y),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETY,tetY_NT,Acinetobacter Actinobacillus Aeromonas Aliarcobacter Arcobacter Burkholderia Citrobacter Escherichia Gram-negative Klebsiella Mannheimia Morganella Pasteurella Photobacterium Proteus Providencia Pseudomonas Salmonella Vibrio Yersinia 
+tetZ_NT,tet(Z),Tetracyclines,Tetracycline_resistance_MFS_efflux_pumps,TETZ,tetZ_NT,Brevibacterium Cellulosimicrobium Corynebacterium Rothia Trueperella
+tlcC_NT,tlr(C),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,TLRCM,tlcC_NT,Streptomyces
+uppP_NT,uppP,Bacitracin resistance,Undecaprenyl-diphosphatase,UPPP,uppP_NT,Acinetobacter
+vanA_NT,vanA,Glycopeptides,VanA-type_resistance_protein,VANA,vanA_NT,Acinetobacter Brevibacillus Enterococcus Klebsiella Mycobacterium Providencia Pseudomonas Salmonella Staphylococcus Streptococcus
+vanB2_NT,vanB,Glycopeptides,VanB-type_resistance_protein,VANB,vanB2_NT,Atopobium Clostridioides Clostridium Eggerthella Enterocloster Enterococcus Erysipelotrichaceae Escherichia Salmonella
+vanB2_NT.1,vanB,Glycopeptides,VanB-type_resistance_protein,VANB,vanB2_NT,Clostridioides Clostridium Enterocloster Enterococcus Erysipelotrichaceae Escherichia Salmonella 
+vanC1_NT,vanC1,Glycopeptides,VanC-type_resistance_protein,VANC,vanC1_NT,Enterococcus Escherichia Pseudomonas Streptococcus
+vanC3_NT,vanC2/3,Glycopeptides,VanC-type_resistance_protein,VANC,vanC3_NT,Enterococcus mixed 
+vanD4_NT,vanD,Glycopeptides,VanD-type_resistance_protein,VAND,vanD4_NT,Blautia Enterocloster Enterococcus Ruthenibacterium [Clostridium]
+vanD5_NT,vanD,Glycopeptides,VanD-type_resistance_protein,VAND,vanD5_NT,Blautia Clostridia Enterocloster Enterococcus Ruminococcus Ruthenibacterium
+vanE_NT,vanE,Glycopeptides,VanE-type_resistance_protein,VANE,vanE_NT,Enterococcus
+vanG_NT,vanG,Glycopeptides,VanG-type_resistance_protein,VANG,vanG_NT,Acinetobacter Anaerostipes Bacillus Bacteroides Brevibacillus Citrobacter Clostridioides Clostridium Cronobacter Dysosmobacter Enterobacter Enterococcus Erysipelatoclostridium Escherichia Faecalibacterium Herbinix Klebsiella Kosakonia Leclercia Paeniclostridium Parabacteroides Proteus Providencia Pseudomonas Raoultella Ruthenibacterium Salmonella Serratia Shigella Streptococcus
+vatA_NT,vat(A),MLS,Streptogramin_A_O-acetyltransferase,VATA,vatA_NT,Enterococcus Staphylococcus
+vatB_NT,vat(B),MLS,Streptogramin_A_O-acetyltransferase,VATB,vatB_NT,Listeria Staphylococcus
+vatC_NT,vat(C),MLS,Streptogramin_A_O-acetyltransferase,VATC,vatC_NT,Staphylococcus
+vatD_or_satA_NT,vat(D),MLS,Streptogramin_A_O-acetyltransferase,VATD,vatD_or_satA_NT,Clostridium Enterococcus
+vatE_NT,vat(E),MLS,Streptogramin_A_O-acetyltransferase,VATE,vatE_NT,Companilactobacillus Enterococcus Lactobacillus Ligilactobacillus Limosilactobacillus Pediococcus Streptococcus
+vatE6_NT,vat(E),MLS,Streptogramin_A_O-acetyltransferase,VATE,vatE6_NT,Companilactobacillus Enterococcus Lactobacillus Ligilactobacillus Limosilactobacillus Pediococcus Streptococcus
+vatF_or_sat6_NT,vat(F),MLS,Streptogramin_A_O-acetyltransferase,VATF,vatF_or_sat6_NT,Yersinia
+vatH_or_vatG_NT,vat(H),MLS,Streptogramin_A_O-acetyltransferase,VATA,vatH_or_vatG_NT,Enterococcus Ligilactobacillus
+vcaM_NT,vcaM,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VCAM,vcaM_NT,Vibrio
+vceA_NT,vceA,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VCEA,vceA_NT,Vibrio
+vceB_NT,vceB,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VCEB,vceB_NT,Vibrio
+vcmA_NT,vcmA,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VCMA,vcmA_NT,Vibrio
+vcrM_NT,vcrM,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VCRM,vcrM_NT,Vibrio
+vgaAlc_NT,vga(A)/(A)-LC,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VGA,vgaAlc_NT,Staphylococcus
+vgaAlc_NT.1,vga(A)/(A)-LC ,Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VGA,vgaAlc_NT,Staphylococcus
+vgaB_NT,vga(B),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VGAB,vgaB_NT,Listeria Staphylococcus
+vgaC_NT,vga(C),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VGA,vgaC_NT,Desemzia Staphylococcus
+vgaD_NT,vga(D),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VGAD,vgaD_NT,Enterococcus Ligilactobacillus
+vgaE_NT,vga(E),Multi-drug_resistance,Multi-drug_ABC_efflux_pumps,VGAE,vgaE_NT,Abyssicoccus Staphylococcus Streptococcus Suicoccus
+vgbA_or_vgh_NT,vgb(A),MLS,Streptogramin_B_ester_bond_cleavage,VGBA,vgbA_or_vgh_NT,Enterococcus Staphylococcus
+vgbB_NT,vgb(B),MLS,Streptogramin_B_ester_bond_cleavage,VGBB,vgbB_NT,Staphylococcus
+blaSHV-100_NG,blaSHV,betalactams,Class_A_betalactamases,SHV,blaSHV-100_NG,Acinetobacter Atlantibacter Citrobacter Enterobacter Escherichia Klebsiella Kluyvera_intermedia Pluralibacter Providencia Pseudomonas Salmonella Serratia Staphylococcus
+blaADC-133_NG,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-133_NG,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
+blaMIR-14_NG,blaMIR,betalactams,Class_C_betalactamases,MIR,blaMIR-14_NG,Enterobacter Escherichia Klebsiella 
+blaADC-295_NG,blaADC,betalactams,Class_C_betalactamases,ADC,blaADC-295_NG,Acinetobacter Enterobacter Escherichia Klebsiella Pseudomonas Staphylococcus
