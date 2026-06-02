@@ -1,0 +1,425 @@
+genus	family	order	class	phylum	superkingdom	Test-8	Test-6	Test-1	Test-3	Test-2
+ADurb.Bin063-1	Pedosphaeraceae	Pedosphaerales	Verrucomicrobiae	Verrucomicrobiota	Bacteria	0.0022818113646591	0.0048702642330563	0.0058964455604655	0.0021651531434573	0.0021057180811952
+ADurb.Bin120	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.0007525895568347	0.0021868683968699	0.0013959658509503	0.0005955568522595	0.0004226605890355
+Abditibacterium	Abditibacteriaceae	Abditibacteriales	Abditibacteria	Abditibacteriota	Bacteria			0.0001034839703719		
+Acetivibrio	Hungateiclostridiaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria		0.0007269732884941			
+Acetoanaerobium	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0008597472266989	0.0039284869310653	0.0397489990424043	0.0405736817305038	0.0548983307050233
+Acetobacterium	Eubacteriaceae	Eubacteriales	Clostridia	Firmicutes	Bacteria	0.0002812881396719	0.0002026943214546			
+Acholeplasma	Acholeplasmataceae	Acholeplasmatales	Bacilli	Firmicutes	Bacteria	0.0002256260482172	0.0009326022506913	0.000222175842994		
+Achromobacter	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0002360272614272				
+Acidovorax	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0003305017311975	0.0002551500622831	0.0075216344779917	0.0265855746751335	0.0304367669900023
+Acinetobacter	Moraxellaceae	Pseudomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0013780164808574	0.0004988235496302	0.0008550287321078	0.0012033442769838	0.0008118299318088
+Advenella	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.227453566096742		0.0068930931252828	0.0067495353332469	0.0100755226151491
+Ahniella	Rhodanobacteraceae	Xanthomonadales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0003001784037981			
+Alcaligenes	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0175323908033693		0.0001838461078716	0.000373317941676	0.0005772723573566
+Alicycliphilus	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001219942443988		0.0004172052282069	0.0014658114179305	0.0011863153443637
+Alkalibacter	Alkalibacteraceae	Eubacteriales	Clostridia	Firmicutes	Bacteria					
+Allorhizobium-Neorhizobium-Pararhizobium-Rhizobium	Rhizobiaceae	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0001298637855041	0.0002109406324933	0.0002902567352762	0.0001682317824677	0.0002067312942661
+Altererythrobacter	Sphingomonadaceae	Sphingomonadales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0002322164908648	0.0006609494130435	0.0003704683717574	0.0001802969237949	0.0001198617069178
+Amaricoccus	Rhodobacteraceae	Rhodobacterales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0001377330200683	0.000216402525157	0.0001894095578444	0.0001327255556732
+Aminivibrio	Synergistaceae	Synergistales	Synergistia	Synergistota	Bacteria				0.000296220975363	0.0001828503047253
+Aminobacter	Rhizobiaceae	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria				0.0001340187122278	0.0001280260152931
+Amnipila	Anaerovoracaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria			0.0006651138045771	0.000378606163338	0.0003121258205495
+Anaerocolumna	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria	0.0002394886866045		0.0003849113075283	0.0004552246442451	0.0005857098544492
+Anaerofustis	Anaerofustaceae	Eubacteriales	Clostridia	Firmicutes	Bacteria				0.0001174149992568	0.0001494976230419
+Anaerolinea	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.0009474281395725	0.0013317171133086	0.0027710374179088	0.003792593632405	0.0039491187246656
+Anaerosalibacter	Family XI	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria			0.0008041322127535	0.0024193895381385	0.001637955354004
+Anaerosinus	Sporomusaceae	Veillonellales-Selenomonadales	Negativicutes	Firmicutes	Bacteria				0.0002641242408325	0.0002722622484789
+Anaerosporobacter	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria	0.0007752969369197		0.0002627685255294	0.0001505221072439	0.0001544267297533
+Anaerostignum	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria			0.0007211717683332	0.0001044470614092	0.0003343185615693
+Anaerostipes	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria					0.0001112218478833
+Anaerovorax	Anaerovoracaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0017871784074566	0.0025399791065922	0.0014019905261513	0.0016980302864841	0.0018389434492349
+Aquabacterium	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria			0.0002554288421421	0.0003385507868727	0.0004760879504168
+Arcobacter	Arcobacteraceae	Campylobacterales	Campylobacteria	Campylobacterota	Bacteria	0.0060881588911745				
+Atopococcus	Carnobacteriaceae	Lactobacillales	Bacilli	Firmicutes	Bacteria		0.0005658103599396			
+Aurantimicrobium	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria		0.0001464326321028	0.0001665966805701	0.0003476957301738	0.0001903106338966
+BD1-7 clade	Spongiibacteraceae	Pseudomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0033896395061269	0.0076213779558807	0.0039501479637089	0.001047267599653	0.0006864385297666
+Bacillus	Bacillaceae	Bacillales	Bacilli	Firmicutes	Bacteria		0.0001857546902386	0.0080950646058181	0.0156685212503349	0.0206009931069763
+Bacteroides	Bacteroidaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0003563532665642		0.0005143743952971	0.000366401782883	0.00036745681049
+Bdellovibrio	Bdellovibrionaceae	Bdellovibrionales	Bdellovibrionia	Bdellovibrionota	Bacteria	0.0001435122656707	0.0001391003259642	0.0001961997684229		
+Bellilinea	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.000308681971185	0.0008508737876385	0.0006448113220855	0.0001885689193143	0.0001667167274508
+Bosea	Beijerinckiaceae	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria			0.0001263924294153	0.0001219822886332	0.0001385797547203
+Brachymonas	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0003183442875416	0.0013265161733094	0.0026414393167775	0.0010764078369506
+Brevundimonas	Caulobacteraceae	Caulobacterales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0001443237389005	0.0002729825323147	0.0001420219212687		
+Burkholderia-Caballeronia-Paraburkholderia	Burkholderiaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001829048810515				
+CL500-29 marine group	Ilumatobacteraceae	Microtrichales	Acidimicrobiia	Actinobacteriota	Bacteria		0.0001447791937451			0.0001055408577688
+Caldicoprobacter	Caldicoprobacteraceae	Caldicoprobacterales	Clostridia	Firmicutes	Bacteria	0.0005464549813734		0.0001553926816632	0.0001289026133637	
+Candidatus Alysiosphaera	Geminicoccaceae	Tistrellales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0003003399276407	0.0003421765150529	0.0001151399242619	
+Candidatus Anammoximicrobium	Pirellulaceae	Pirellulales	Planctomycetes	Planctomycetota	Bacteria		0.0001690587510146	0.0001249339981267		
+Candidatus Berkiella	Unknown Family	Gammaproteobacteria Incertae Sedis	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001710880031421	0.0001332611787539	0.0010384828766952	0.0001827215442016	
+Candidatus Caldatribacterium	Caldatribacteriaceae	Caldatribacteriales	Caldatribacteriia	Caldatribacteriota	Bacteria	0.0274466416488536	0.0146226084687116	0.0501161465058326	0.0092254127776659	0.007872169881912
+Candidatus Cloacimonas	Cloacimonadaceae	Cloacimonadales	Cloacimonadia	Cloacimonadota	Bacteria	0.0034690006761359	0.0038935956877546	0.0049178513007131	0.0026485089123494	0.0026393110436983
+Candidatus Competibacter	Competibacteraceae	Competibacterales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0037954438823902	0.0006453285747818	0.0003988013314384	0.0002576466712504
+Candidatus Metachlamydia	Parachlamydiaceae	Chlamydiales	Chlamydiae	Verrucomicrobiota	Bacteria	0.0001472759503187		0.0001260836268853		
+Candidatus Methanofastidiosum	Methanofastidiosaceae	Methanofastidiosales	Thermococci	Euryarchaeota	Archaea		0.0001111083909433	0.0001279086197023	0.0001372908018306	
+Candidatus Protochlamydia	Parachlamydiaceae	Chlamydiales	Chlamydiae	Verrucomicrobiota	Bacteria	0.0004817292913362	0.0001337872742256	0.0006276044932757	0.0001171862287607	
+Candidatus Saccharimonas	Saccharimonadaceae	Saccharimonadales	Saccharimonadia	Patescibacteria	Bacteria		0.0001491959368143			
+Candidatus Soleaferrea	Ruminococcaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0002613012584159				
+Candidatus Symbiobacter	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria				0.000187494413555	0.0002501223792548
+Castellaniella	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria			0.0006215966886387	0.0003805355133096	0.0004452494555418
+Caulobacter	Caulobacteraceae	Caulobacterales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0002238023272063	0.0001824978797106		
+Cereibacter	Rhodobacteraceae	Rhodobacterales	Alphaproteobacteria	Proteobacteria	Bacteria					
+Christensenellaceae R-7 group	Christensenellaceae	Christensenellales	Clostridia	Firmicutes	Bacteria	0.0095798463150376	0.059963595934251	0.0450329012684645	0.0646404132385546	0.0711555956564219
+Citrobacter	Enterobacteriaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0001223012435588	0.0010500475480169	0.0038761954543497	0.0051242950990108
+Clostridioides	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria					0.0003745783332148
+Clostridium	Caloramatoraceae	Clostridiales	Clostridia	Firmicutes	Bacteria			0.0001594324388131	0.0004388343988218	0.000259416427531
+Clostridium sensu stricto 1	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria	0.0007472114507541	0.0041137075273294	0.0022179540570389	0.0025232520184512	0.0023045171965872
+Clostridium sensu stricto 11	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria			0.0002351839741018		
+Clostridium sensu stricto 12	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria			0.000125044189361	0.0001416802064404	
+Clostridium sensu stricto 13	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria	0.0001295720194434		0.0004989395959156	0.0004797767113934	0.0014817895781611
+Clostridium sensu stricto 14	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria		0.0001039696187224	0.0017603763461954	0.0054661842592436	0.0053929361723335
+Clostridium sensu stricto 15	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria		0.0015876409704546	0.0921232718519508	0.103065167334514	0.0709406580692518
+Clostridium sensu stricto 16	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria			0.0001323681124367		
+Clostridium sensu stricto 18	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria		0.000375302281371	0.0064830684234155	0.0192156502422331	0.0115546065128029
+Clostridium sensu stricto 3	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria			0.0008468729186468	0.0021737831231193	0.0026459080664044
+Clostridium sensu stricto 5	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria					
+Clostridium sensu stricto 7	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria			0.0042601800289168	0.0048219648613369	0.0039572990414454
+Colidextribacter	Oscillospiraceae	Oscillospirales	Clostridia	Firmicutes	Bacteria				0.00015987271994	
+Comamonas	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0167990558044505	0.0003168370880699	0.0706325689958093	0.129961233281037	0.189135633042529
+Cryobacterium	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria		0.0001071110254789	0.0001304524132295	0.0002254506155449	0.0001829837906028
+Cryptanaerobacter	Pelotomaculaceae	Desulfotomaculales	Desulfotomaculia	Firmicutes	Bacteria		0.0001458223598901			
+Curvibacter	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria					0.000159985670369
+DMER64	Rikenellaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0017502231415934	0.0038599239556056	0.0025423716819506	0.0011138981072178	0.0007418291047107
+Dechloromonas	Rhodocyclaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0003898542153159	0.0001385216647965		
+Defluviitalea	Defluviitaleaceae	Lachnospirales	Clostridia	Firmicutes	Bacteria	0.0006398977563561				
+Delftia	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0002253704736539		0.0003519694989669	0.0004035257050508	0.0006026876470439
+Desulfatiglans	Desulfatiglandaceae	Desulfatiglandales	Desulfobacteria	Desulfobacterota	Bacteria			0.0001386831656624	0.000150428270253	0.0001627388284423
+Desulfitibacter	Desulfitibacteraceae	Desulfitibacterales	Moorellia	Firmicutes	Bacteria	0.0005816020675174				
+Desulfobulbus	Desulfobulbaceae	Desulfobulbales	Desulfobulbia	Desulfobacterota	Bacteria	0.0004139038864683	0.000951470744131	0.0006185864596377	0.0003772571486835	0.0003496772017244
+Desulfohalotomaculum	Desulfotomaculaceae	Desulfotomaculales	Desulfotomaculia	Firmicutes	Bacteria	0.0002045415405552				
+Desulfomicrobium	Desulfomicrobiaceae	Desulfovibrionales	Desulfovibrionia	Desulfobacterota	Bacteria		0.0002836707404573			
+Desulfomonile	Desulfomonilaceae	Desulfomonilales	Desulfomonilia	Desulfobacterota	Bacteria					0.0001138298122763
+Desulfosporosinus	Desulfitobacteriaceae	Desulfitobacteriales	Desulfitobacteriia	Firmicutes	Bacteria	0.0009697928821757				
+Desulfotomaculum	Desulfotomaculaceae	Desulfotomaculales	Desulfotomaculia	Firmicutes	Bacteria	0.0002494207012008				
+Desulfovibrio	Desulfovibrionaceae	Desulfovibrionales	Desulfovibrionia	Desulfobacterota	Bacteria	0.0010478929149625	0.0002051285649029	0.0001825051353666	0.000163928756806	0.0001551681956341
+Dethiobacter	Dethiobacteraceae	Dethiobacterales	Dethiobacteria	Firmicutes	Bacteria					0.000193916260675
+Devosia	Devosiaceae	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0004178111270717	0.0010453483893579	0.0010189550281398	0.0005404854236557	0.0004136142559253
+Diaminobutyricimonas	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria		0.0001374602108369	0.0002655298494256	0.0007173267354421	0.0007135400583694
+Diaphorobacter	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.000159613980071		0.0007224044284781	0.0015972698343351	0.0018270498019302
+Dielma	Erysipelotrichaceae	Erysipelotrichales	Bacilli	Firmicutes	Bacteria					
+Dokdonella	Rhodanobacteraceae	Xanthomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001089041008419	0.0002847306080111	0.0002144570900581	0.000103392872986	
+Dysgonomonas	Dysgonomonadaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0006931103415926		0.0001174974534656		
+Enterobacter	Enterobacteriaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001494585149433		0.0002481079972862	0.0010037401977544	0.001294394228153
+Enterococcus	Enterococcaceae	Lactobacillales	Bacilli	Firmicutes	Bacteria	0.0001043344197294	0.0009040380851727	0.0012323690087804	0.0006081498100911	0.001022683847981
+Ercella	Hungateiclostridiaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0001088712590886	0.0002985535836147	0.0002126865318688	0.0003393388720363	0.0001953766408384
+Erysipelothrix	Erysipelotrichaceae	Erysipelotrichales	Bacilli	Firmicutes	Bacteria					0.0001896921364256
+Erysipelotrichaceae UCG-007	Erysipelotrichaceae	Erysipelotrichales	Bacilli	Firmicutes	Bacteria	0.0001974006843189				
+Erythrobacter	Sphingomonadaceae	Sphingomonadales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0001300524667254			
+Escherichia	Enterobacteriaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.00020739267269		0.0022380163613281	0.0093872685494261	0.0097616739808961
+Exiguobacterium	Exiguobacteraceae	Exiguobacterales	Bacilli	Firmicutes	Bacteria		0.0003445031256518			
+Faecalibacterium	Ruminococcaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria		0.0001145554740335	0.0001190480409981		
+Fastidiosipila	Hungateiclostridiaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0031047023485992	0.0028518969071264	0.003443434906781	0.0027043392733485	0.0024853483617978
+Fermentimonas	Dysgonomonadaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0005469962783344				
+Fimbriiglobus	Gemmataceae	Gemmatales	Planctomycetes	Planctomycetota	Bacteria				0.000235605692961	0.0001922395412335
+Flavobacterium	Flavobacteriaceae	Flavobacteriales	Bacteroidia	Bacteroidota	Bacteria					
+Flexilinea	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.000114489752048		0.0001383197512795	0.0001214203030268	0.0001167111889064
+Fonticella	Caloramatoraceae	Clostridiales	Clostridia	Firmicutes	Bacteria					
+GKS98 freshwater group	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0002137028468708				0.0001049944776822
+Galbitalea	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria	0.0003188126851771	0.0010561834904932	0.0011873054135993	0.0023299106502392	0.0025434068739139
+Gallicola	Family XI	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria			0.0009489355924289	0.0006602477589346	0.0003642062719029
+Geminicoccus	Geminicoccaceae	Tistrellales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0002143365970675	0.0007469483618847	0.0006686515857329	0.0001884783230766	
+Geobacter	Geobacteraceae	Geobacterales	Desulfuromonadia	Desulfobacterota	Bacteria		0.000170794600181			
+Giesbergeria	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria					0.0001347673127986
+Glaciihabitans	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria			0.0001071050504056	0.0002258602707404	0.0002311406149532
+HN-HF0106	Hungateiclostridiaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria		0.0001788475636467	0.0001114817709206		
+Hafnia-Obesumbacterium	Hafniaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0002194732422568				
+Herbiconiux	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria				0.0001045999388147	
+Herbinix	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria	0.0002868345784083				
+Hydrogenophaga	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria			0.0001939868557388	0.0005540147546448	0.0006198646568469
+Hyphomicrobium	Hyphomicrobiaceae	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0001432210323124	0.0001564475134971	0.0002265587596894	0.0001775436687512	
+Iamia	Iamiaceae	Microtrichales	Acidimicrobiia	Actinobacteriota	Bacteria		0.0004832953850348	0.0002817715412265	0.0002191715095222	0.0001432076866749
+Ideonella	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria				0.000163853815044	0.0001797445803271
+Intestinibacter	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0001706712495325	0.0006062986195723	0.0005739858491071	0.00015929982551	0.0001573402140812
+Intestinimonas	Oscillospiraceae	Oscillospirales	Clostridia	Firmicutes	Bacteria					
+JGI-0000079-D21	Synergistaceae	Synergistales	Synergistia	Synergistota	Bacteria	0.0006940611340386	0.0014420539313868	0.0008650883499935	0.0005251501784098	0.000312864352243
+Jatrophihabitans	Frankiaceae	Frankiales	Actinobacteria	Actinobacteriota	Bacteria		0.0001431244221303			
+Klebsiella	Enterobacteriaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria			0.0004638719613577	0.0016016619187551	0.0019539791661247
+Lachnoclostridium	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria			0.000353228989005	0.000343512611285	0.0010804814628078
+Lachnospiraceae AC2044 group	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria		0.0023142074952898	0.0004574404805309	0.0003148363835326	0.0004581709626238
+Lachnospiraceae FCS020 group	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria		0.0002044047833748			
+Lachnospiraceae NC2004 group	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria		0.0001408771167764			
+Lachnospiraceae NK4A136 group	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria		0.0002211555572157			
+Lachnospiraceae XPB1014 group	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria		0.0002244382636614	0.0004389032712046	0.0003441121165973	0.000560485858284
+Lactivibrio	Synergistaceae	Synergistales	Synergistia	Synergistota	Bacteria		0.0002728854657902	0.0002332586447023	0.0009723386101007	0.00077246517626
+Lautropia	Burkholderiaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0001739827010264			
+Legionella	Legionellaceae	Legionellales	Gammaproteobacteria	Proteobacteria	Bacteria					
+Leifsonia	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria	0.0003060751335041	0.0008164598777271	0.001001107068544	0.0019290113146431	0.0020467976326536
+Lentimicrobium	Lentimicrobiaceae	Sphingobacteriales	Bacteroidia	Bacteroidota	Bacteria	0.0001234956178435	0.0013704363967814	0.0002979993962399	0.0003373434265435	0.0003085472302599
+Leptolinea	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.0032487697257255	0.0088181431008867	0.0077318438682495	0.0048260041974466	0.0048726487570419
+Leptothrix	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria				0.0001311849168021	0.0001456441599178
+Leucobacter	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria	0.0001968336700451	0.0006955589554669	0.0007874363261961	0.0013872896873123	0.0009390667319775
+Levilinea	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.0004288439506434	0.0012728658121615	0.0018218331122262	0.0010308120322742	0.001108261816048
+Limnohabitans	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria				0.0001577624950349	0.0002287782696629
+Longilinea	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.0059782921500233	0.0171725626559085	0.0114901944675004	0.0104794663861803	0.0106616842756073
+Luteimonas	Xanthomonadaceae	Xanthomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001112904576909	0.0004602207838853	0.0002053840267434	0.0001250299611258	0.000127223235515
+Luteolibacter	Rubritaleaceae	Verrucomicrobiales	Verrucomicrobiae	Verrucomicrobiota	Bacteria		0.0001997159156687			0.0001214592053033
+Lysinibacillus	Planococcaceae	Bacillales	Bacilli	Firmicutes	Bacteria	0.0062746680280696	0.006169907074931	0.0001989966218246	0.0001422241432587	0.0018788771419688
+Lysinimonas	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria					0.0001211079310719
+Lysobacter	Xanthomonadaceae	Xanthomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001199247275367	0.0005513247796589	0.0003252557894533	0.000214400845517	0.0001693603707128
+Macellibacteroides	Tannerellaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0036795565127234		0.0032928553442883	0.0008649143623327	0.0024234126409274
+Mesorhizobium	Rhizobiaceae	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria				0.0001253819839246	0.000147552817006
+Methanolinea	Methanoregulaceae	Methanomicrobiales	Methanomicrobia	Halobacterota	Archaea	0.0012728510094564	0.0013988744509241	0.0017477629838965	0.0011697068361523	0.0010795454333293
+Methanosaeta	Methanosaetaceae	Methanosarciniales	Methanosarcinia	Halobacterota	Archaea	0.0023265070091987	0.0034958223462181	0.008921430563314	0.0042425882028694	0.0036720845919927
+Methanospirillum	Methanospirillaceae	Methanomicrobiales	Methanomicrobia	Halobacterota	Archaea		0.0001142559546849	0.0004372690022383	0.000360519357479	0.000286543777888
+Microbacterium	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria	0.0002789864685348	0.0005093645380766	0.0009202923074962	0.0025303526811286	0.002184663804255
+Microvirgula	Aquaspirillaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0039454251540492				
+Mobilitalea	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria					
+Monoglobus	Monoglobaceae	Monoglobales	Clostridia	Firmicutes	Bacteria		0.0001572840668919			
+Morganella	Morganellaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria			0.0004580587399434	0.0001380231308298	0.0005731027289758
+Mycobacterium	Mycobacteriaceae	Corynebacteriales	Actinobacteria	Actinobacteriota	Bacteria	0.001296214096039	0.0017080545068256	0.001767737266785	0.0018615667390571	0.001883965001923
+NK4A214 group	Oscillospiraceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0004210158535524	0.0003756597761515	0.0003439522916426	0.0004785651270538	0.0005401329953071
+Negativibacillus	Ruminococcaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria					
+Neochlamydia	Parachlamydiaceae	Chlamydiales	Chlamydiae	Verrucomicrobiota	Bacteria	0.0002825200137872	0.0001474935427465	0.0003854611802262	0.0001106206755209	
+Novosphingobium	Sphingomonadaceae	Sphingomonadales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0006147849228802	0.0030370932710499	0.0016713924631241	0.0006816960781404	0.0003960206767392
+OLB8	Saprospiraceae	Chitinophagales	Bacteroidia	Bacteroidota	Bacteria			0.0001755100042738		0.0001267678644496
+Oblitimonas	Pseudomonadaceae	Pseudomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0003261756061259				
+Ottowia	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0002606441619017	0.0008891993831816	0.0009270460850458	0.0012531262626039	0.0013481635721781
+Paenalcaligenes	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0021161787603268				0.0001476374462265
+Paeniclostridium	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria		0.0001789052416271			
+Paludibacter	Paludibacteraceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0004910713620795		0.000259172317642		0.0001963199440396
+Paludicola	Ruminococcaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.000102431163747				
+Pantoea	Erwiniaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001333297354403				
+Papillibacter	Oscillospiraceae	Oscillospirales	Clostridia	Firmicutes	Bacteria					
+Paraclostridium	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria		0.0001285228657256			
+Paracoccus	Rhodobacteraceae	Rhodobacterales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0002103414454223	0.0003912918684144	0.0003740948606669	0.0005079475412852	0.0003692014348942
+Parafrigoribacterium	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria		0.0001551732561093	0.0002706082182883	0.0003888771318883	0.000310587665493
+Parapusillimonas	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.000338490082826				
+Pectobacterium	Pectobacteriaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001855659577993				
+Pelolinea	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.0004260164788702	0.0012975515862985	0.0010359373683476	0.0005584526453029	0.0005103421213579
+Pelosinus	Sporomusaceae	Veillonellales-Selenomonadales	Negativicutes	Firmicutes	Bacteria				0.0001266647867964	0.0001414621540728
+Pelotomaculum	Pelotomaculaceae	Desulfotomaculales	Desulfotomaculia	Firmicutes	Bacteria		0.0001075410922668			
+Peptoclostridium	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria		0.0037292888559563	0.0015182684271795	0.0011223567712822	0.0005090288333189
+Peptostreptococcus	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria		0.0009626795979485	0.0005227449979877	0.0008181547436817	0.0005992616016398
+Petrimonas	Dysgonomonadaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0077431874851124	0.0006384674759855	0.0037609345460293	0.0015402285780955	0.0025592576715089
+Phascolarctobacterium	Acidaminococcaceae	Acidaminococcales	Negativicutes	Firmicutes	Bacteria			0.0001260038989496		0.0001506055732086
+Phenylobacterium	Caulobacteraceae	Caulobacterales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0002872254098271	0.0008867219768619	0.0008043810367164	0.0004659966865596	0.0004720130363444
+Pigmentiphaga	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001224791374585				
+Pir3 lineage	Pirellulaceae	Pirellulales	Planctomycetes	Planctomycetota	Bacteria	0.0009444837163705	0.0025845665113211	0.0021322388019677	0.0012264425673209	0.0012535053602451
+Pir4 lineage	Pirellulaceae	Pirellulales	Planctomycetes	Planctomycetota	Bacteria	0.0003598266292407	0.0009448619461932	0.001421847571414	0.0011230642914459	0.0010554003316516
+Pirellula	Pirellulaceae	Pirellulales	Planctomycetes	Planctomycetota	Bacteria	0.0003682017655219	0.0012682948808108	0.0017970100208209	0.0017164591819134	0.0017355429239978
+Plesiomonas	Enterobacteriaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0002992399120498				
+Polaromonas	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria				0.0001583816643877	0.0003095810610331
+Porphyromonas	Porphyromonadaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0001639780766315		0.0001640538882031		0.0001278381883133
+Proteiniclasticum	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria	0.0021834953669741	0.0005002809097823	0.0006956775254419	0.0006487161616772	0.002452989266115
+Proteiniphilum	Dysgonomonadaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0341924882685268	0.0067450251165629	0.0092391111759952	0.0047256245613173	0.0045078375557596
+Proteocatella	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0014154862208539	0.0010395205614834	0.0086912041919526	0.0176300911438726	0.0164091196855664
+Proteus	Morganellaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria					
+Providencia	Morganellaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0018715047375969	0.0001393323633412		0.0001335353348434	0.0006461232037681
+Pseudarcobacter	Arcobacteraceae	Campylobacterales	Campylobacteria	Campylobacterota	Bacteria	0.0008896573710491				
+Pseudobacteroides	Hungateiclostridiaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria		0.0001753787179304			
+Pseudomonas	Pseudomonadaceae	Pseudomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.147363146991093	0.000167912455593	0.000236226843453	0.0003185091772447	0.000216825808852
+Pseudorhodobacter	Rhodobacteraceae	Rhodobacterales	Alphaproteobacteria	Proteobacteria	Bacteria					0.0001382360596393
+Pseudoxanthomonas	Xanthomonadaceae	Xanthomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001973285898735	0.0012107183012838	0.000681262295388	0.0003379084068487	0.0002016021923948
+Psychrobacillus	Planococcaceae	Bacillales	Bacilli	Firmicutes	Bacteria		0.0001601752119356			
+Puniceicoccus	Puniceicoccaceae	Opitutales	Verrucomicrobiae	Verrucomicrobiota	Bacteria		0.0001324301715765	0.0001650951076098	0.0005615190406924	0.0004153752174842
+Pusillimonas	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0005991336709397				
+Pygmaiobacter	Ruminococcaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria					0.0002144596539138
+Rahnella1	Yersiniaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0003121988523306				
+Ramlibacter	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria				0.000149771753773	0.0001979361601331
+Reyranella	Reyranellaceae	Reyranellales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0001129181249498			
+Rhodobacter	Rhodobacteraceae	Rhodobacterales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0001202802148743	0.0001506651012348	0.0002234607935816	0.0002136358388242	0.0001843898098371
+Rhodoferax	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria		0.000128100422709	0.0002487097964156	0.0002817767546731	0.0003830949841577
+Rikenellaceae RC9 gut group	Rikenellaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0001541524723075	0.0005635778224541	0.0002606109234871		
+Romboutsia	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0017542237697508	0.0043794107219446	0.0056974836687804	0.0026729303722737	0.0019763793589633
+Roseimarinus	Prolixibacteraceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria					
+Roseomonas	Acetobacteraceae	Acetobacterales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0001998356896969	0.0008571505284187	0.0005675168666863	0.0004078505535103	0.0003004102285449
+Ruminiclostridium	Hungateiclostridiaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0011205068739963			0.0001264033588942	
+Ruminococcus	Ruminococcaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0001489487673554	0.0049422270781748	0.0001697123663936	0.0002118351663599	0.0001820833430252
+Rummeliibacillus	Planococcaceae	Bacillales	Bacilli	Firmicutes	Bacteria			0.0001160585429993		0.0001189030787276
+SC103	Petrotogaceae	Petrotogales	Thermotogae	Thermotogota	Bacteria		0.0001264258319461			
+SH-PL14	Rubinisphaeraceae	Planctomycetales	Planctomycetes	Planctomycetota	Bacteria	0.0018386439723079	0.0037363968379484	0.0032506366443432	0.0038593438489608	0.0040174720923832
+Saccharofermentans	Hungateiclostridiaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria		0.0003511138178581	0.0003724547572339	0.0003940617284329	0.0004310543935941
+Salinibacterium	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria		0.0001177400680879	0.0002418041877229	0.0004567145051598	0.0003719353750171
+Salmonella	Enterobacteriaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria				0.0001622716306697	0.0001340858409496
+Sandaracinobacter	Sphingomonadaceae	Sphingomonadales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0001713721420258	0.0001118856253473	0.0001393141618517	0.0001375590429724
+Sedimentibacter	Sedimentibacteraceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0118766642995514	0.0468986705583501	0.0470187064616732	0.0418430439719256	0.0176325036790377
+Serratia	Yersiniaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0208779415883964				
+Simplicispira	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0017111359224212				
+Smithella	Smithellaceae	Syntrophales	Syntrophia	Desulfobacterota	Bacteria	0.0113130372522076	0.0264708658467595	0.0121608395185936	0.0041992935896685	0.0033521150835307
+Soehngenia	Family XI	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria			0.0007433684382472	0.0009987132818584	0.0015799989248753
+Solobacterium	Erysipelotrichaceae	Erysipelotrichales	Bacilli	Firmicutes	Bacteria	0.0007607641185718				
+Sphaerotilus	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria					0.0001259450889305
+Sphingomonas	Sphingomonadaceae	Sphingomonadales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0002125926574523	0.0001264113918709		
+Sphingorhabdus	Sphingomonadaceae	Sphingomonadales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0002750211552742	0.0011284989751722	0.0009355313806986	0.0003603165021094	0.0001640838982473
+Sporanaerobacter	Family XI	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria		0.0002278101468492	0.0099575843298765	0.0209080169971602	0.0164367689310057
+Sporosarcina	Planococcaceae	Bacillales	Bacilli	Firmicutes	Bacteria		0.0011305490996987			
+Staphylococcus	Staphylococcaceae	Staphylococcales	Bacilli	Firmicutes	Bacteria			0.0001268129057335	0.0001947562473779	0.0002769230665581
+Stella	Azospirillales Incertae Sedis	Azospirillales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0001242906639104			
+Stenotrophomonas	Xanthomonadaceae	Xanthomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0016158318173389	0.0001991679393542	0.0025150533608834	0.0043797071174812	0.0071744760017728
+Subgroup 10	Thermoanaerobaculaceae	Thermoanaerobaculales	Thermoanaerobaculia	Acidobacteriota	Bacteria	0.0010308703986538	0.0131226301450089	0.0041612641705921	0.0024672449165169	0.0015742482780218
+Succinispira	Acidaminococcaceae	Acidaminococcales	Negativicutes	Firmicutes	Bacteria	0.0001065892993872		0.0001672770811259		
+Sumerlaea	Sumerlaeaceae	Sumerlaeales	Sumerlaeia	Sumerlaeota	Bacteria	0.0014911884723066	0.0036194735355935	0.0018184671209655	0.000932623301631	0.0006911004247598
+Sva0081 sediment group	Desulfosarcinaceae	Desulfobacterales	Desulfobacteria	Desulfobacterota	Bacteria		0.0001327754903283			
+Syner-01	Synergistaceae	Synergistales	Synergistia	Synergistota	Bacteria	0.0010082173002131	0.0020439784471519	0.0027716948773683	0.0104137684728411	0.0067596726370509
+Syntrophobacter	Syntrophobacteraceae	Syntrophobacterales	Syntrophobacteria	Desulfobacterota	Bacteria	0.000503690303217	0.0034810176036651	0.0031770054144835	0.0015300189999335	0.0014362120185341
+Syntrophomonas	Syntrophomonadaceae	Syntrophomonadales	Syntrophomonadia	Firmicutes	Bacteria	0.0030315358800849	0.0023881980063197	0.0012361369504792	0.000897596509873	0.0005898085668537
+Syntrophorhabdus	Syntrophorhabdaceae	Syntrophorhabdales	Syntrophorhabdia	Desulfobacterota	Bacteria	0.0093137448552463	0.0959208078114829	0.0301138439681465	0.0093188072042408	0.0080868338387433
+Syntrophus	Syntrophaceae	Syntrophales	Syntrophia	Desulfobacterota	Bacteria	0.0108317953348263	0.0217504157375292	0.0282029346740642	0.0504424945199743	0.0481073984103056
+Tepidimicrobium	Family XI	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0001390984445673				
+Terrisporobacter	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0001468283902466	0.0004226821626411	0.0003022619847414	0.0001977747979641	0.0001130278070691
+Tetrasphaera	Intrasporangiaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria		0.000579492497724	0.0002424345553386	0.000286502602165	0.0001619738138044
+Thauera	Rhodocyclaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001508947949299	0.0023760738494688	0.0011293909110826	0.0005260428184937	0.0003380143525277
+Thermomonas	Xanthomonadaceae	Xanthomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0001557351450811	0.0011607521261206	0.0006499768285478	0.0002756820197484	0.0003206611615308
+Thermovirga	Synergistaceae	Synergistales	Synergistia	Synergistota	Bacteria	0.0071948204001293	0.0178144914285617	0.0145271530483064	0.0087030648486748	0.0066434414252061
+Thiopseudomonas	Pseudomonadaceae	Pseudomonadales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0319067866165003				
+Thiothrix	Thiotrichaceae	Thiotrichales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0002024067494937			
+Tissierella	Family XI	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0754753462112254	0.0004163558326993	0.0064557780149746	0.0023809173420669	0.0027042161758573
+Trichococcus	Carnobacteriaceae	Lactobacillales	Bacilli	Firmicutes	Bacteria		0.0045142018857555			
+Turicibacter	Erysipelotrichaceae	Erysipelotrichales	Bacilli	Firmicutes	Bacteria	0.0002236245363611	0.0003590706491855	0.0005064006229327	0.0001801539365882	0.0002036562878731
+Tyzzerella	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria					
+UBA1819	Ruminococcaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria					0.000106174024162
+UCG-004	Erysipelatoclostridiaceae	Erysipelotrichales	Bacilli	Firmicutes	Bacteria		0.0001360349737011			
+Uruburuella	Neisseriaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0004760517368751	0.0002689331585214		
+Vagococcus	Vagococcaceae	Lactobacillales	Bacilli	Firmicutes	Bacteria		0.0002072990137289			
+Variovorax	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria				0.0001514964046698	0.0001905994428299
+Verticiella	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0002907130499917				
+Vitreoscilla	Neisseriaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0001330712753759			
+W5	Cloacimonadaceae	Cloacimonadales	Cloacimonadia	Cloacimonadota	Bacteria	0.0065872073922493	0.0062742823792466	0.0044570424999648	0.0015722935041575	0.001456122602021
+W5053	Family XI	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0003078239365589		0.0004825280886761	0.0006834115800092	0.0010858243939213
+XBB1006	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria			0.000117503762621		0.0002245859918295
+YC-ZSS-LKJ63	Hydrogenedensaceae	Hydrogenedentiales	Hydrogenedentia	Hydrogenedentes	Bacteria	0.0092803951442786	0.044334910369372	0.0200494167636246	0.0073605500108181	0.0059727987857636
+Yersinia	Yersiniaceae	Enterobacterales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0068304195528243				
+Zoogloea	Rhodocyclaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0005095705810883			
+[Anaerorhabdus] furcosa group	Erysipelotrichaceae	Erysipelotrichales	Bacilli	Firmicutes	Bacteria					
+[Eubacterium] ruminantium group	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria					
+[Eubacterium] xylanophilum group	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria					
+p-1088-a5 gut group	Pirellulaceae	Pirellulales	Planctomycetes	Planctomycetota	Bacteria	0.0004263175264989	0.000546120170558	0.0008642828157453	0.000382860864034	0.000454058211558
+probable genus 10	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria		0.0006493205436398		0.0002118692211036	0.0001039590659764
+unassigned						0	0	0	0	0
+	009E01-B-SD-P15	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria		0.0001031933246704			
+	A0839	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0003309688820924	0.0002798157356576	0.0001547144916617	
+	Acetobacteraceae	Acetobacterales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0003077288487495	0.0001145228367346	0.0001314091901867	0.0001489958626693
+	Acidaminococcaceae	Acidaminococcales	Negativicutes	Firmicutes	Bacteria					
+	Alcaligenaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0002024544990578				
+	Alkalibaculum	Eubacteriales	Clostridia	Firmicutes	Bacteria	0.0003726501894314				
+	Alkaliphilus	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria			0.000359573622608	0.0004571014450277	0.0003681749395375
+	Anaerolineaceae	Anaerolineales	Anaerolineae	Chloroflexi	Bacteria	0.0238686575663785	0.0597880890214712	0.0499835325925064	0.0540714392772412	0.0561423083795085
+	Anaerovoracaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0021705132752512	0.0022127132905284	0.0015022936765386	0.0009667653499936	0.0008085190908145
+	Arcobacteraceae	Campylobacterales	Campylobacteria	Campylobacterota	Bacteria	0.002157368205726				
+	Babeliaceae	Babeliales	Babeliae	Dependentiae	Bacteria		0.0001583495359493			
+	Bacillaceae	Bacillales	Bacilli	Firmicutes	Bacteria			0.0048903224510815	0.0113864802647306	0.0128117841624486
+	Bacteroidetes vadinHA17	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.013301666755162	0.0261666355977954	0.020659866867705	0.0085270667367375	0.0059737406915084
+	Beijerinckiaceae	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria		0.0001754112556907	0.0003331699278105	0.0003023861111505	0.0001754206764487
+	Caldilineaceae	Caldilineales	Anaerolineae	Chloroflexi	Bacteria	0.0003866367338753	0.0042077828635216	0.0028398313618608	0.0031739888943345	0.0038214998657753
+	Calditrichaceae	Calditrichales	Calditrichia	Calditrichota	Bacteria	0.0005929856294814	0.0010376378056191	0.0004842838482549	0.000228771933696	0.0001583452882524
+	Caloramatoraceae	Clostridiales	Clostridia	Firmicutes	Bacteria			0.0003360803502635	0.0008237805767947	0.0005608617215369
+	Christensenellaceae	Christensenellales	Clostridia	Firmicutes	Bacteria	0.0002107133852239	0.0008583064747138	0.0004429089952099	0.0004356327169768	0.0003658339260404
+	Clostridiaceae	Clostridiales	Clostridia	Firmicutes	Bacteria			0.0002126190882775	0.0006446313884663	0.0009127157651726
+	Comamonadaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria	0.0003614011945093	0.0007057361739797	0.0013187654537872	0.0016749873309251	0.0023415661351541
+	Desulfovibrionaceae	Desulfovibrionales	Desulfovibrionia	Desulfobacterota	Bacteria		0.0001943244617737	0.0001659797628467		
+	Dysgonomonadaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0009181250083169	0.0001656235473283	0.000179941336978		
+	Erysipelotrichaceae	Erysipelotrichales	Bacilli	Firmicutes	Bacteria					
+	Family XI	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0293637876780707		0.0023939226465173	0.0010580419886845	0.0010171997635436
+	Fermentibacteraceae	Fermentibacterales	Fermentibacteria	Fermentibacterota	Bacteria	0.0001548114361655	0.0007536696543146	0.0001740498758921		
+	Gemmataceae	Gemmatales	Planctomycetes	Planctomycetota	Bacteria				0.0001523148463989	0.0001892285367282
+	Geobacteraceae	Geobacterales	Desulfuromonadia	Desulfobacterota	Bacteria	0.0001383002215005	0.0017388312404715	0.0002132430925449	0.0003092366352876	0.0002662202678107
+	Gottschalkia	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.000101416794379	0.0064814794768319	0.0004299269738686	0.0006098296477279	0.000665101626545
+	Gracilibacter	Gracilibacteraceae	Clostridia	Firmicutes	Bacteria		0.0003443176031642	0.0001137219671171		
+	Holosporaceae	Holosporales	Alphaproteobacteria	Proteobacteria	Bacteria					
+	Hungateiclostridiaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0006273863845036	0.0010241621068404	0.0004283031552916	0.0005272152857832	0.0006765488796696
+	Hydrogenedensaceae	Hydrogenedentiales	Hydrogenedentia	Hydrogenedentes	Bacteria	0.007575713620896	0.0258558712016013	0.0146455301790672	0.0085748487752466	0.0091650362032861
+	Hydrogenoanaerobacterium	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0001352548488339				
+	Isosphaeraceae	Isosphaerales	Planctomycetes	Planctomycetota	Bacteria		0.0002242987654617	0.0001816522708668	0.0001172238059085	0.0001947501511272
+	JTB215	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria			0.0004610687561574	0.0003557465886437	0.000380276362746
+	LF045	Caldisericales	Caldisericia	Caldisericota	Bacteria	0.0001212113818353	0.0015078618594232	0.0006300484592893	0.0003903802225193	0.000281553883253
+	Lachnospiraceae	Lachnospirales	Clostridia	Firmicutes	Bacteria	0.0051167624589277	0.0001713114606208	0.000527137585677	0.0006472279964321	0.0013214355655975
+	Limnochordaceae	Limnochordales	Limnochordia	Firmicutes	Bacteria	0.0001933433426484				
+	Lutispora	Gracilibacteraceae	Clostridia	Firmicutes	Bacteria	0.0004395808691233	0.0010876871250501	0.0002139940844589	0.0007755558669124	0.0005643964605186
+	Microbacteriaceae	Micrococcales	Actinobacteria	Actinobacteriota	Bacteria		0.0001598197237507	0.0002486641735503	0.0004891140593928	0.0005028114053425
+	Oscillospiraceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0001282422962115		0.0001330216666936		0.0001272418196635
+	Paludibacteraceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0001230586067656	0.0002884864880499	0.0002327215405074	0.0001061678809438	
+	Pedosphaeraceae	Pedosphaerales	Verrucomicrobiae	Verrucomicrobiota	Bacteria	0.0001404224758452	0.0016933320177657	0.0009666516105822	0.000334834636431	0.0002594505271933
+	Peptococcaceae	Peptococcales	Clostridia	Firmicutes	Bacteria	0.0001347870848992	0.0002960740617569	0.0001784980481516	0.0002172533831774	0.0001500168442523
+	Peptostreptococcaceae	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria	0.0005033421695432	0.0022288388779023	0.0019205115312662	0.0010484821498183	0.0007540303637388
+	Pirellulaceae	Pirellulales	Planctomycetes	Planctomycetota	Bacteria	0.0015032469889211	0.0034987202081753	0.0052968019783018	0.0063101860969361	0.0066780239407633
+	Prolixibacteraceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0255783716993702	0.145907887143638	0.0645944784070633	0.0255810808451669	0.0165975436217452
+	Rhizobiaceae	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria					
+	Rhizobiales Incertae Sedis	Rhizobiales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0001758290634427	0.0001674628759684	0.0002694753961827	0.0002364848438815	0.0001658213172417
+	Rhodobacteraceae	Rhodobacterales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0001340719929621	0.0001954738750814	0.000193237099367	0.0002639428410183	0.0001538047009698
+	Rhodocyclaceae	Burkholderiales	Gammaproteobacteria	Proteobacteria	Bacteria		0.0001237907739469	0.0001045506045552		
+	Rikenellaceae	Bacteroidales	Bacteroidia	Bacteroidota	Bacteria	0.0002152868910795	0.0005541828705396	0.0002911612949784	0.0001672319201585	0.0001246623467625
+	Rubinisphaeraceae	Planctomycetales	Planctomycetes	Planctomycetota	Bacteria	0.0001551239536827	0.0001900776709679	0.0003860366707167	0.0002734415956776	0.0002532903161187
+	Rubritaleaceae	Verrucomicrobiales	Verrucomicrobiae	Verrucomicrobiota	Bacteria	0.0005471695236039	0.0014722916638524	0.0008820017898903	0.0006805546274326	0.0004581710440355
+	Ruminococcaceae	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0007529179445525	0.0002090284870199	0.0001991273410146	0.0002625949242326	0.0003280587979118
+	SCGC AAA011-D5	Woesearchaeales	Nanoarchaeia	Nanoarchaeota	Archaea					
+	SRB2	Thermoanaerobacterales	Thermoanaerobacteria	Firmicutes	Bacteria	0.0002727687322944				
+	ST-12K33	Sphingobacteriales	Bacteroidia	Bacteroidota	Bacteria	0.0004718814496952	0.0017793387126108	0.0004205443114365	0.0002190993067159	0.0001403451961775
+	Serpentinicella	Peptostreptococcales-Tissierellales	Clostridia	Firmicutes	Bacteria		0.0001443763175603			
+	Sphingomonadaceae	Sphingomonadales	Alphaproteobacteria	Proteobacteria	Bacteria	0.0001853084334985	0.0012281076298917	0.0006155840099051	0.0002735520067619	0.0002921774774169
+	Spirochaetaceae	Spirochaetales	Spirochaetia	Spirochaetota	Bacteria	0.000164027613458	0.0010111463927014	0.0004664580476962	0.0002112392281728	0.000215577732607
+	Sporomusaceae	Veillonellales-Selenomonadales	Negativicutes	Firmicutes	Bacteria		0.0001113374429302	0.0001286396551945	0.0001635003694281	0.0001521156246365
+	Synergistaceae	Synergistales	Synergistia	Synergistota	Bacteria	0.0022897420928144	0.0045686532882376	0.0054576617270541	0.0151083485689921	0.0117711478434399
+	Syntrophomonadaceae	Syntrophomonadales	Syntrophomonadia	Firmicutes	Bacteria	0.0004781642878848	0.0003183005651568		0.0003165821864801	0.000335325532143
+	UCG-010	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.000212600454067	0.0008114626962275	0.0004616533133187	0.0005101941845181	0.0004220553733064
+	UCG-011	Oscillospirales	Clostridia	Firmicutes	Bacteria		0.0001177003009727			
+	Vermiphilaceae	Babeliales	Babeliae	Dependentiae	Bacteria	0.0001778873049648	0.0001719586555603	0.0003293038463456	0.0001822068976839	0.0001346418608985
+	Verrucomicrobiaceae	Verrucomicrobiales	Verrucomicrobiae	Verrucomicrobiota	Bacteria	0.000199264854671	0.0006239907351662	0.0003422542906717	0.0002791549421805	0.0002532699024553
+	W27	Cloacimonadales	Cloacimonadia	Cloacimonadota	Bacteria	0.0020063871888153	0.0021019964622188	0.0019571529525193	0.0007930319954469	0.0007254548261428
+	WCHB1-02	Caldisericales	Caldisericia	Caldisericota	Bacteria		0.0007466316016839			
+	[Clostridium] methylpentosum group	Oscillospirales	Clostridia	Firmicutes	Bacteria					
+	[Eubacterium] coprostanoligenes group	Oscillospirales	Clostridia	Firmicutes	Bacteria	0.0002040640592299	0.0011314494623151	0.0005212456555183	0.0003443245071228	0.000520353094569
+		ADurb.Bin180	Anaerolineae	Chloroflexi	Bacteria		0.0003589705990142	0.0002005754024392	0.0002066369924366	0.0001957579194369
+		Absconditabacteriales (SR1)	Gracilibacteria	Patescibacteria	Bacteria		0.0016470919931949	0.0003047078566354	0.0001725329400266	0.000125717726165
+		Aminicenantales	Aminicenantia	Acidobacteriota	Bacteria	0.0003722383274696	0.0007970703857075	0.000646279387148	0.0008482359517155	0.0008427979443765
+		Babeliales	Babeliae	Dependentiae	Bacteria	0.0001345235487724	0.0002933776692743	0.0001252813634237		
+		Candidatus Campbellbacteria	Parcubacteria	Patescibacteria	Bacteria		0.0005739899811735	0.000166539767139		
+		Candidatus Collierbacteria	Microgenomatia	Patescibacteria	Bacteria			0.0001425087843073		
+		Candidatus Falkowbacteria	ABY1	Patescibacteria	Bacteria	0.0002079538867106	0.0143939224964391	0.0035562826830662	0.0019066278917757	0.0012835549451114
+		Candidatus Kerfeldbacteria	ABY1	Patescibacteria	Bacteria	0.0001558060213177	0.0003637939665362	0.0001530171427085		
+		Candidatus Levybacteria	Microgenomatia	Patescibacteria	Bacteria	0.0001914946381286	0.0001336838084052	0.0003226590354224	0.0002055770742486	0.0002353102867879
+		Candidatus Magasanikbacteria	ABY1	Patescibacteria	Bacteria		0.0034454643107783	0.0007537090731811	0.0004427234830765	0.000280151256014
+		Candidatus Moranbacteria	Parcubacteria	Patescibacteria	Bacteria		0.0004052376786243	0.000476775384464	0.0003571486391096	0.0002680961528595
+		Candidatus Nomurabacteria	Parcubacteria	Patescibacteria	Bacteria		0.0009742037059512	0.0002900246745873	0.0001415427826291	0.0001076125523315
+		Candidatus Pacebacteria	Microgenomatia	Patescibacteria	Bacteria	0.0016894074494036	0.0021044532017218	0.0026433863733293	0.0016091971129695	0.0013638989874704
+		Candidatus Shapirobacteria	Microgenomatia	Patescibacteria	Bacteria	0.0001114979078937		0.0001584788304476		
+		Candidatus Woesebacteria	Microgenomatia	Patescibacteria	Bacteria	0.0023504860163355	0.007423079662544	0.00689499761029	0.0062935070040957	0.0058628456945155
+		Chloroplast	Cyanobacteriia	Cyanobacteria	Bacteria		0.0001178111500906	0.0001098132932788	0.0001336552647969	0.0001195871142821
+		Chthoniobacterales	Verrucomicrobiae	Verrucomicrobiota	Bacteria		0.000165933645417	0.0001501649887517		
+		Chthonomonadales	Chthonomonadetes	Armatimonadota	Bacteria		0.0002579248051679	0.0001490242753663		
+		Clostridia UCG-014	Clostridia	Firmicutes	Bacteria		0.0001514951622708			
+		Clostridia vadinBB60 group	Clostridia	Firmicutes	Bacteria					
+		Clostridiales	Clostridia	Firmicutes	Bacteria	0.0014542763538919	0.000205493799653	0.0001172538231953	0.0001033044917349	0.0004668911287526
+		DTU014	Incertae Sedis	Firmicutes	Bacteria	0.0004542448169232	0.002100075361206	0.001022905315785	0.0007378744037825	0.0004999830361099
+		Desulfitobacteriales	Desulfitobacteriia	Firmicutes	Bacteria	0.0001237955405455				
+		Erysipelotrichales	Bacilli	Firmicutes	Bacteria	0.000811307739798				
+		Gaiellales	Thermoleophilia	Actinobacteriota	Bacteria	0.0019827750908289	0.0014588956274399	0.0013710491231428	0.0012196182008714	0.0010901941669399
+		Gracilibacteraceae	Clostridia	Firmicutes	Bacteria		0.0006255380944022	0.0001983039371496	0.000196052647282	0.0001939173589457
+		Izemoplasmatales	Bacilli	Firmicutes	Bacteria		0.0002132354835185			
+		Kapabacteriales	Kapabacteria	Bacteroidota	Bacteria					
+		LD1-PA32	Chlamydiae	Verrucomicrobiota	Bacteria		0.001026682151214	0.000123791140486		
+		LD1-PB3	Verrucomicrobiae	Verrucomicrobiota	Bacteria	0.0015739754281761	0.0211682608634534	0.0099254306843602	0.0114353262503653	0.0126373253427493
+		MSB-5E12	Anaerolineae	Chloroflexi	Bacteria		0.0001777947469192			
+		OPB41	Coriobacteriia	Actinobacteriota	Bacteria	0.0007849979054008			0.0002926370300628	0.0002340859182606
+		PeM15	Actinobacteria	Actinobacteriota	Bacteria		0.0001142570880031		0.0001870139705094	
+		Pla1 lineage	Phycisphaerae	Planctomycetota	Bacteria	0.0001645126582043	0.0002747736296122	0.0001249666072729		
+		Planctomycetales	Planctomycetes	Planctomycetota	Bacteria	0.0012024217449357	0.003399980784904	0.0024050484132281	0.0013163022455149	0.0009953499203909
+		RBG-13-54-9	Anaerolineae	Chloroflexi	Bacteria	0.0025421621947498	0.0084011680764023	0.0048855069039771	0.0030253268334941	0.0030141657632584
+		SBR1031	Anaerolineae	Chloroflexi	Bacteria	0.0008945063252208	0.0047273595373023	0.0034881867726022	0.0022185511788799	0.0026522396739677
+		SJA-15	Anaerolineae	Chloroflexi	Bacteria	0.0031282537824707	0.0070125333554702	0.0060107860098675	0.0041194654660745	0.0027470610866652
+		Saccharimonadales	Saccharimonadia	Patescibacteria	Bacteria	0.0012265658444608	0.0019082222944542	0.0016163330425567	0.0020245938685309	0.0017404303842537
+		Subgroup 7	Holophagae	Acidobacteriota	Bacteria		0.0003985971960345	0.0002204963514236	0.0003475275025183	0.0003457279178618
+		Syntrophales	Syntrophia	Desulfobacterota	Bacteria	0.0011625536045624	0.0060807292573129	0.0021502365213646	0.0008910743170024	0.0006311829791129
+		Veillonellales-Selenomonadales	Negativicutes	Firmicutes	Bacteria					
+		Vicinamibacterales	Vicinamibacteria	Acidobacteriota	Bacteria	0.0006728716313365	0.0013853034236111	0.0009885169920603	0.0011635990082369	0.0013075433080225
+		WCHB1-41	Kiritimatiellae	Verrucomicrobiota	Bacteria	0.0016921621845544	0.0042440205606204	0.0020103239892961	0.0021247024434332	0.0024699497337872
+			Actinobacteria	Actinobacteriota	Bacteria					
+			Anaerolineae	Chloroflexi	Bacteria		0.0009827897649068	0.0005040563469693	0.0002569081678306	0.00024492530003
+			Berkelbacteria	Patescibacteria	Bacteria	0.0097238217342679	0.006449319669821	0.010409492505328	0.0086342644396529	0.0082466221132441
+			D8A-2	Firmicutes	Bacteria		0.0008024492955979	0.0003740497009378	0.0007394284878459	0.0004553609190746
+			Dojkabacteria	Patescibacteria	Bacteria	0.0243646703629154	0.0225977777302533	0.0319569220255154	0.0197531550613245	0.0180366877986442
+			JS1	Caldatribacteriota	Bacteria	0.0007000591630955	0.0011325313904969	0.0011589048106676	0.0003734690053647	0.0003769982880563
+			Pla3 lineage	Planctomycetota	Bacteria			0.0001102026295419		
+			Planctomycetes	Planctomycetota	Bacteria					
+			Subgroup 21	Acidobacteriota	Bacteria		0.0001300712520801			
+			Sumerlaeia	Sumerlaeota	Bacteria	0.0001705942738558	0.0006778708830318	0.000330654939667	0.000175827806255	0.000162318769108
+			WCHB1-81	Actinobacteriota	Bacteria	0.0080851384141507	0.0040763273894991	0.0108967251966129	0.0118624643033926	0.0078301893939908
+			WWE3	Patescibacteria	Bacteria	0.0007593518764282	0.005354748315937	0.0063487008943029	0.0051300481910347	0.0052049063192426
+			bacteriap25	Myxococcota	Bacteria		0.0001660210010509	0.0002140451285182	0.0002428823026079	0.00023675671216
+				Armatimonadota	Bacteria	0.0084367474818195	0.0075940289647347	0.009431634600083	0.0116150308917089	0.0126024105166073
+				Firmicutes	Bacteria	0.0008357595887667				
+				MBNT15	Bacteria			0.0001901619767874	0.0002337701559615	0.0002051853629892
+				Marinimicrobia (SAR406 clade)	Bacteria		0.00020752178796			
+				SAR324 clade(Marine group B)	Bacteria	0.0013497379338938	0.0050709019596489	0.0025472476277618	0.0008832312397046	0.0006121275225836
+				WPS-2	Bacteria		0.0019897539198683	0.0024564280353345	0.0039583463695484	0.0038113033330862
+				WS1	Bacteria		0.0083941930010591	0.0003894175057153	0.00204563061755	0.0031691341238117
+					Bacteria		0.0001489532937358			
