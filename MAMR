@@ -172,7 +172,7 @@ def extract_features(alignment):
         alignment.reference_length
     ]
     cigar_stats = alignment.get_cigar_stats()[0]
-    n_mismatch = cigar_stats[10] - cigar_stats[1] - cigar_stats[2]
+    n_mismatch = cigar_stats[10] - cigar_stats[1] - cigar_stats[2]  # adapted from emu 
 
     features.extend([
         cigar_stats[1],
