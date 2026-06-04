@@ -129,7 +129,7 @@ Running microbotAMR:
 $MAMR -h
 usage: MAMR [-h] [-v] {AMR,BAC,COR} ...
 
-Integrated microbiome and reistome analysis pipeline
+An Integrated Pipeline for Microbiome and Resistome Analysis
 
 positional arguments:
   {AMR,BAC,COR}  sub-commands
