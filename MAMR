@@ -493,7 +493,7 @@ def filter_low_abundance_genes(gene_stats, min_count=0, max_gmm_components=3, lo
         data_reshaped = df['log_count'].values.reshape(-1, 1)
 
         n_components_range = range(1, min(len(df) + 1, max_gmm_components + 1))
-        aic_scores = []
+      #  aic_scores = []
         bic_scores = []
 
         df["GMM_low_cluster"] = False
@@ -502,7 +502,7 @@ def filter_low_abundance_genes(gene_stats, min_count=0, max_gmm_components=3, lo
             for n in n_components_range:
                 gmm = GaussianMixture(n_components=n, random_state=42, reg_covar=1e-4)
                 gmm.fit(data_reshaped)
-                aic_scores.append(gmm.aic(data_reshaped))
+         #       aic_scores.append(gmm.aic(data_reshaped))
                 bic_scores.append(gmm.bic(data_reshaped))
 
             optimal_components = n_components_range[np.argmin(bic_scores)]
