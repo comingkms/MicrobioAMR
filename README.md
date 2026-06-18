@@ -54,7 +54,8 @@ To ensure the availability of the `MAMR` command, it is essential to add the abs
 ```
 echo 'export PATH="/absolute/path/to/MAMR:$PATH"'>> ~/.bashrc && source ~/.bashrc
 ```
-Download emu database from [emu](https://github.com/treangenlab/emu)
+Download the emu database from the [emu GitHub repository](https://github.com/treangenlab/emu)  and save it to the Emu_database directory.
+
 ## Test
 1. Run the run_test.py 
 ```
