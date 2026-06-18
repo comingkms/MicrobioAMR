@@ -44,7 +44,7 @@ def _ancestors(start: Path) -> list[Path]:
 
 
 def _has_mamr_script(root: Path) -> bool:
-    return any((root / name).is_file() for name in ["MAMR_9", "MAMR_9.py", "MAMR.py", "mamr.py"])
+    return any((root / name).is_file() for name in ["MAMR", "MAMR.py", "MAMR.py", "mamr.py"])
 
 
 def _has_project_databases(root: Path) -> bool:
@@ -266,7 +266,7 @@ def mamr_script() -> Path:
         assert script.exists() and script.is_file(), f"MAMR_SCRIPT must be an existing file: {script}"
         return script
 
-    for name in ["MAMR_9", "MAMR_9.py", "MAMR.py", "mamr.py", "MicrobioAMR.py", "microbioamr.py"]:
+    for name in ["MAMR", "MAMR.py", "mamr.py", "MicrobioAMR.py", "microbioamr.py"]:
         candidate = PROJECT_ROOT / name
         if candidate.exists() and candidate.is_file():
             return candidate.resolve()
