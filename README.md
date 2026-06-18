@@ -47,7 +47,7 @@ cd MicrobioAMR
 conda env create -f MAMR.yml
 conda activate MAMR
 ```
-+ (Optional)To ensure the availability of the `MAMR` command, it is essential to add the absolute path of MAMR's directory to your PATH environment variable. This can be done by adding the following line to your `~/.bashrc` file:
++ (Optional) To ensure the availability of the `MAMR` command, it is essential to add the absolute path of MAMR's directory to your PATH environment variable. This can be done by adding the following line to your `~/.bashrc` file:
 
 ```
 echo 'export PATH="/absolute/path/to/MAMR:$PATH"'>> ~/.bashrc && source ~/.bashrc
