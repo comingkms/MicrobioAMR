@@ -39,7 +39,7 @@ MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires th
 
 ## Installation
 
-The easiest and most convenient way to install MAMR dependencies is by using conda in an isolated environment, such as `MAMR`. This method ensures a smooth and hassle-free installation process.
++ The easiest and most convenient way to install MAMR dependencies is by using conda in an isolated environment, such as `MAMR`. This method ensures a smooth and hassle-free installation process. The whole installation process should take about 5-10 minutes.
 ```bash
 git clone https://github.com/comingkms/MicrobioAMR.git
 chmod +x MicrobioAMR/MAMR
@@ -47,14 +47,12 @@ cd MicrobioAMR
 conda env create -f MAMR.yml
 conda activate MAMR
 ```
-The whole installation process should take about 5-10 minutes.
-
-To ensure the availability of the `MAMR` command, it is essential to add the absolute path of MAMR's directory to your PATH environment variable. This can be done by adding the following line to your `~/.bashrc` file:
++ (Optional)To ensure the availability of the `MAMR` command, it is essential to add the absolute path of MAMR's directory to your PATH environment variable. This can be done by adding the following line to your `~/.bashrc` file:
 
 ```
 echo 'export PATH="/absolute/path/to/MAMR:$PATH"'>> ~/.bashrc && source ~/.bashrc
 ```
-Download the emu database from the [emu GitHub repository](https://github.com/treangenlab/emu)  and save it to the Emu_database directory.
++ Download the emu database from the [emu GitHub repository](https://github.com/treangenlab/emu)  and save it to the Emu_database directory.
 
 ## Test
 1. Run the run_test.py 
