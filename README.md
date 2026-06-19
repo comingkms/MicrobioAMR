@@ -42,7 +42,7 @@ MAMR was developed and tested in Ubuntu 22.04 under Python v3.10. It requires th
 ## Installation
 
 + The easiest and most convenient way to install MAMR dependencies is by using conda in an isolated environment, such as `MAMR`. This method ensures a smooth and hassle-free installation process. The whole installation process should take about 5-10 minutes.
-```bash
+```
 git clone https://github.com/comingkms/MicrobioAMR.git
 chmod +x MicrobioAMR/MAMR
 cd MicrobioAMR
@@ -56,6 +56,12 @@ echo 'export PATH="/absolute/path/to/MAMR:$PATH"'>> ~/.bashrc && source ~/.bashr
 ```
 + Download the emu database from the [emu GitHub repository](https://github.com/treangenlab/emu)  and save it to the Emu_database directory.
 
++ Note: native osx-arm64 does not support porechop installation through conda. Please delete porechop in the MAMR.yml file and rerun:
+```
+conda env create -f MAMR.yml
+conda activate MAMR
+pip install git+https://github.com/rrwick/Porechop.git
+```
 ## Test
 1. Run the run_test.py 
 ```
